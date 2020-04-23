@@ -2,6 +2,22 @@
 # python 2.7
 # 关于时间序列 timeseries 的相关计算函数
 
+def tx_extend(tartsobj, tsobj1, tsobj2):
+	# 时域数据拼接
+	# 将tsobj2 接到 tsobj1 后面 赋予 tartsobj
+	# tartsobj 属性 继承 tsobj1
+	# 通道数 需保持一直
+
+	list1 = getTS(tsobj1)
+	list2 = getTS(tsobj2)
+	for n in range(len(list1)):
+		list1[n].extend(list2[n])
+	
+	# 数据拼接
+	putTS(tartsobj,tsobj1,list1)
+
+
+#获取\赋值时序信号数据
 
 def putTS(tsobj,tartsobj,list1):
 	# 对时间序列进行赋值
@@ -34,9 +50,8 @@ def getTS(tsobj):
 	return list1
 
 
-'''
-相关计算
-'''
+# 相关计算
+
 
 def cal_rms(list1):
 	# RMS 均方根计算
