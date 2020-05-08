@@ -43,7 +43,7 @@ def getTS(tsobj):
 	# 转化为列表导出
 	num = tsobj.GetChannelCount()
 	list1 = []
-	for n in range(list1):
+	for n in range(num):
 		listnum = tsobj.GetPointCount(n)
 		list_temp = tsobj.GetValuesAsList(n,0,listnum)
 		list1.append(list_temp)
