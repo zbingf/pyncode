@@ -9,11 +9,22 @@
 		CSV硬点数据文件路径 、
 		目标文件bdf文件路径 、
 		加载通道方向
+		
+		CSV文件格式:
+			name,id,x,y,z
+			test1,1,-10,-10,10
+			test2,2,-10,10,10
+			test3,3,20,-10,10
+			test4,4,20,10,10
+	注:
+	输出的数据为:
+		加载通道数 = 硬点数 * 加载方向个数
+	通道顺序为:(假定六个方向都加载) 1X 2Y 3Z 4RX 5RY 6RZ 7X 8Y 9Z 10RX 11RY 12RZ
 '''
 import os.path
 # 输入
 CSV_PATH = r'E:\workspace\nastran\test.csv'
-V_TYPE = '123456' # 加载方向 1:X 2:Y 3:Z 4:RX 5:RY 6:RZ
+V_TYPE = '123456' # 加载方向 1:X 2:Y 3:Z 4:RX 5:RY 6:RZ 123456
 # 常数
 INIT_ELEMENT_ID = 99900000 # ELEMENT 单元
 INIT_GRID_ID = 99800000 # GRID 节点
