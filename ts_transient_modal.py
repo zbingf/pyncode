@@ -1,10 +1,20 @@
 # -*- coding: utf-8 -*-
 '''
-瞬态分析-模态法
-加载数据处理
-创建TLOAD1 TABLED1 DAREA
-所需数据
+	瞬态分析-模态法
+	加载数据处理
+	创建TLOAD1 TABLED1 DAREA
+	所需数据
+	需指定
+		临时记录文件路径 、 
+		CSV硬点数据文件路径 、
+		目标文件bdf文件路径 、
+		加载通道方向
 '''
+import os.path
+# 输入
+CSV_PATH = r'E:\workspace\nastran\test.csv'
+V_TYPE = '123456' # 加载方向 1:X 2:Y 3:Z 4:RX 5:RY 6:RZ
+# 常数
 INIT_ELEMENT_ID = 99900000 # ELEMENT 单元
 INIT_GRID_ID = 99800000 # GRID 节点
 INIT_TABLED1_ID = 99700000 # TABLED1 
@@ -16,12 +26,61 @@ INIT_TSTEP_ID = 99200000 # TSTEP
 INIT_COMP_ID = 99100000 # COMP 编号
 INIT_DLOAD_ID = 99000000  # DLOAD 编号
 
-record_filepath = r'E:\workspace\nastran\temp.txt'
+# 路径 及 名称
+PATH = os.path.dirname(CSV_PATH)
+NAME = os.path.basename(CSV_PATH)[:-4]
+BDF_PATH = os.path.join(PATH,NAME+'.bdf')
+RECORD_PATH = os.path.join(PATH,NAME+'.txt')
 
-with open(record_filepath,'w') as f:
+
+# 创建，清空记录文件
+with open(RECORD_PATH,'w') as f:
 	f.write('\n')
 
+def glyphscript(engineState):
+	'''
+		运行函数
+	'''
+	bdfpath = BDF_PATH
+	csvpath = CSV_PATH
+
+	# timeseries 
+	tsin1 = engineState.GetInputTimeSeries(0)
+	# 通道数
+	n_channels = tsin1.GetChannelCount()
+	# 时域数据转换为 列表数据
+	list1 = getTS(tsin1)
+	# 采样频率 - 以首组数据
+	samplerate = tsin1.GetSampleRate(0)
+	# 名称命名为TS数据通道Y轴名称
+	name_list = [tsin1.GetYTitle(n) for n in range(n_channels)]
+
+	# engineState.JournalOut(str(n_channels))
+	# engineState.JournalOut(name_list[0])
+	# engineState.JournalOut(str(samplerate))
+	# engineState.JournalOut(str(list1[0][0]))
+
+	# vtype = '123456'
+
+	# 数据设置
+	# n_channels = 24
+	# samplerate = 50
+	tabled1s = {
+		'id':[n+1 for n in range(n_channels)],
+		'name':name_list,
+		'data':list1,
+		'samplerate':samplerate,
+		'vtype':V_TYPE
+		}
+
+	write_bdf_file(bdfpath,csvpath,tabled1s)
+
+	return ''
+
 def record_file(data):
+	'''
+		记录数据
+	'''
 	if type(data) == str :
 		str1 = data
 	elif type(data) == list :
@@ -29,7 +88,7 @@ def record_file(data):
 	elif type(data) == int or type(data) == float:
 		str1 = str(data)
 
-	with open(record_filepath,'a') as f:
+	with open(RECORD_PATH,'a') as f:
 		f.write(str(str1))
 
 def create_force_1_comp(load_id,name,grid_id,v,color=5):
@@ -89,6 +148,11 @@ def create_force_1_comps(load_ids,names,grid_ids,vtype=3):
 
 def create_tstep(num,name,tsnum,step,color=11):
 	'''
+		创建 TSTEP 卡片
+		num: ID
+		name: 卡片名称
+		tsnum: 数据长度
+		step: 时间步长
 	'''
 	str1 = '$HMNAME LOADCOL         {}"TSTEP_{}"\n'+\
 	'$HWCOLOR LOADCOL        {}      {}\n'+\
@@ -348,7 +412,6 @@ def create_rbe2_default(idlist):
 def create_dload_default(tload1_ids,tload1_gains,color=5):
 	'''
 		创建 DLOAD 卡片
-
 	'''
 
 	str_start = '$HMNAME LOADCOL         {}"DLOAD"\n'.format(strint8(INIT_DLOAD_ID))+\
@@ -389,7 +452,6 @@ def create_dload_default(tload1_ids,tload1_gains,color=5):
 def write_bdf_file(bdfpath,csvpath,tabled1s):
 	'''
 		生成 bdf 文件
-
 	'''
 	grids = csvfile(csvpath)
 	# 创建加载点
@@ -425,45 +487,6 @@ def getTS(tsobj):
 		list_temp = tsobj.GetValuesAsList(n,0,listnum)
 		list1.append(list_temp)
 	return list1
-
-def glyphscript(engineState):
-	# 
-	# global engineState
-	bdfpath = r'E:\workspace\nastran\test.bdf'
-	csvpath = r'E:\workspace\nastran\test.csv'
-
-	# timeseries 
-	tsin1 = engineState.GetInputTimeSeries(0)
-	# 通道数
-	n_channels = tsin1.GetChannelCount()
-	# 时域数据转换为 列表数据
-	list1 = getTS(tsin1)
-	# 采样频率 - 以首组数据
-	samplerate = tsin1.GetSampleRate(0)
-	# 名称命名为TS数据通道Y轴名称
-	name_list = [tsin1.GetYTitle(n) for n in range(n_channels)]
-
-	# engineState.JournalOut(str(n_channels))
-	# engineState.JournalOut(name_list[0])
-	# engineState.JournalOut(str(samplerate))
-	# engineState.JournalOut(str(list1[0][0]))
-
-	vtype = '123456'
-
-	# 数据设置
-	# n_channels = 24
-	# samplerate = 50
-	tabled1s = {
-		'id':[n+1 for n in range(n_channels)],
-		'name':name_list,
-		'data':list1,
-		'samplerate':samplerate,
-		'vtype':vtype
-		}
-
-	write_bdf_file(bdfpath,csvpath,tabled1s)
-
-	return ''
 
 # print( strfloat8(12) )
 # print( strfloat8(12345678) )

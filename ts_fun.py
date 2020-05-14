@@ -1,8 +1,8 @@
-# coding:utf-8
+# -*- coding: utf-8 -*-
 # python 2.7
 # 关于时间序列 timeseries 的相关计算函数
 
-def tx_extend(tartsobj, tsobj1, tsobj2):
+def ts_extend(tartsobj, tsobj1, tsobj2):
 	# 时域数据拼接
 	# 将tsobj2 接到 tsobj1 后面 赋予 tartsobj
 	# tartsobj 属性 继承 tsobj1
@@ -16,7 +16,6 @@ def tx_extend(tartsobj, tsobj1, tsobj2):
 	# 数据拼接
 	putTS(tartsobj,tsobj1,list1)
 
-
 #获取\赋值时序信号数据
 
 def putTS(tsobj,tartsobj,list1):
@@ -25,7 +24,7 @@ def putTS(tsobj,tartsobj,list1):
 	# 将列表list1 作为数据 导入 tsobj中
 	import array
 	num = len(list1)
-	if type(list1[0]) is list :
+	if type(list1[0]) == list :
 		tsobj.SetChannelCount(num)
 		len_value = len(list1[0])
 		for n in range(num):
@@ -36,7 +35,7 @@ def putTS(tsobj,tartsobj,list1):
 	else:
 		tsobj.SetChannelCount(1)
 		tsobj.CopyAttributes(tartsobj,0,0)
-		tsobj.PutValues(0,num,len_value,list1)
+		tsobj.PutValues(0,num,1,list1)
 
 def getTS(tsobj):
 	# 获取 time series 数据
@@ -49,9 +48,7 @@ def getTS(tsobj):
 		list1.append(list_temp)
 	return list1
 
-
 # 相关计算
-
 
 def cal_rms(list1):
 	# RMS 均方根计算
@@ -82,6 +79,10 @@ def cal_delta(list1,list2):
 		data.append(templist)
 	return data
 
+# def cal_relative(list1,list2):
+# 	# 计算两组数据的比值
+# 	# list1 - list2 
+
 def cal_rms_delta(list1,list2):
 	# 计算 两个list的差值 对应的 rms
 	list3 = cal_delta(list1,list2)
@@ -90,6 +91,7 @@ def cal_rms_delta(list1,list2):
 
 def cal_rms_percent(list1,list2):
 	# 计算两个 list 的rms的比值
+	# 
 	data = []
 	data1 = cal_rms(list1)
 	data2 = cal_rms(list2)
@@ -98,11 +100,11 @@ def cal_rms_percent(list1,list2):
 	return data
 
 
-a = [[1,1,1,1]]
-b = [[2,2,2,2]]
-print(cal_rms_percent(a,b))
-print(cal_rms_delta(a,b))
-print(cal_rms(a))
+# a = [[1,1,1,1]]
+# b = [[2,2,2,2]]
+# print(cal_rms_percent(a,b))
+# print(cal_rms_delta(a,b))
+# print(cal_rms(a))
 
 
 
