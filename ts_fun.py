@@ -48,8 +48,128 @@ def getTS(tsobj):
 		list1.append(list_temp)
 	return list1
 
-# 相关计算
+def cal_rms_delta_percent(list1,list2):
+	'''
+		误差均方根 / 目标均方根
+	'''
+	values_delta = cal_rms_delta(list1,list2)
+	values_target = cal_rms(list2)
 
+	list3 = [ n1/n2 for n1,n2 in zip(values_delta,values_target)]
+
+	return list3
+
+def cal_rms_percent(list1,list2):
+	'''
+		测量均方根 / 目标信号均方根
+	'''
+	data = []
+	data1 = cal_rms(list1)
+	data2 = cal_rms(list2)
+	for n in range(len(data1)):
+		data.append(data1[n]/data2[n])
+
+	return data
+
+def cal_max_percent(list1,list2):
+	'''
+		测量信号最大值 / 目标信号最大值
+	'''
+	maxs1 = [max(line) for line in list1]
+	maxs2 = [max(line) for line in list2]
+	values = [ max1 / max2 for max1,max2 in zip(maxs1,maxs2)]
+
+	return values
+
+def cal_min_percent(list1,list2):
+	'''
+		测量信号最小值 / 目标信号最小值
+	'''
+	mins1 = [min(line) for line in list1]
+	mins2 = [min(line) for line in list2]
+	values = [ min1 / min2 for min1,min2 in zip(mins1,mins2)]
+
+	return values
+
+def cal_pdi_relative(list1,list2):
+	'''
+		测量信号PDI / 目标信号PDI
+	'''
+	damage1 = cal_pdi(list1)
+	damage2 = cal_pdi(list2)
+
+	values = [ d1/d2 for d1,d2 in zip(damage1,damage2)]
+
+	return values
+
+# def cal_pdi_relative2(list1,list2):
+# 	'''
+# 		测量信号PDI / 目标信号PDI
+# 	'''
+# 	damage1 = cal_pdi2(list1)
+# 	damage2 = cal_pdi2(list2)
+
+# 	values = [ d1/d2 for d1,d2 in zip(damage1,damage2) ]
+
+# 	return values
+
+def cal_pdi(list1,b=5000,k=-5):
+	'''
+		伪损伤
+	'''
+	import math
+
+	A = math.log10(b)
+	B = 1/k
+
+	damage = [ sum( [ 1/10**((math.log10(abs(n))-A)/B) for n in line if n!=0 ] ) for line in list1]
+
+	return damage
+
+# def cal_pdi2(list1,b=5000,k=-5):
+# 	'''
+# 		伪损伤
+# 	'''
+# 	import math
+
+# 	A = math.log10(b)
+# 	B = 1/k
+
+# 	damage = [ sum( [ 1/10**((math.log10(abs(n-min(line)))-A)/B) for n in line if n-min(line)!=0 ] ) for line in list1]
+
+# 	return damage
+
+def putTS(tsobj,tartsobj,list1):
+	# 对时间序列进行赋值
+	# 复制tartsobj属性 到 tsobj中
+	# 将列表list1 作为数据 导入 tsobj中
+	import array
+	num = len(list1)
+	if type(list1[0]) == list :
+		tsobj.SetChannelCount(num)
+		len_value = len(list1[0])
+		for n in range(num):
+			tsobj.CopyAttributes(tartsobj,n,n)
+			tsobj.SetPointCount(n,len_value)
+			arr1 = array.array('f',list1[n])
+			tsobj.PutValues(n,0,len_value,arr1)
+	else:
+		tsobj.SetChannelCount(1)
+		tsobj.CopyAttributes(tartsobj,0,0)
+		tsobj.PutValues(0,num,1,list1)
+
+def getTS(tsobj):
+	# 获取 time series 数据
+	# 转化为列表导出
+	num = tsobj.GetChannelCount()
+	list1 = []
+	for n in range(num):
+		listnum = tsobj.GetPointCount(n)
+		list_temp = tsobj.GetValuesAsList(n,0,listnum)
+		list1.append(list_temp)
+	return list1
+
+# 相关计算
 def cal_rms(list1):
 	# RMS 均方根计算
 	# 二维数组 
@@ -65,7 +185,6 @@ def cal_rms(list1):
 		data.append(value1)
 	return data
 
-
 def cal_delta(list1,list2):
 	# 计算两组数据的差值
 	# list1 - list2 
@@ -79,35 +198,11 @@ def cal_delta(list1,list2):
 		data.append(templist)
 	return data
 
-# def cal_relative(list1,list2):
-# 	# 计算两组数据的比值
-# 	# list1 - list2 
-
 def cal_rms_delta(list1,list2):
 	# 计算 两个list的差值 对应的 rms
 	list3 = cal_delta(list1,list2)
 	data = cal_rms(list3)
 	return data
-
-def cal_rms_percent(list1,list2):
-	# 计算两个 list 的rms的比值
-	# 
-	data = []
-	data1 = cal_rms(list1)
-	data2 = cal_rms(list2)
-	for n in range(len(data1)):
-		data.append(data1[n]/data2[n])
-	return data
-
-
-# a = [[1,1,1,1]]
-# b = [[2,2,2,2]]
-# print(cal_rms_percent(a,b))
-# print(cal_rms_delta(a,b))
-# print(cal_rms(a))
-
-
-
 
 
 

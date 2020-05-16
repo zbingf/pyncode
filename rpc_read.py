@@ -23,7 +23,7 @@ def glyphscript(engineState):
 	# 调用第1通道指定的文件路径
 	rpc_path = tsin1_metadata.GetItem(0, 'FilenameWithPath')
 
-	list1 = get_rsp_data(rpc_path)
+	list1 , dic , name_channels = get_rsp_data(rpc_path)
 
 	putTS(tsout1,tsin1,list1)
 
@@ -145,17 +145,93 @@ def get_rsp_data(rpcFile):
 	file.close()
 
 
-	return data_list  
+	return data_list , dic , name_channels
+
+def cal_compare(list1,list2):
+	'''
+		数据评估 - 评价数据拟合程度
+		list1 与 list2 均为 二维数据
+		list2 为目标数据
+	'''
+	values1 = ts_fun.cal_rms_delta_percent(list1,list2)
+	values2 = ts_fun.cal_rms_percent(list1,list2)
+	values3 = ts_fun.cal_max_percent(list1,list2)
+	values4 = ts_fun.cal_min_percent(list1,list2)
+	values5 = ts_fun.cal_pdi_relative(list1,list2)
+
+	# [values1,values2,values3,values4,values5]
+	return { 'rms_delta_percent':values1, 'rms_percent':values2 , 
+		'max_percent':values3 , 'min_percent':values4 , 
+		'pdi_relative':values5 }
+
+def figure_plot(data_list,names,xlabel,ylabel):
+	'''
+		data_list 为 多通道数据 即 二维数据
+	'''
+	fig = plt.figure()
+	ax = fig.add_subplot(111)
+	for n in range(len(data_list)):
+		ax.plot(data_list[n])
+	ax.legend(names , 	loc = 'upper left' )
+	plt.xlabel(xlabel)
+	plt.ylabel(ylabel)
+
+def cal_rpcs_compare(rpc_path,n_it):
+
+	path = os.path.dirname(rpc_path)
+	name = os.path.basename(rpc_path)
+	target_list , dic , name_channels = get_rsp_data(rpc_path)
+	cal_name = ['_{}.rsp'.format(n) for n in range(n_it)]
+	cal_lists = []
+	result_lists = []
+	for num , name_end in enumerate(cal_name):
+		new_name = name[:-4] + name_end
+		cal_path = os.path.join( path,new_name )
+		list1 , __ , __ = get_rsp_data(cal_path)
+
+		result_lists.append( cal_compare(list1,target_list) )
+		cal_lists.append(list1)
+		# print(cal_path)
+
+	# 处理计算结果
+	n_channel_list = [n for n in range(len(name_channels))]
+	rms_delta_percents = [ [ result_lists[n]['rms_delta_percent'][n_chan] for n in range(len(cal_name))]
+		for n_chan in n_channel_list ]
+	rms_percents = [ [ result_lists[n]['rms_percent'][n_chan] for n in range(len(cal_name))]
+		for n_chan in n_channel_list ]
+	max_percents = [ [ result_lists[n]['max_percent'][n_chan] for n in range(len(cal_name))]
+		for n_chan in n_channel_list ]
+	min_percents = [ [ result_lists[n]['min_percent'][n_chan] for n in range(len(cal_name))]
+		for n_chan in n_channel_list ]
+	pdi_relatives = [ [ result_lists[n]['pdi_relative'][n_chan] for n in range(len(cal_name))]
+		for n_chan in n_channel_list ]
+
+	# 作图
+	plt.rcParams['font.family']=['sans-serif']
+	plt.rcParams['font.sans-serif'] = ['SimHei']
+	plt.rcParams['axes.unicode_minus']=False
+
+	figure_plot(rms_delta_percents,name_channels,'迭代次数','误差均方根 / 目标信号均方根')
+	figure_plot(rms_percents,name_channels,'迭代次数','测量信号均方根 / 目标信号均方根')
+	figure_plot(max_percents,name_channels,'迭代次数','测量信号最大值 / 目标信号最大值')
+	figure_plot(min_percents,name_channels,'迭代次数','测量信号最小值 / 目标信号最小值')
+	figure_plot(pdi_relatives,name_channels,'迭代次数','测量信号PDI / 目标信号PDI')
+
+	return ''
 
 if __name__ == '__main__':
-	# if len(sys.argv) < 2:
-	# 	print("\n\n A .rpc file needed")
-	# 	sys.exit()  
+
+	import matplotlib.pyplot as plt
+	import ts_fun
+	# 迭代目标数据-文件路径
 	rpc_path = r'E:\workspace\FEMFAT-Lab\six_dof_rig\hight_pass_1HZ.rsp'
-	rpc_path = r'E:\workspace\FEMFAT-Lab\six_dof_rig\temp.rsp'
-	get_rsp_data(rpc_path)
+	# rpc_path = r'E:\workspace\FEMFAT-Lab\six_dof_rig\temp.rsp'
+	# print(path,name)
+	# 迭代次数
+	n_it = 16
+	cal_rpcs_compare(rpc_path,n_it)
 
-	# path:E:\Software\MSC.Software\Adams\2019\adamssdk\include
+	# print(len(target_list[0]))
+	# print(len(cal_lists[0][0]))
 
-
-
+	plt.show()
