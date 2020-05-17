@@ -120,3 +120,34 @@ def getTS(tsobj):
 		list_temp = tsobj.GetValuesAsList(n,0,listnum)
 		list1.append(list_temp)
 	return list1
+
+
+def csv_xy_read(fiilepath):
+	'''
+		近适用于 两列数据读取
+	'''
+	import csv
+	x ,y = [] ,[]
+
+	with open(fiilepath,'r') as f:
+		reader=csv.reader(f)
+		for row in reader:
+			x.append(float(row[0]))
+			y.append(float(row[1]))
+	return x,y
+
+if __name__ == '__main__':
+
+	import matplotlib.pyplot as plt
+	# import os.path
+	fiilepath = r'E:\ADAMS\test.csv'
+	cmdpath = fiilepath[:-4] + '.cmd'
+	x,y = csv_xy_read(fiilepath)
+
+	str1 = cmd_spline_create('._rigid_chassis','wind_force',x,y)
+
+	with open(cmdpath,'w') as f:
+		f.write(str1)
+
+	# plt.plot(x,y)
+	# plt.show()

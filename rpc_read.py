@@ -176,17 +176,20 @@ def figure_plot(data_list,names,xlabel,ylabel):
 	plt.xlabel(xlabel)
 	plt.ylabel(ylabel)
 
-def cal_rpcs_compare(rpc_path,n_it):
+def cal_rpcs_compare(rpc_path,n_it=100):
 
 	path = os.path.dirname(rpc_path)
 	name = os.path.basename(rpc_path)
 	target_list , dic , name_channels = get_rsp_data(rpc_path)
+
 	cal_name = ['_{}.rsp'.format(n) for n in range(n_it)]
 	cal_lists = []
 	result_lists = []
 	for num , name_end in enumerate(cal_name):
 		new_name = name[:-4] + name_end
 		cal_path = os.path.join( path,new_name )
+		if os.path.isfile(cal_path) == False:
+			break
 		list1 , __ , __ = get_rsp_data(cal_path)
 
 		result_lists.append( cal_compare(list1,target_list) )
@@ -195,15 +198,15 @@ def cal_rpcs_compare(rpc_path,n_it):
 
 	# 处理计算结果
 	n_channel_list = [n for n in range(len(name_channels))]
-	rms_delta_percents = [ [ result_lists[n]['rms_delta_percent'][n_chan] for n in range(len(cal_name))]
+	rms_delta_percents = [ [ result_lists[n]['rms_delta_percent'][n_chan] for n in range(len(result_lists))]
 		for n_chan in n_channel_list ]
-	rms_percents = [ [ result_lists[n]['rms_percent'][n_chan] for n in range(len(cal_name))]
+	rms_percents = [ [ result_lists[n]['rms_percent'][n_chan] for n in range(len(result_lists))]
 		for n_chan in n_channel_list ]
-	max_percents = [ [ result_lists[n]['max_percent'][n_chan] for n in range(len(cal_name))]
+	max_percents = [ [ result_lists[n]['max_percent'][n_chan] for n in range(len(result_lists))]
 		for n_chan in n_channel_list ]
-	min_percents = [ [ result_lists[n]['min_percent'][n_chan] for n in range(len(cal_name))]
+	min_percents = [ [ result_lists[n]['min_percent'][n_chan] for n in range(len(result_lists))]
 		for n_chan in n_channel_list ]
-	pdi_relatives = [ [ result_lists[n]['pdi_relative'][n_chan] for n in range(len(cal_name))]
+	pdi_relatives = [ [ result_lists[n]['pdi_relative'][n_chan] for n in range(len(result_lists))]
 		for n_chan in n_channel_list ]
 
 	# 作图
@@ -220,16 +223,23 @@ def cal_rpcs_compare(rpc_path,n_it):
 	return ''
 
 if __name__ == '__main__':
+	import tkinter
+	import tkinter.messagebox #这个是消息框，对话框的关键
+	import tkinter.filedialog
+	tkobj=tkinter.Tk()
+	# 隐藏隐藏主窗口
+	tkobj.withdraw()
 
 	import matplotlib.pyplot as plt
 	import ts_fun
 	# 迭代目标数据-文件路径
-	rpc_path = r'E:\workspace\FEMFAT-Lab\six_dof_rig\hight_pass_1HZ.rsp'
+	# rpc_path = r'E:\workspace\FEMFAT-Lab\six_dof_rig\hight_pass_1HZ.rsp'
+	rpc_path = tkinter.filedialog.askopenfilename()
 	# rpc_path = r'E:\workspace\FEMFAT-Lab\six_dof_rig\temp.rsp'
 	# print(path,name)
 	# 迭代次数
-	n_it = 16
-	cal_rpcs_compare(rpc_path,n_it)
+	# n_it = 16
+	cal_rpcs_compare(rpc_path)
 
 	# print(len(target_list[0]))
 	# print(len(cal_lists[0][0]))
