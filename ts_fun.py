@@ -52,6 +52,16 @@ def cal_rms_delta_percent(list1,list2):
 	'''
 		误差均方根 / 目标均方根
 	'''
+	# 等长评估, 以最短的为主
+	n_l1 = len(list1[0])
+	n_l2 = len(list2[0])
+	if n_l1 > n_l2 :
+		for line in list1:
+			del line[n_l2:]
+	elif n_l1 < n_l2:
+		for line in list2:
+			del line[n_l1:]
+
 	values_delta = cal_rms_delta(list1,list2)
 	values_target = cal_rms(list2)
 
@@ -63,6 +73,16 @@ def cal_rms_percent(list1,list2):
 	'''
 		测量均方根 / 目标信号均方根
 	'''
+	# 等长评估, 以最短的为主
+	n_l1 = len(list1[0])
+	n_l2 = len(list2[0])
+	if n_l1 > n_l2 :
+		for line in list1:
+			del line[n_l2:]
+	elif n_l1 < n_l2:
+		for line in list2:
+			del line[n_l1:]
+
 	data = []
 	data1 = cal_rms(list1)
 	data2 = cal_rms(list2)
@@ -75,6 +95,16 @@ def cal_max_percent(list1,list2):
 	'''
 		测量信号最大值 / 目标信号最大值
 	'''
+	# 等长评估, 以最短的为主
+	n_l1 = len(list1[0])
+	n_l2 = len(list2[0])
+	if n_l1 > n_l2 :
+		for line in list1:
+			del line[n_l2:]
+	elif n_l1 < n_l2:
+		for line in list2:
+			del line[n_l1:]
+
 	maxs1 = [max(line) for line in list1]
 	maxs2 = [max(line) for line in list2]
 	values = [ max1 / max2 for max1,max2 in zip(maxs1,maxs2)]
@@ -85,6 +115,16 @@ def cal_min_percent(list1,list2):
 	'''
 		测量信号最小值 / 目标信号最小值
 	'''
+	# 等长评估, 以最短的为主
+	n_l1 = len(list1[0])
+	n_l2 = len(list2[0])
+	if n_l1 > n_l2 :
+		for line in list1:
+			del line[n_l2:]
+	elif n_l1 < n_l2:
+		for line in list2:
+			del line[n_l1:]
+
 	mins1 = [min(line) for line in list1]
 	mins2 = [min(line) for line in list2]
 	values = [ min1 / min2 for min1,min2 in zip(mins1,mins2)]
@@ -95,6 +135,16 @@ def cal_pdi_relative(list1,list2):
 	'''
 		测量信号PDI / 目标信号PDI
 	'''
+	# 等长评估, 以最短的为主
+	n_l1 = len(list1[0])
+	n_l2 = len(list2[0])
+	if n_l1 > n_l2 :
+		for line in list1:
+			del line[n_l2:]
+	elif n_l1 < n_l2:
+		for line in list2:
+			del line[n_l1:]
+
 	damage1 = cal_pdi(list1)
 	damage2 = cal_pdi(list2)
 

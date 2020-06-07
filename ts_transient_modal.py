@@ -239,7 +239,7 @@ def create_tload1s(numslist,names,tabled1_ids,darea_ids):
 	strlist = []
 	for num ,name ,tabled1_id ,darea_id in zip(numslist,names,tabled1_ids,darea_ids):
 		strlist.append(create_tload1(num+INIT_TLOAD1_ID,name,
-			tabled1_id+INIT_TABLED1_ID,darea_id+INIT_DAREA_ID))
+			tabled1_id+INIT_TABLED1_ID,darea_id+INIT_FORCE_ID)) # 此处使用 INIT_FORCE_ID
 	return '\n'.join(strlist)
 
 def create_darea(num,name,node_id,v,color=10):
@@ -314,7 +314,7 @@ def strfloat8(value,isright=True):
 				if value == int(value):
 					strvalue = str(round(value,8-intlen-1))
 				else:
-					strvalue = str(round(value,8-intlen-1))
+					strvalue = str(round(value,8-intlen-2))
 		else:
 			# 数值过大
 			print('warning')
@@ -520,3 +520,5 @@ def getTS(tsobj):
 # print( strfloat8(123456.51715373993) )
 # print( strfloat8(1234561.51715373993) )
 # print( strfloat8(12345613.51715373993) )
+
+# print(strfloat8(-0.012341))
