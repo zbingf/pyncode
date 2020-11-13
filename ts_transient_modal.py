@@ -88,7 +88,7 @@ def glyphscript(engineState):
 
 	return ''
 
-def record_file(data):
+def record_file(data): # 记录数据
 	'''
 		记录数据
 	'''
@@ -102,7 +102,7 @@ def record_file(data):
 	with open(RECORD_PATH,'a') as f:
 		f.write(str(str1))
 
-def create_force_1_comp(load_id,name,grid_id,v,color=5):
+def create_force_1_comp(load_id,name,grid_id,v,color=5): # 单个 单位力or力矩加载
 	'''
 		单位力 or 力矩加载
 
@@ -129,7 +129,7 @@ def create_force_1_comp(load_id,name,grid_id,v,color=5):
 			strint8(load_id),strint8(grid_id))
 	return str_start + str1
 
-def create_force_1_comps(load_ids,names,grid_ids,vtype=3):
+def create_force_1_comps(load_ids,names,grid_ids,vtype=3): # 数组 
 	'''
 		创建单位力集
 		load_ids names  vlist 长度一致
@@ -157,7 +157,7 @@ def create_force_1_comps(load_ids,names,grid_ids,vtype=3):
 
 	return '\n'.join(strlist)
 
-def create_tstep(num,name,tsnum,step,color=11):
+def create_tstep(num,name,tsnum,step,color=11): # 创建TSTEP卡片
 	'''
 		创建 TSTEP 卡片
 		num: ID

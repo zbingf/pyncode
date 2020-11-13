@@ -163,14 +163,14 @@ def cal_pdi_relative(list1,list2):
 
 # 	return values
 
-def cal_pdi(list1,b=5000,k=-5):
+def cal_pdi(list1,b=5000.0,k=-5.0):
 	'''
 		伪损伤
 	'''
 	import math
 
 	A = math.log10(b)
-	B = 1/k
+	B = 1.0/k
 
 	damage = [ sum( [ 1/10**((math.log10(abs(n))-A)/B) for n in line if n!=0 ] ) for line in list1]
 
