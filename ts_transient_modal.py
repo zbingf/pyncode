@@ -22,20 +22,27 @@
 	通道顺序为:(假定六个方向都加载) 1X 2Y 3Z 4RX 5RY 6RZ 7X 8Y 9Z 10RX 11RY 12RZ
 '''
 import os.path
-# 输入
+# csv路径输入
+# 文件记录坐标数据,格式如下;
+# 	name,id,x,y,z,
+# 	test1,1,10,10,10,
+# 	test2,1,10,-10,10,
 CSV_PATH = r'E:\workspace\nastran\test.csv'
-V_TYPE = '123456' # 加载方向 1:X 2:Y 3:Z 4:RX 5:RY 6:RZ 123456
+# 加载方向 1:X 2:Y 3:Z 4:RX 5:RY 6:RZ 
+# 123456 : 六分力加载
+V_TYPE = '123456' 
+
 # 常数
-INIT_ELEMENT_ID = 99900000 # ELEMENT 单元
-INIT_GRID_ID = 99800000 # GRID 节点
-INIT_TABLED1_ID = 99700000 # TABLED1 
-INIT_TLOAD1_ID = 99600000 # TLOAD1
-INIT_DAREA_ID = 99500000 # DAREA
-INIT_TABDMP1_ID = 99400000 # TABDMP1
-INIT_FORCE_ID = 99300000 # 
-INIT_TSTEP_ID = 99200000 # TSTEP
-INIT_COMP_ID = 99100000 # COMP 编号
-INIT_DLOAD_ID = 99000000  # DLOAD 编号
+INIT_ELEMENT_ID = 99900000 		# ELEMENT 单元 ID
+INIT_GRID_ID = 99800000 		# GRID 节点 ID
+INIT_TABLED1_ID = 99700000 		# TABLED1 ID
+INIT_TLOAD1_ID = 99600000 		# TLOAD1 ID
+INIT_DAREA_ID = 99500000 		# DAREA ID
+INIT_TABDMP1_ID = 99400000 		# TABDMP1 ID
+INIT_FORCE_ID = 99300000 		# 
+INIT_TSTEP_ID = 99200000 		# TSTEP ID
+INIT_COMP_ID = 99100000 		# COMP ID
+INIT_DLOAD_ID = 99000000  		# DLOAD ID
 
 # 路径 及 名称
 PATH = os.path.dirname(CSV_PATH)
@@ -48,6 +55,7 @@ RECORD_PATH = os.path.join(PATH,NAME+'.txt')
 with open(RECORD_PATH,'w') as f:
 	f.write('\n')
 
+# 主程序
 def glyphscript(engineState):
 	'''
 		运行函数
@@ -464,12 +472,16 @@ def write_bdf_file(bdfpath,csvpath,tabled1s):
 	'''
 		生成 bdf 文件
 	'''
+	# csv文件读取
 	grids = csvfile(csvpath)
+
 	# 创建加载点
 	str_grid = create_grids(grids['id'],grids['x'],grids['y'],grids['z'])
+	
 	# 各通道加载数据
 	str_tabled1 = create_tabled1s(tabled1s['id'],tabled1s['name'],
 		tabled1s['data'],tabled1s['samplerate'])
+	
 	# 加载点对应 load col 及 卡片DAREA 创建
 	# str_darea = create_dareas(tabled1s['id'],tabled1s['name'],tabled1s['id'],loads['v'])
 	# 创建 load col 及 加载FORCE 
