@@ -1,5 +1,13 @@
 # -*- coding: utf-8 -*-
 # python 2.7
+'''
+	频域数据计算
+	查找峰值并计算
+	将峰值数据排序成csv格式计算
+
+	需要一个输入 - 频域输入
+
+'''
 # 频域计算
 def glyphscript(engineState):
 	# 输出打印 子函数
@@ -23,19 +31,20 @@ def glyphscript(engineState):
 		tx,ty = sorted_xy(nx,ny)
 		target_x.append(tx)
 		target_y.append(ty)
-
+	# vprint(list2str(target_x))
+	# vprint(list2str(target_y))
 	# 写入数据
 	f = open(csv_path,'w')
 	str1 = '{},,,'.join([HI_in1.GetChanTitle(n) for n in range(nlen)]) + '\n'
 	f.write(str1)
 	str1 = 'Hz,,,'*nlen + '\n'
 	f.write(str1)
-	for n1 in ragne(len(target_x[0])):
-		for n2 in ragne(len(target_x)):
+	for n1 in range(len(target_x[0])):
+		for n2 in range(len(target_x)):
 			try:
 				str1 = '{},{},,'.format(
-					str(target_x[n2][n1],
-					str(target_y[n2][n1])))
+					str(target_x[n2][n1]),
+					str(target_y[n2][n1]) )
 			except:
 				str1 = ' , , ,'
 			f.write(str1)
@@ -45,6 +54,7 @@ def glyphscript(engineState):
 	# 打开csv文件
 	import os
 	os.system(csv_path)
+
 	return ''
 
 def hi_get_data(HIobj):
@@ -61,7 +71,7 @@ def hi_get_data(HIobj):
 		xstart = dic1['XMin']
 		xend = dic1['XMax']
 
-		xs.append([(float(xend-xstart)/float(xlen-1)*nnum) for num in range(xlen)])
+		xs.append([(float(xend-xstart)/float(xlen-1)*num) for num in range(xlen)])
 		ys.append([matrix1.GetXBin(num) for num in range(xlen)])
 
 	return xs,ys
@@ -97,7 +107,7 @@ def listloc(list1,locs):
 	'''获取指定位置列表数据'''
 	return [list1[n] for n in locs]
 
-def data_peak_find(list1,distance = 2)
+def data_peak_find(list1,distance = 2):
 	'''
 		使用三点数据对列表进行检索 ,返回潜在波峰位置
 		当前：寻找波峰
