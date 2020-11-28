@@ -7,7 +7,7 @@ ncode相关子模块
 + hi_peak_search 
 	+ 查找频域数据波峰峰值及对应频率
 
-![hi_peak_search](./examples/hi_peak_search.png)
+![](./examples/hi_peak_search.png)
 
 ## 时域计算模块
 + 
