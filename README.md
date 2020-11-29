@@ -11,7 +11,7 @@ Histogram 数据
 + hi_peak_search 
 	+ 查找频域数据波峰峰值及对应频率
 	+ 流程图如下：
-![hi_peak_search](./examples/hi_peak_search.png)
+![hi_peak_search](./README/hi_peak_search.png)
 
 
 ## 时域计算模块
