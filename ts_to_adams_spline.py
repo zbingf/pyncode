@@ -9,6 +9,13 @@
 		spline_names
 '''
 
+import logging
+import os
+current_path = r'D:\github\pyncode'
+os.chdir(current_path)
+logging.basicConfig(level=logging.INFO, filename='debug.log')
+
+
 def glyphscript(engineState):
 	'''
 		主函数
@@ -36,6 +43,7 @@ def glyphscript(engineState):
 	with open(cmd_path,'w') as f:
 		f.write(str1)
 
+	logging.shutdown()
 	return ''
 
 

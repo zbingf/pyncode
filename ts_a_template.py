@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+import logging
+import os
+current_path = r'D:\github\pyncode'
+os.chdir(current_path)
+logging.basicConfig(level=logging.INFO, filename='debug.log')
+
 
 def glyphscript(engineState):
 	ts_in0 = engineState.GetInputTimeSeries(0)
@@ -6,6 +12,7 @@ def glyphscript(engineState):
 	list1 = getTS(ts_in0)
 	putTS(ts_out0, ts_in0, list1)
 	
+	logging.shutdown()
 	return ''
 
 def putTS(tsobj,tartsobj,list1):

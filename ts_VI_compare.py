@@ -5,6 +5,12 @@
 	
 	
 '''
+import logging
+import os
+current_path = r'D:\github\pyncode'
+os.chdir(current_path)
+logging.basicConfig(level=logging.INFO, filename='debug.log')
+
 def glyphscript(engineState):
 	'''
 		主函数
@@ -48,6 +54,7 @@ def glyphscript(engineState):
 
 	cal_pdi(list1,b=5000.0,k=-5.0)
 	
+	logging.shutdown()
 	return ''
 
 def cal_rms_delta_percent(list1,list2):

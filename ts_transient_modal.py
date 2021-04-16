@@ -22,6 +22,13 @@
 	通道顺序为:(假定六个方向都加载) 1X 2Y 3Z 4RX 5RY 6RZ 7X 8Y 9Z 10RX 11RY 12RZ
 '''
 import os.path
+import logging
+import os
+current_path = r'D:\github\pyncode'
+os.chdir(current_path)
+logging.basicConfig(level=logging.INFO, filename='debug.log')
+
+
 # csv路径输入
 # 文件记录坐标数据,格式如下;
 # 	name,id,x,y,z,
@@ -95,6 +102,7 @@ def glyphscript(engineState):
 
 	write_bdf_file(bdfpath,csvpath,tabled1s)
 
+	logging.shutdown()
 	return ''
 
 def record_file(data): # 记录数据

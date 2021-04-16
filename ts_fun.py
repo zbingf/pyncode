@@ -2,6 +2,14 @@
 # python 2.7
 # 关于时间序列 timeseries 的相关计算函数
 
+import logging
+import os
+current_path = r'D:\github\pyncode'
+os.chdir(current_path)
+logging.basicConfig(level=logging.INFO, filename='debug.log')
+
+
+
 def ts_extend(tartsobj, tsobj1, tsobj2):
 	# 时域数据拼接
 	# 将tsobj2 接到 tsobj1 后面 赋予 tartsobj
