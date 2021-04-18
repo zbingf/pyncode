@@ -7,8 +7,6 @@ function glyphscript(engineState)
 
 
 	set_ouput_ts(ts_out1, ts_in1, data)
-	% set_channel_data(ts_out1, data);
-	% copy_chanenel_data(ts_out1, ts_in1);
 
 	% 作图
 	x_channel = 1;
@@ -17,7 +15,6 @@ function glyphscript(engineState)
 	plot_single(x_channel, y_channel, ts_in1, fig_num, '.r', 111);
 
 end
-
 
 function set_ouput_ts(ts_obj, ts_obj_source, data)
 	
