@@ -217,7 +217,7 @@ obj.save()
 
 # 转存PDF
 office_docx.doc2pdf(docx_path)
-os.system(docx_path[:-4]+'.pdf')
+os.system(docx_path[:-4]+'pdf')
 
 # 删除多余文档
 del_paths = fig_paths+[json_path, csv_path0, csv_path1]

@@ -43,6 +43,7 @@ def glyphscript(engineState):
 
 	return ''
 
+# 导出PDI数据
 def output_pdi_data(json_path, ts_obj_in0, ts_obj_in1):
 
 	md_obj_in0 = ts_obj_in0.GetMetaData()
@@ -160,8 +161,10 @@ def putTS(tsobj,tartsobj,list1):
 	return None
 
 def getTS(tsobj):
-	# 获取 time series 数据
-	# 转化为列表导出
+	"""
+		获取 time series 数据
+		转化为列表导出	
+	"""
 	num = tsobj.GetChannelCount()
 	list1 = []
 	for n in range(num):
@@ -170,6 +173,7 @@ def getTS(tsobj):
 		list1.append(list_temp)
 	return list1
 
+# 数据转csv
 def data2csv(csv_path, data, chantitles=None): # 数据导出为csv格式
 	"""
 		csv_path 	目标csv路径
