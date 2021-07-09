@@ -56,7 +56,7 @@ csv_path1 	= main_dic['csv_path1']
 ts_dic0 	= main_dic['ts_dic0']
 ts_dic1 	= main_dic['ts_dic1']
 
-pdf_path = pdf_scatter_plot.pdf_scatter_plot(csv_path0, csv_path1, docx_path)
+pdf_path = pdf_scatter_plot.pdf_scatter_plot_csv(csv_path0, csv_path1, docx_path)
 logger.info(f'load pdf_path: {pdf_path}')
 os.system(pdf_path)
 

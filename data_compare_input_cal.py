@@ -60,7 +60,7 @@ csv_path1 	= main_dic['csv_path1']
 pdi_dic0 	= main_dic['pdi_dic0']
 pdi_dic1 	= main_dic['pdi_dic1']
 
-pdf_path = pdf_compare_pdi.pdf_compare_pdi(csv_path0, csv_path1, pdi_dic0, pdi_dic1, docx_path, fig_path)
+pdf_path = pdf_compare_pdi.pdf_compare_pdi_csv(csv_path0, csv_path1, pdi_dic0, pdi_dic1, docx_path, fig_path)
 
 logger.info(f'load pdf_path : {pdf_path}')
 os.system(pdf_path)
