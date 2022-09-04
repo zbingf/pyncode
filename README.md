@@ -2,6 +2,16 @@
 ncode相关子模块
 __version : python 2.7__
 
+## baidu_GPS_get
+根据[百度拾取坐标系统](https://api.map.baidu.com/lbsapi/getpoint/index.html) 截取GPS图片
+共三部:
++ 鼠标指向, 地图-左上角, enter按键确认
++ 鼠标指向, 地图-右下角, enter按键确认
++ 鼠标指向, 网页内-坐标复制按钮, enter按键确认
+
+
+
+
 ## 频域计算模块
 Histogram 数据
 + hi_ride_cal 
