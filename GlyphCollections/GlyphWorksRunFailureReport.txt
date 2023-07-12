@@ -4,581 +4,15 @@ Begin
 
 Run failure report
 
-29-Sep-2022 22:52:48
+13-Jul-2023 00:02:25
 
 
 00000   Memory
-00001       Load 21%
+00001       Load 32%
 00002       32716MB total
-00003       25653MB available
-00004       44492MB total (page file)
-00005       33838MB available (page file)
-00006       134217727MB total (virtual)
-00007       134212354MB available (virtual)
-00008   
-00009   
-00010   System Info
-00011       Processors 16
-00012       Processor Architecture 9
-00013       Page Size 4096
-00014       Processor Type 8664
-00015       Allocation Granularity 65536
-00016       Processor Level 23
-00017       Processor Revision 28928
-00018   
-00019   
-00020   OS Version Info
-00021       Major Version 6
-00022       Minor Version 2
-00023       Build Number 9200
-00024       Platform ID 2
-00025   
-00026   
-00027   HW Profile Info
-00028       Dock Info 1
-00029   
-00030   
-00031   File System
-00032      No data available
-00033   
-00034   
-00035   Data Manager
-00036      3 entries - cache allocated 524288000 bytes
-00037   
-00038      Remapping enabled : TRUE
-00039      Verify records : Off
-00040      Verify streams : Off
-00041      Verify storages : Off
-00042      Verify files : Off
-00043   
-00044      Time series
-00045   
-00046      Time series
-00047   
-00048      Array
-00049   
-00050   
-00051   
-00052   S3 File Manager
-00053    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[3eda8a65-2aa8-4005-8562-f460d7fd0e40].tmp, pFile=Ox4517C990, thread=Ox34D4, ptr=Ox00000000, readwrite
-00054    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000001]_G[b95a5e13-32d7-4064-a519-25bfdd036e4d].tmp, pFile=Ox5E780330, thread=Ox34D4, ptr=Ox00000000, readwrite
-00055    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000002]_G[373a7bce-6c3e-4a3c-8df3-a4bad204bf3c].tmp, pFile=Ox5E77F5F0, thread=Ox34D4, ptr=Ox00000000, readwrite
-00056   
-00057   
-00058   Application
-00059        Workspace : WS1
-00060        Delete data on the fly enabled (global) : TRUE
-00061        Delete data on the fly (this) : TRUE
-00062        Glyphs that can switch pipe states : 0
-00063        Glyphs that can request skip cancellation : 0
-00064        Pipe states backed up : FALSE
-00065        Repeating : FALSE
-00066        Run : 0
-00067        Run count : 1
-00068        Run error count : 0
-00069        Run complete : FALSE
-00070        Run skipped : FALSE
-00071        Stop on error during multiple run : FALSE
-00072        Ranks are stored : FALSE = 0
-00073        Resetting : FALSE
-00074        Stepping : FALSE
-00075        Running : FALSE
-00076        Paused : FALSE
-00077        Stopped : TRUE
-00078        Interactive : FALSE
-00079        Complete : FALSE
-00080        Reset : FALSE
-00081        Break : FALSE
-00082        Next File : FALSE
-00083        Running to glyph : FALSE
-00084        Preparing to run : FALSE
-00085        Stop pending : FALSE
-00086        Waiting for next single step : FALSE
-00087        Auto collate : FALSE
-00088        Collate OFF : TRUE
-00089        Collate GATHER : FALSE
-00090        Collate REVIEW : FALSE
-00091        Collate results available : FALSE
-00092        Logging : FALSE
-00093        Use shared scratch file : FALSE
-00094        Looping : FALSE
-00095        Has looped : FALSE
-00096        
-00097        
-00098        
-00099        
-00100             Auto collate : FALSE
-00101             Collate results available : NO
-00102             Collate data count : 0
-00103             Collate review count : 0
-00104             Logging : FALSE
-00105             Reviewing : FALSE
-00106             Backed up : FALSE
-00107             Data present : TRUE
-00108        
-00109             Auto collate : FALSE
-00110             Collate results available : NO
-00111             Collate data count : 0
-00112             Collate review count : 0
-00113             Logging : FALSE
-00114             Reviewing : FALSE
-00115             Backed up : FALSE
-00116             Data present : TRUE
-00117   
-00118   
-00119   
-00120   Global journal entries
-00121     Out  :  29-Sep-2022 22:52:48   Run started   
-00122   Error  :  29-Sep-2022 22:52:48   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-***
-End
-***
-
-
-*****
-Begin
-*****
-
-Run failure report
-
-29-Sep-2022 22:53:07
-
-
-00000   Memory
-00001       Load 21%
-00002       32716MB total
-00003       25646MB available
-00004       44492MB total (page file)
-00005       33833MB available (page file)
-00006       134217727MB total (virtual)
-00007       134212354MB available (virtual)
-00008   
-00009   
-00010   System Info
-00011       Processors 16
-00012       Processor Architecture 9
-00013       Page Size 4096
-00014       Processor Type 8664
-00015       Allocation Granularity 65536
-00016       Processor Level 23
-00017       Processor Revision 28928
-00018   
-00019   
-00020   OS Version Info
-00021       Major Version 6
-00022       Minor Version 2
-00023       Build Number 9200
-00024       Platform ID 2
-00025   
-00026   
-00027   HW Profile Info
-00028       Dock Info 1
-00029   
-00030   
-00031   File System
-00032      No data available
-00033   
-00034   
-00035   Data Manager
-00036      3 entries - cache allocated 524288000 bytes
-00037   
-00038      Remapping enabled : TRUE
-00039      Verify records : Off
-00040      Verify streams : Off
-00041      Verify storages : Off
-00042      Verify files : Off
-00043   
-00044      Time series
-00045   
-00046      Time series
-00047   
-00048      Array
-00049   
-00050   
-00051   
-00052   S3 File Manager
-00053    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[3eda8a65-2aa8-4005-8562-f460d7fd0e40].tmp, pFile=Ox4517C990, thread=Ox34D4, ptr=Ox00000000, readwrite
-00054    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000001]_G[565986eb-6a3f-4541-a70b-984349b7fa9d].tmp, pFile=Ox5E780330, thread=Ox34D4, ptr=Ox00000000, readwrite
-00055    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000002]_G[dd2a7012-dfbb-4e57-ab3b-483f34a8663b].tmp, pFile=Ox5E77F5F0, thread=Ox34D4, ptr=Ox00000000, readwrite
-00056   
-00057   
-00058   Application
-00059        Workspace : WS1
-00060        Delete data on the fly enabled (global) : TRUE
-00061        Delete data on the fly (this) : TRUE
-00062        Glyphs that can switch pipe states : 0
-00063        Glyphs that can request skip cancellation : 0
-00064        Pipe states backed up : FALSE
-00065        Repeating : FALSE
-00066        Run : 0
-00067        Run count : 1
-00068        Run error count : 0
-00069        Run complete : FALSE
-00070        Run skipped : FALSE
-00071        Stop on error during multiple run : FALSE
-00072        Ranks are stored : FALSE = 0
-00073        Resetting : FALSE
-00074        Stepping : FALSE
-00075        Running : FALSE
-00076        Paused : FALSE
-00077        Stopped : TRUE
-00078        Interactive : FALSE
-00079        Complete : FALSE
-00080        Reset : FALSE
-00081        Break : FALSE
-00082        Next File : FALSE
-00083        Running to glyph : FALSE
-00084        Preparing to run : FALSE
-00085        Stop pending : FALSE
-00086        Waiting for next single step : FALSE
-00087        Auto collate : FALSE
-00088        Collate OFF : TRUE
-00089        Collate GATHER : FALSE
-00090        Collate REVIEW : FALSE
-00091        Collate results available : FALSE
-00092        Logging : FALSE
-00093        Use shared scratch file : FALSE
-00094        Looping : FALSE
-00095        Has looped : FALSE
-00096        
-00097        
-00098        
-00099        
-00100             Auto collate : FALSE
-00101             Collate results available : NO
-00102             Collate data count : 0
-00103             Collate review count : 0
-00104             Logging : FALSE
-00105             Reviewing : FALSE
-00106             Backed up : FALSE
-00107             Data present : TRUE
-00108        
-00109             Auto collate : FALSE
-00110             Collate results available : NO
-00111             Collate data count : 0
-00112             Collate review count : 0
-00113             Logging : FALSE
-00114             Reviewing : FALSE
-00115             Backed up : FALSE
-00116             Data present : TRUE
-00117   
-00118   
-00119   
-00120   Global journal entries
-00121     Out  :  29-Sep-2022 22:52:48   Run started   
-00122   Error  :  29-Sep-2022 22:52:48   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00123     Out  :  29-Sep-2022 22:52:53   Run finished - elapsed time 4.63secs   
-00124     Out  :  29-Sep-2022 22:53:07   Run started   
-00125   Error  :  29-Sep-2022 22:53:07   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-***
-End
-***
-
-
-*****
-Begin
-*****
-
-Run failure report
-
-29-Sep-2022 22:54:01
-
-
-00000   Memory
-00001       Load 21%
-00002       32716MB total
-00003       25651MB available
-00004       44492MB total (page file)
-00005       33834MB available (page file)
-00006       134217727MB total (virtual)
-00007       134212354MB available (virtual)
-00008   
-00009   
-00010   System Info
-00011       Processors 16
-00012       Processor Architecture 9
-00013       Page Size 4096
-00014       Processor Type 8664
-00015       Allocation Granularity 65536
-00016       Processor Level 23
-00017       Processor Revision 28928
-00018   
-00019   
-00020   OS Version Info
-00021       Major Version 6
-00022       Minor Version 2
-00023       Build Number 9200
-00024       Platform ID 2
-00025   
-00026   
-00027   HW Profile Info
-00028       Dock Info 1
-00029   
-00030   
-00031   File System
-00032      No data available
-00033   
-00034   
-00035   Data Manager
-00036      3 entries - cache allocated 524288000 bytes
-00037   
-00038      Remapping enabled : TRUE
-00039      Verify records : Off
-00040      Verify streams : Off
-00041      Verify storages : Off
-00042      Verify files : Off
-00043   
-00044      Time series
-00045   
-00046      Time series
-00047   
-00048      Array
-00049   
-00050   
-00051   
-00052   S3 File Manager
-00053    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[3eda8a65-2aa8-4005-8562-f460d7fd0e40].tmp, pFile=Ox4517C990, thread=Ox34D4, ptr=Ox00000000, readwrite
-00054    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000001]_G[4fba75e0-adc5-486a-8e10-c7e4da3d43f6].tmp, pFile=Ox5E77D4D0, thread=Ox34D4, ptr=Ox00000000, readwrite
-00055    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000002]_G[1873c72b-b901-45b7-93c5-fb05c7a315d7].tmp, pFile=Ox5E77F5F0, thread=Ox34D4, ptr=Ox00000000, readwrite
-00056   
-00057   
-00058   Application
-00059        Workspace : WS1
-00060        Delete data on the fly enabled (global) : TRUE
-00061        Delete data on the fly (this) : TRUE
-00062        Glyphs that can switch pipe states : 0
-00063        Glyphs that can request skip cancellation : 0
-00064        Pipe states backed up : FALSE
-00065        Repeating : FALSE
-00066        Run : 0
-00067        Run count : 1
-00068        Run error count : 0
-00069        Run complete : FALSE
-00070        Run skipped : FALSE
-00071        Stop on error during multiple run : FALSE
-00072        Ranks are stored : FALSE = 0
-00073        Resetting : FALSE
-00074        Stepping : FALSE
-00075        Running : FALSE
-00076        Paused : FALSE
-00077        Stopped : TRUE
-00078        Interactive : FALSE
-00079        Complete : FALSE
-00080        Reset : FALSE
-00081        Break : FALSE
-00082        Next File : FALSE
-00083        Running to glyph : FALSE
-00084        Preparing to run : FALSE
-00085        Stop pending : FALSE
-00086        Waiting for next single step : FALSE
-00087        Auto collate : FALSE
-00088        Collate OFF : TRUE
-00089        Collate GATHER : FALSE
-00090        Collate REVIEW : FALSE
-00091        Collate results available : FALSE
-00092        Logging : FALSE
-00093        Use shared scratch file : FALSE
-00094        Looping : FALSE
-00095        Has looped : FALSE
-00096        
-00097        
-00098        
-00099        
-00100             Auto collate : FALSE
-00101             Collate results available : NO
-00102             Collate data count : 0
-00103             Collate review count : 0
-00104             Logging : FALSE
-00105             Reviewing : FALSE
-00106             Backed up : FALSE
-00107             Data present : TRUE
-00108        
-00109             Auto collate : FALSE
-00110             Collate results available : NO
-00111             Collate data count : 0
-00112             Collate review count : 0
-00113             Logging : FALSE
-00114             Reviewing : FALSE
-00115             Backed up : FALSE
-00116             Data present : TRUE
-00117   
-00118   
-00119   
-00120   Global journal entries
-00121     Out  :  29-Sep-2022 22:52:48   Run started   
-00122   Error  :  29-Sep-2022 22:52:48   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00123     Out  :  29-Sep-2022 22:52:53   Run finished - elapsed time 4.63secs   
-00124     Out  :  29-Sep-2022 22:53:07   Run started   
-00125   Error  :  29-Sep-2022 22:53:07   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00126     Out  :  29-Sep-2022 22:53:10   Run finished - elapsed time 3.04secs   
-00127     Out  :  29-Sep-2022 22:54:01   Run started   
-00128   Error  :  29-Sep-2022 22:54:01   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-***
-End
-***
-
-
-*****
-Begin
-*****
-
-Run failure report
-
-29-Sep-2022 22:54:32
-
-
-00000   Memory
-00001       Load 21%
-00002       32716MB total
-00003       25640MB available
-00004       44492MB total (page file)
-00005       33839MB available (page file)
-00006       134217727MB total (virtual)
-00007       134212354MB available (virtual)
-00008   
-00009   
-00010   System Info
-00011       Processors 16
-00012       Processor Architecture 9
-00013       Page Size 4096
-00014       Processor Type 8664
-00015       Allocation Granularity 65536
-00016       Processor Level 23
-00017       Processor Revision 28928
-00018   
-00019   
-00020   OS Version Info
-00021       Major Version 6
-00022       Minor Version 2
-00023       Build Number 9200
-00024       Platform ID 2
-00025   
-00026   
-00027   HW Profile Info
-00028       Dock Info 1
-00029   
-00030   
-00031   File System
-00032      No data available
-00033   
-00034   
-00035   Data Manager
-00036      3 entries - cache allocated 524288000 bytes
-00037   
-00038      Remapping enabled : TRUE
-00039      Verify records : Off
-00040      Verify streams : Off
-00041      Verify storages : Off
-00042      Verify files : Off
-00043   
-00044      Time series
-00045   
-00046      Time series
-00047   
-00048      Array
-00049   
-00050   
-00051   
-00052   S3 File Manager
-00053    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[3eda8a65-2aa8-4005-8562-f460d7fd0e40].tmp, pFile=Ox4517C990, thread=Ox34D4, ptr=Ox00000000, readwrite
-00054    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000001]_G[4ef36a22-52c9-4c6f-a8de-b522c555167e].tmp, pFile=Ox5E77D4D0, thread=Ox34D4, ptr=Ox00000000, readwrite
-00055    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000002]_G[e83c348f-5333-4688-b828-c3c0cd946b96].tmp, pFile=Ox5E780330, thread=Ox34D4, ptr=Ox00000000, readwrite
-00056   
-00057   
-00058   Application
-00059        Workspace : WS1
-00060        Delete data on the fly enabled (global) : TRUE
-00061        Delete data on the fly (this) : TRUE
-00062        Glyphs that can switch pipe states : 0
-00063        Glyphs that can request skip cancellation : 0
-00064        Pipe states backed up : FALSE
-00065        Repeating : FALSE
-00066        Run : 0
-00067        Run count : 1
-00068        Run error count : 0
-00069        Run complete : FALSE
-00070        Run skipped : FALSE
-00071        Stop on error during multiple run : FALSE
-00072        Ranks are stored : FALSE = 0
-00073        Resetting : FALSE
-00074        Stepping : FALSE
-00075        Running : FALSE
-00076        Paused : FALSE
-00077        Stopped : TRUE
-00078        Interactive : FALSE
-00079        Complete : FALSE
-00080        Reset : FALSE
-00081        Break : FALSE
-00082        Next File : FALSE
-00083        Running to glyph : FALSE
-00084        Preparing to run : FALSE
-00085        Stop pending : FALSE
-00086        Waiting for next single step : FALSE
-00087        Auto collate : FALSE
-00088        Collate OFF : TRUE
-00089        Collate GATHER : FALSE
-00090        Collate REVIEW : FALSE
-00091        Collate results available : FALSE
-00092        Logging : FALSE
-00093        Use shared scratch file : FALSE
-00094        Looping : FALSE
-00095        Has looped : FALSE
-00096        
-00097        
-00098        
-00099        
-00100             Auto collate : FALSE
-00101             Collate results available : NO
-00102             Collate data count : 0
-00103             Collate review count : 0
-00104             Logging : FALSE
-00105             Reviewing : FALSE
-00106             Backed up : FALSE
-00107             Data present : TRUE
-00108        
-00109             Auto collate : FALSE
-00110             Collate results available : NO
-00111             Collate data count : 0
-00112             Collate review count : 0
-00113             Logging : FALSE
-00114             Reviewing : FALSE
-00115             Backed up : FALSE
-00116             Data present : TRUE
-00117   
-00118   
-00119   
-00120   Global journal entries
-00121     Out  :  29-Sep-2022 22:52:48   Run started   
-00122   Error  :  29-Sep-2022 22:52:48   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00123     Out  :  29-Sep-2022 22:52:53   Run finished - elapsed time 4.63secs   
-00124     Out  :  29-Sep-2022 22:53:07   Run started   
-00125   Error  :  29-Sep-2022 22:53:07   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00126     Out  :  29-Sep-2022 22:53:10   Run finished - elapsed time 3.04secs   
-00127     Out  :  29-Sep-2022 22:54:01   Run started   
-00128   Error  :  29-Sep-2022 22:54:01   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00129     Out  :  29-Sep-2022 22:54:06   Run finished - elapsed time 5.10secs   
-00130     Out  :  29-Sep-2022 22:54:32   Run started   
-00131   Error  :  29-Sep-2022 22:54:32   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-***
-End
-***
-
-
-*****
-Begin
-*****
-
-Run failure report
-
-29-Sep-2022 22:56:43
-
-
-00000   Memory
-00001       Load 21%
-00002       32716MB total
-00003       25654MB available
-00004       44492MB total (page file)
-00005       33849MB available (page file)
+00003       21965MB available
+00004       39884MB total (page file)
+00005       24498MB available (page file)
 00006       134217727MB total (virtual)
 00007       134212338MB available (virtual)
 00008   
@@ -609,7 +43,7 @@ Run failure report
 00033   
 00034   
 00035   Data Manager
-00036      3 entries - cache allocated 524288000 bytes
+00036      5 entries - cache allocated 524288000 bytes
 00037   
 00038      Remapping enabled : TRUE
 00039      Verify records : Off
@@ -619,250 +53,89 @@ Run failure report
 00043   
 00044      Time series
 00045   
-00046      Time series
+00046      Multi column
 00047   
 00048      Array
 00049   
-00050   
+00050      Multi column channel
 00051   
-00052   S3 File Manager
-00053    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[3eda8a65-2aa8-4005-8562-f460d7fd0e40].tmp, pFile=Ox4517C990, thread=Ox34D4, ptr=Ox00000000, readwrite
-00054    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[50aa12fa-e4b8-4946-abb7-03d814ba052c].tmp, pFile=Ox5E780680, thread=Ox34D4, ptr=Ox00000000, readwrite
-00055    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000001]_G[42facc6d-83d0-41ea-a0ce-5dcd31e3eb6c].tmp, pFile=Ox5E780330, thread=Ox34D4, ptr=Ox00000000, readwrite
-00056    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000002]_G[9f398e7a-a1e0-4cd9-93d8-b725fbdbfdfa].tmp, pFile=Ox5E77CE30, thread=Ox34D4, ptr=Ox00000000, readwrite
-00057   
-00058   
-00059   Application
-00060        Workspace : WS1
-00061        Delete data on the fly enabled (global) : TRUE
-00062        Delete data on the fly (this) : TRUE
-00063        Glyphs that can switch pipe states : 0
-00064        Glyphs that can request skip cancellation : 0
-00065        Pipe states backed up : FALSE
-00066        Repeating : FALSE
-00067        Run : 0
-00068        Run count : 1
-00069        Run error count : 0
-00070        Run complete : FALSE
-00071        Run skipped : FALSE
-00072        Stop on error during multiple run : FALSE
-00073        Ranks are stored : FALSE = 0
-00074        Resetting : FALSE
-00075        Stepping : FALSE
-00076        Running : FALSE
-00077        Paused : FALSE
-00078        Stopped : TRUE
-00079        Interactive : FALSE
-00080        Complete : FALSE
-00081        Reset : FALSE
-00082        Break : FALSE
-00083        Next File : FALSE
-00084        Running to glyph : FALSE
-00085        Preparing to run : FALSE
-00086        Stop pending : FALSE
-00087        Waiting for next single step : FALSE
-00088        Auto collate : FALSE
-00089        Collate OFF : TRUE
-00090        Collate GATHER : FALSE
-00091        Collate REVIEW : FALSE
-00092        Collate results available : FALSE
-00093        Logging : FALSE
-00094        Use shared scratch file : FALSE
-00095        Looping : FALSE
-00096        Has looped : FALSE
-00097        
-00098        
-00099        
-00100        
-00101             Auto collate : FALSE
-00102             Collate results available : NO
-00103             Collate data count : 0
-00104             Collate review count : 0
-00105             Logging : FALSE
-00106             Reviewing : FALSE
-00107             Backed up : FALSE
-00108             Data present : TRUE
-00109        
-00110             Auto collate : FALSE
-00111             Collate results available : NO
-00112             Collate data count : 0
-00113             Collate review count : 0
-00114             Logging : FALSE
-00115             Reviewing : FALSE
-00116             Backed up : FALSE
-00117             Data present : TRUE
-00118   
-00119   
-00120   
-00121   Global journal entries
-00122     Out  :  29-Sep-2022 22:52:48   Run started   
-00123   Error  :  29-Sep-2022 22:52:48   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00124     Out  :  29-Sep-2022 22:52:53   Run finished - elapsed time 4.63secs   
-00125     Out  :  29-Sep-2022 22:53:07   Run started   
-00126   Error  :  29-Sep-2022 22:53:07   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00127     Out  :  29-Sep-2022 22:53:10   Run finished - elapsed time 3.04secs   
-00128     Out  :  29-Sep-2022 22:54:01   Run started   
-00129   Error  :  29-Sep-2022 22:54:01   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00130     Out  :  29-Sep-2022 22:54:06   Run finished - elapsed time 5.10secs   
-00131     Out  :  29-Sep-2022 22:54:32   Run started   
-00132   Error  :  29-Sep-2022 22:54:32   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00133     Out  :  29-Sep-2022 22:54:38   Run finished - elapsed time 5.68secs   
-00134     Out  :  29-Sep-2022 22:56:43   Run started   
-00135   Error  :  29-Sep-2022 22:56:43   <type 'exceptions.AttributeError'> 'str' object has no attribute 'strim' [Function: glyphscript Line:17]   TS-Edit-Name-Unit1
-***
-End
-***
-
-
-*****
-Begin
-*****
-
-Run failure report
-
-29-Sep-2022 22:59:02
-
-
-00000   Memory
-00001       Load 21%
-00002       32716MB total
-00003       25646MB available
-00004       44492MB total (page file)
-00005       33835MB available (page file)
-00006       134217727MB total (virtual)
-00007       134212338MB available (virtual)
-00008   
-00009   
-00010   System Info
-00011       Processors 16
-00012       Processor Architecture 9
-00013       Page Size 4096
-00014       Processor Type 8664
-00015       Allocation Granularity 65536
-00016       Processor Level 23
-00017       Processor Revision 28928
-00018   
-00019   
-00020   OS Version Info
-00021       Major Version 6
-00022       Minor Version 2
-00023       Build Number 9200
-00024       Platform ID 2
-00025   
-00026   
-00027   HW Profile Info
-00028       Dock Info 1
-00029   
-00030   
-00031   File System
-00032      No data available
-00033   
-00034   
-00035   Data Manager
-00036      3 entries - cache allocated 524288000 bytes
-00037   
-00038      Remapping enabled : TRUE
-00039      Verify records : Off
-00040      Verify streams : Off
-00041      Verify storages : Off
-00042      Verify files : Off
-00043   
-00044      Time series
-00045   
-00046      Time series
-00047   
-00048      Array
-00049   
-00050   
-00051   
-00052   S3 File Manager
-00053    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[17c44af7-b802-4e4e-aba9-52edd84f6a25].tmp, pFile=Ox5E77D4D0, thread=Ox34D4, ptr=Ox00000000, readwrite
-00054    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[3eda8a65-2aa8-4005-8562-f460d7fd0e40].tmp, pFile=Ox4517C990, thread=Ox34D4, ptr=Ox00000000, readwrite
-00055    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[50aa12fa-e4b8-4946-abb7-03d814ba052c].tmp, pFile=Ox5E780680, thread=Ox34D4, ptr=Ox00000000, readwrite
-00056    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000001]_G[15c97fe1-b91c-4618-92d8-0b6e94ad111c].tmp, pFile=Ox5E77E560, thread=Ox34D4, ptr=Ox00000000, readwrite
-00057    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000002]_G[5a646b75-b271-47c2-b41a-adc9b5a26fc5].tmp, pFile=Ox5E77EF50, thread=Ox34D4, ptr=Ox00000000, readwrite
-00058   
-00059   
-00060   Application
-00061        Workspace : WS1
-00062        Delete data on the fly enabled (global) : TRUE
-00063        Delete data on the fly (this) : TRUE
-00064        Glyphs that can switch pipe states : 0
-00065        Glyphs that can request skip cancellation : 0
-00066        Pipe states backed up : FALSE
-00067        Repeating : FALSE
-00068        Run : 0
-00069        Run count : 1
-00070        Run error count : 0
-00071        Run complete : FALSE
-00072        Run skipped : FALSE
-00073        Stop on error during multiple run : FALSE
-00074        Ranks are stored : FALSE = 0
-00075        Resetting : FALSE
-00076        Stepping : FALSE
-00077        Running : FALSE
-00078        Paused : FALSE
-00079        Stopped : TRUE
-00080        Interactive : FALSE
-00081        Complete : FALSE
-00082        Reset : FALSE
-00083        Break : FALSE
-00084        Next File : FALSE
-00085        Running to glyph : FALSE
-00086        Preparing to run : FALSE
-00087        Stop pending : FALSE
-00088        Waiting for next single step : FALSE
-00089        Auto collate : FALSE
-00090        Collate OFF : TRUE
-00091        Collate GATHER : FALSE
-00092        Collate REVIEW : FALSE
-00093        Collate results available : FALSE
-00094        Logging : FALSE
-00095        Use shared scratch file : FALSE
-00096        Looping : FALSE
-00097        Has looped : FALSE
-00098        
-00099        
+00052      Results table
+00053   
+00054   
+00055   
+00056   S3 File Manager
+00057    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004F9C]_G[a5129b05-696c-4888-b6f8-77a8c7ed942f].tmp, pFile=Ox34BBAE20, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00058    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000002]_G[53044f39-4554-4954-a886-292538f107d6].tmp, pFile=Ox4F4B2C50, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00059    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000003]_G[aa4242f1-f718-4ae6-aea8-9807a09070d3].tmp, pFile=Ox4F4B2900, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00060   
+00061   
+00062   Application
+00063        Workspace : WS1
+00064        Delete data on the fly enabled (global) : TRUE
+00065        Delete data on the fly (this) : TRUE
+00066        Glyphs that can switch pipe states : 0
+00067        Glyphs that can request skip cancellation : 0
+00068        Pipe states backed up : FALSE
+00069        Repeating : FALSE
+00070        Run : 0
+00071        Run count : 1
+00072        Run error count : 0
+00073        Run complete : FALSE
+00074        Run skipped : FALSE
+00075        Stop on error during multiple run : FALSE
+00076        Ranks are stored : FALSE = 0
+00077        Resetting : FALSE
+00078        Stepping : FALSE
+00079        Running : FALSE
+00080        Paused : FALSE
+00081        Stopped : TRUE
+00082        Interactive : FALSE
+00083        Complete : FALSE
+00084        Reset : FALSE
+00085        Break : FALSE
+00086        Next File : FALSE
+00087        Running to glyph : FALSE
+00088        Preparing to run : FALSE
+00089        Stop pending : FALSE
+00090        Waiting for next single step : FALSE
+00091        Auto collate : FALSE
+00092        Collate OFF : TRUE
+00093        Collate GATHER : FALSE
+00094        Collate REVIEW : FALSE
+00095        Collate results available : FALSE
+00096        Logging : FALSE
+00097        Use shared scratch file : FALSE
+00098        Looping : FALSE
+00099        Has looped : FALSE
 00100        
 00101        
-00102             Auto collate : FALSE
-00103             Collate results available : NO
-00104             Collate data count : 0
-00105             Collate review count : 0
-00106             Logging : FALSE
-00107             Reviewing : FALSE
-00108             Backed up : FALSE
-00109             Data present : TRUE
-00110        
-00111             Auto collate : FALSE
-00112             Collate results available : NO
-00113             Collate data count : 0
-00114             Collate review count : 0
-00115             Logging : FALSE
-00116             Reviewing : FALSE
-00117             Backed up : FALSE
-00118             Data present : TRUE
-00119   
-00120   
+00102        
+00103        
+00104             Auto collate : FALSE
+00105             Collate results available : NO
+00106             Collate data count : 0
+00107             Collate review count : 0
+00108             Logging : FALSE
+00109             Reviewing : FALSE
+00110             Backed up : FALSE
+00111             Data present : TRUE
+00112        
+00113             Auto collate : FALSE
+00114             Collate results available : NO
+00115             Collate data count : 0
+00116             Collate review count : 0
+00117             Logging : FALSE
+00118             Reviewing : FALSE
+00119             Backed up : FALSE
+00120             Data present : TRUE
 00121   
-00122   Global journal entries
-00123     Out  :  29-Sep-2022 22:52:48   Run started   
-00124   Error  :  29-Sep-2022 22:52:48   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00125     Out  :  29-Sep-2022 22:52:53   Run finished - elapsed time 4.63secs   
-00126     Out  :  29-Sep-2022 22:53:07   Run started   
-00127   Error  :  29-Sep-2022 22:53:07   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00128     Out  :  29-Sep-2022 22:53:10   Run finished - elapsed time 3.04secs   
-00129     Out  :  29-Sep-2022 22:54:01   Run started   
-00130   Error  :  29-Sep-2022 22:54:01   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00131     Out  :  29-Sep-2022 22:54:06   Run finished - elapsed time 5.10secs   
-00132     Out  :  29-Sep-2022 22:54:32   Run started   
-00133   Error  :  29-Sep-2022 22:54:32   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00134     Out  :  29-Sep-2022 22:54:38   Run finished - elapsed time 5.68secs   
-00135     Out  :  29-Sep-2022 22:56:43   Run started   
-00136   Error  :  29-Sep-2022 22:56:43   <type 'exceptions.AttributeError'> 'str' object has no attribute 'strim' [Function: glyphscript Line:17]   TS-Edit-Name-Unit1
-00137     Out  :  29-Sep-2022 22:56:46   Run finished - elapsed time 3.43secs   
-00138     Out  :  29-Sep-2022 22:59:02   Run started   
-00139   Error  :  29-Sep-2022 22:59:02   <type 'exceptions.AttributeError'> 'str' object has no attribute 'strim' [Function: glyphscript Line:17]   TS-Edit-Name-Unit1
+00122   
+00123   
+00124   Global journal entries
+00125     Out  :  13-Jul-2023 00:02:16   Run started   
+00126     Out  :  13-Jul-2023 00:02:16   Run finished - total time in process 0.1382secs   
+00127     Out  :  13-Jul-2023 00:02:25   Run started   
+00128   Error  :  13-Jul-2023 00:02:25   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
 ***
 End
 ***
@@ -874,15 +147,161 @@ Begin
 
 Run failure report
 
-29-Sep-2022 22:59:49
+13-Jul-2023 00:03:11
 
 
 00000   Memory
-00001       Load 21%
+00001       Load 32%
 00002       32716MB total
-00003       25650MB available
-00004       44492MB total (page file)
-00005       33839MB available (page file)
+00003       22071MB available
+00004       39884MB total (page file)
+00005       24635MB available (page file)
+00006       134217727MB total (virtual)
+00007       134212338MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      5 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Time series
+00045   
+00046      Multi column
+00047   
+00048      Array
+00049   
+00050      Multi column channel
+00051   
+00052      Results table
+00053   
+00054   
+00055   
+00056   S3 File Manager
+00057    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004F9C]_G[a5129b05-696c-4888-b6f8-77a8c7ed942f].tmp, pFile=Ox34BBAE20, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00058    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000002]_G[b1e3e9a5-c054-4dd3-901a-02291f170cb4].tmp, pFile=Ox4F4B3CE0, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00059    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000003]_G[049f4764-e4d7-4d08-a0de-523c19b8c5bd].tmp, pFile=Ox4F4B1F10, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00060   
+00061   
+00062   Application
+00063        Workspace : WS1
+00064        Delete data on the fly enabled (global) : TRUE
+00065        Delete data on the fly (this) : TRUE
+00066        Glyphs that can switch pipe states : 0
+00067        Glyphs that can request skip cancellation : 0
+00068        Pipe states backed up : FALSE
+00069        Repeating : FALSE
+00070        Run : 0
+00071        Run count : 1
+00072        Run error count : 0
+00073        Run complete : FALSE
+00074        Run skipped : FALSE
+00075        Stop on error during multiple run : FALSE
+00076        Ranks are stored : FALSE = 0
+00077        Resetting : FALSE
+00078        Stepping : FALSE
+00079        Running : FALSE
+00080        Paused : FALSE
+00081        Stopped : TRUE
+00082        Interactive : FALSE
+00083        Complete : FALSE
+00084        Reset : FALSE
+00085        Break : FALSE
+00086        Next File : FALSE
+00087        Running to glyph : FALSE
+00088        Preparing to run : FALSE
+00089        Stop pending : FALSE
+00090        Waiting for next single step : FALSE
+00091        Auto collate : FALSE
+00092        Collate OFF : TRUE
+00093        Collate GATHER : FALSE
+00094        Collate REVIEW : FALSE
+00095        Collate results available : FALSE
+00096        Logging : FALSE
+00097        Use shared scratch file : FALSE
+00098        Looping : FALSE
+00099        Has looped : FALSE
+00100        
+00101        
+00102        
+00103        
+00104             Auto collate : FALSE
+00105             Collate results available : NO
+00106             Collate data count : 0
+00107             Collate review count : 0
+00108             Logging : FALSE
+00109             Reviewing : FALSE
+00110             Backed up : FALSE
+00111             Data present : TRUE
+00112        
+00113             Auto collate : FALSE
+00114             Collate results available : NO
+00115             Collate data count : 0
+00116             Collate review count : 0
+00117             Logging : FALSE
+00118             Reviewing : FALSE
+00119             Backed up : FALSE
+00120             Data present : TRUE
+00121   
+00122   
+00123   
+00124   Global journal entries
+00125     Out  :  13-Jul-2023 00:02:16   Run started   
+00126     Out  :  13-Jul-2023 00:02:16   Run finished - total time in process 0.1382secs   
+00127     Out  :  13-Jul-2023 00:02:25   Run started   
+00128   Error  :  13-Jul-2023 00:02:25   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
+00129     Out  :  13-Jul-2023 00:02:33   Run finished - elapsed time 7.79secs   
+00130     Out  :  13-Jul-2023 00:03:11   Run started   
+00131   Error  :  13-Jul-2023 00:03:11   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
+***
+End
+***
+
+
+*****
+Begin
+*****
+
+Run failure report
+
+13-Jul-2023 00:06:04
+
+
+00000   Memory
+00001       Load 34%
+00002       32716MB total
+00003       21312MB available
+00004       39884MB total (page file)
+00005       22915MB available (page file)
 00006       134217727MB total (virtual)
 00007       134212337MB available (virtual)
 00008   
@@ -913,7 +332,7 @@ Run failure report
 00033   
 00034   
 00035   Data Manager
-00036      3 entries - cache allocated 524288000 bytes
+00036      5 entries - cache allocated 524288000 bytes
 00037   
 00038      Remapping enabled : TRUE
 00039      Verify records : Off
@@ -923,103 +342,99 @@ Run failure report
 00043   
 00044      Time series
 00045   
-00046      Time series
+00046      Multi column
 00047   
 00048      Array
 00049   
-00050   
+00050      Multi column channel
 00051   
-00052   S3 File Manager
-00053    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[17c44af7-b802-4e4e-aba9-52edd84f6a25].tmp, pFile=Ox5E77D4D0, thread=Ox34D4, ptr=Ox00000000, readwrite
-00054    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[3eda8a65-2aa8-4005-8562-f460d7fd0e40].tmp, pFile=Ox4517C990, thread=Ox34D4, ptr=Ox00000000, readwrite
-00055    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000034D4]_G[50aa12fa-e4b8-4946-abb7-03d814ba052c].tmp, pFile=Ox5E780680, thread=Ox34D4, ptr=Ox00000000, readwrite
-00056    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000001]_G[71d74b0b-aa26-4538-bd52-75e253709561].tmp, pFile=Ox5E77EF50, thread=Ox34D4, ptr=Ox00000000, readwrite
-00057    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000034D4]_N[000002]_G[2c9481d8-7975-4a70-88f5-762b68308f3a].tmp, pFile=Ox5E77E560, thread=Ox34D4, ptr=Ox00000000, readwrite
-00058   
-00059   
-00060   Application
-00061        Workspace : WS1
-00062        Delete data on the fly enabled (global) : TRUE
-00063        Delete data on the fly (this) : TRUE
-00064        Glyphs that can switch pipe states : 0
-00065        Glyphs that can request skip cancellation : 0
-00066        Pipe states backed up : FALSE
-00067        Repeating : FALSE
-00068        Run : 0
-00069        Run count : 1
-00070        Run error count : 0
-00071        Run complete : FALSE
-00072        Run skipped : FALSE
-00073        Stop on error during multiple run : FALSE
-00074        Ranks are stored : FALSE = 0
-00075        Resetting : FALSE
-00076        Stepping : FALSE
-00077        Running : FALSE
-00078        Paused : FALSE
-00079        Stopped : TRUE
-00080        Interactive : FALSE
-00081        Complete : FALSE
-00082        Reset : FALSE
-00083        Break : FALSE
-00084        Next File : FALSE
-00085        Running to glyph : FALSE
-00086        Preparing to run : FALSE
-00087        Stop pending : FALSE
-00088        Waiting for next single step : FALSE
-00089        Auto collate : FALSE
-00090        Collate OFF : TRUE
-00091        Collate GATHER : FALSE
-00092        Collate REVIEW : FALSE
-00093        Collate results available : FALSE
-00094        Logging : FALSE
-00095        Use shared scratch file : FALSE
-00096        Looping : FALSE
-00097        Has looped : FALSE
-00098        
-00099        
+00052      Results table
+00053   
+00054   
+00055   
+00056   S3 File Manager
+00057    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004F9C]_G[a5129b05-696c-4888-b6f8-77a8c7ed942f].tmp, pFile=Ox34BBAE20, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00058    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000002]_G[0e08e37f-b9c3-4316-90b0-ad3e8bfbcd11].tmp, pFile=Ox4F4B2FA0, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00059    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000003]_G[e032302b-16b0-471d-9986-0e1aab760d05].tmp, pFile=Ox4F4B1BC0, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00060   
+00061   
+00062   Application
+00063        Workspace : WS1
+00064        Delete data on the fly enabled (global) : TRUE
+00065        Delete data on the fly (this) : TRUE
+00066        Glyphs that can switch pipe states : 0
+00067        Glyphs that can request skip cancellation : 0
+00068        Pipe states backed up : FALSE
+00069        Repeating : FALSE
+00070        Run : 0
+00071        Run count : 1
+00072        Run error count : 0
+00073        Run complete : FALSE
+00074        Run skipped : FALSE
+00075        Stop on error during multiple run : FALSE
+00076        Ranks are stored : FALSE = 0
+00077        Resetting : FALSE
+00078        Stepping : FALSE
+00079        Running : FALSE
+00080        Paused : FALSE
+00081        Stopped : TRUE
+00082        Interactive : FALSE
+00083        Complete : FALSE
+00084        Reset : FALSE
+00085        Break : FALSE
+00086        Next File : FALSE
+00087        Running to glyph : FALSE
+00088        Preparing to run : FALSE
+00089        Stop pending : FALSE
+00090        Waiting for next single step : FALSE
+00091        Auto collate : FALSE
+00092        Collate OFF : TRUE
+00093        Collate GATHER : FALSE
+00094        Collate REVIEW : FALSE
+00095        Collate results available : FALSE
+00096        Logging : FALSE
+00097        Use shared scratch file : FALSE
+00098        Looping : FALSE
+00099        Has looped : FALSE
 00100        
 00101        
-00102             Auto collate : FALSE
-00103             Collate results available : NO
-00104             Collate data count : 0
-00105             Collate review count : 0
-00106             Logging : FALSE
-00107             Reviewing : FALSE
-00108             Backed up : FALSE
-00109             Data present : TRUE
-00110        
-00111             Auto collate : FALSE
-00112             Collate results available : NO
-00113             Collate data count : 0
-00114             Collate review count : 0
-00115             Logging : FALSE
-00116             Reviewing : FALSE
-00117             Backed up : FALSE
-00118             Data present : TRUE
-00119   
-00120   
+00102        
+00103        
+00104             Auto collate : FALSE
+00105             Collate results available : NO
+00106             Collate data count : 0
+00107             Collate review count : 0
+00108             Logging : FALSE
+00109             Reviewing : FALSE
+00110             Backed up : FALSE
+00111             Data present : TRUE
+00112        
+00113             Auto collate : FALSE
+00114             Collate results available : NO
+00115             Collate data count : 0
+00116             Collate review count : 0
+00117             Logging : FALSE
+00118             Reviewing : FALSE
+00119             Backed up : FALSE
+00120             Data present : TRUE
 00121   
-00122   Global journal entries
-00123     Out  :  29-Sep-2022 22:52:48   Run started   
-00124   Error  :  29-Sep-2022 22:52:48   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00125     Out  :  29-Sep-2022 22:52:53   Run finished - elapsed time 4.63secs   
-00126     Out  :  29-Sep-2022 22:53:07   Run started   
-00127   Error  :  29-Sep-2022 22:53:07   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00128     Out  :  29-Sep-2022 22:53:10   Run finished - elapsed time 3.04secs   
-00129     Out  :  29-Sep-2022 22:54:01   Run started   
-00130   Error  :  29-Sep-2022 22:54:01   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00131     Out  :  29-Sep-2022 22:54:06   Run finished - elapsed time 5.10secs   
-00132     Out  :  29-Sep-2022 22:54:32   Run started   
-00133   Error  :  29-Sep-2022 22:54:32   <type 'exceptions.NameError'> global name 'A_names' is not defined [Function: glyphscript Line:13]   TS-Edit-Name-Unit1
-00134     Out  :  29-Sep-2022 22:54:38   Run finished - elapsed time 5.68secs   
-00135     Out  :  29-Sep-2022 22:56:43   Run started   
-00136   Error  :  29-Sep-2022 22:56:43   <type 'exceptions.AttributeError'> 'str' object has no attribute 'strim' [Function: glyphscript Line:17]   TS-Edit-Name-Unit1
-00137     Out  :  29-Sep-2022 22:56:46   Run finished - elapsed time 3.43secs   
-00138     Out  :  29-Sep-2022 22:59:02   Run started   
-00139   Error  :  29-Sep-2022 22:59:02   <type 'exceptions.AttributeError'> 'str' object has no attribute 'strim' [Function: glyphscript Line:17]   TS-Edit-Name-Unit1
-00140     Out  :  29-Sep-2022 22:59:38   Run finished - elapsed time 35.94secs   
-00141     Out  :  29-Sep-2022 22:59:49   Run started   
-00142   Error  :  29-Sep-2022 22:59:49   <type 'exceptions.AttributeError'> 'str' object has no attribute 'strim' [Function: glyphscript Line:17]   TS-Edit-Name-Unit1
+00122   
+00123   
+00124   Global journal entries
+00125     Out  :  13-Jul-2023 00:02:16   Run started   
+00126     Out  :  13-Jul-2023 00:02:16   Run finished - total time in process 0.1382secs   
+00127     Out  :  13-Jul-2023 00:02:25   Run started   
+00128   Error  :  13-Jul-2023 00:02:25   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
+00129     Out  :  13-Jul-2023 00:02:33   Run finished - elapsed time 7.79secs   
+00130     Out  :  13-Jul-2023 00:03:11   Run started   
+00131   Error  :  13-Jul-2023 00:03:11   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
+00132     Out  :  13-Jul-2023 00:03:47   Run finished - elapsed time 36.62secs   
+00133     Out  :  13-Jul-2023 00:03:50   Run started   
+00134     Out  :  13-Jul-2023 00:03:50   Run finished - total time in process 0.1511secs   
+00135     Out  :  13-Jul-2023 00:03:56   Run started   
+00136     Out  :  13-Jul-2023 00:03:56   Run finished - total time in process 0.1419secs   
+00137     Out  :  13-Jul-2023 00:06:03   Run started   
+00138   Error  :  13-Jul-2023 00:06:04   <type 'exceptions.IOError'> (13, 'Permission denied', 'D:\\207_447.csv') [Function: glyphscript Line:49 | Function: output_csv_data Line:63]   Scripting1
 ***
 End
 ***

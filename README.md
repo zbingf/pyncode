@@ -2,14 +2,18 @@
 ncode相关子模块
 __version : python 2.7__
 
+目录
++ GlyphCollections : Ncode直接调用
++ baidu_GPS_get
+
+
+
 ## baidu_GPS_get
 根据[百度拾取坐标系统](https://api.map.baidu.com/lbsapi/getpoint/index.html) 截取GPS图片
 共三部:
 + 鼠标指向, 地图-左上角, enter按键确认
 + 鼠标指向, 地图-右下角, enter按键确认
 + 鼠标指向, 网页内-坐标复制按钮, enter按键确认
-
-
 
 
 ## 频域计算模块
@@ -26,6 +30,9 @@ Histogram 数据
 
 ## 时域计算模块
 TimeSeries 数据
+
++ ts_cut_file_pdi
+	+ 根据截断数据, 输出截断后的CSV文件, 并进行PDI数据处理
 
 + ts_fun
 	+ 时域计算相关子模块
