@@ -4,11 +4,41 @@
 #   输出: 无
 # 用途
 #   1 根据GraphicalEditor输入MultiColumn的数据段,截取文件
-#   2 计算PDI损伤
-#   3 输出csv文件 [截断后的时域数据] 
+#   2 输出csv文件 [截断后的时域数据] 
 
 import pprint
 import copy
+import os
+
+
+ATS_RSP = """<AsciiTranslateSetup>
+   <Version>1</Version>
+   <ConvertTo>1</ConvertTo>
+   <CreateLogFile>0</CreateLogFile>
+   <NumberOfHeaderLines>1</NumberOfHeaderLines>
+   <NumberOfChannels>-1</NumberOfChannels>
+   <LineNumberForChannelTitles>1</LineNumberForChannelTitles>
+   <LineNumberForUnits>0</LineNumberForUnits>
+   <TabSeparated>0</TabSeparated>
+   <CommaSeparated>1</CommaSeparated>
+   <SpaceSeparated>0</SpaceSeparated>
+   <SemiColonSeparated>0</SemiColonSeparated>
+   <FixedWidth>0</FixedWidth>
+   <DecimalCharacter>1</DecimalCharacter>
+   <IncludeExclude>0</IncludeExclude>
+   <ColumnList></ColumnList>
+   <HeaderToMetadata>0</HeaderToMetadata>
+   <AutoDetectSampleRate>0</AutoDetectSampleRate>
+   <SampleRate>#SampleRate#</SampleRate>
+   <XaxisBase>0</XaxisBase>
+   <XaxisTitle>Time</XaxisTitle>
+   <XaxisUnits>Seconds</XaxisUnits>
+   <OutputNamingMethod>2</OutputNamingMethod>
+   <OutputTestName>temp</OutputTestName>
+   <OutputNamingText>a</OutputNamingText>
+   <OutputFormat>3</OutputFormat>
+</AsciiTranslateSetup>
+"""
 
 
 def glyphscript(engineState):
@@ -26,7 +56,7 @@ def glyphscript(engineState):
         list3d.append(list2d)
         cut_names.append(str(n_range[0])+'_'+str(n_range[1]))
 
-    damage_2d = output_csv_list3d(list3d)
+    # damage_2d = output_csv_list3d(list3d)
 
     channel_titles = getTS_channel_name(tsin1)
     channel_titles = [str(n)+'_'+v for n,v in enumerate(channel_titles)]
@@ -37,17 +67,37 @@ def glyphscript(engineState):
     #     f.write(','.join([str(v) for v in damage_1d])+'\n')
     # f.write('\n')
     # f.write(','.join(cut_names)+'\n')
-    # f.close()
+    
+    path_name = getTS_file_path(tsin1)
+    file_name = getTS_file_name(tsin1)
+    file_path = os.path.join(path_name, file_name)
+    samplerate = getTS_samplerate(tsin1)
+
+    ats_path = 'RSP_1V1.ats'
+    with open(ats_path, 'w') as f:
+        f.write(ATS_RSP.replace('#SampleRate#', str(samplerate)))
+    ats_path = os.path.abspath(ats_path)
+
 
     n = 0
     for cut_name, list2d in zip(cut_names, list3d):
-        csv_path = 'D:\\' + cut_name + '.csv'
+        csv_path = file_path + '_' + cut_name + '.csv'
         if n > 0:
             output_csv_data(csv_path, list2d, channel_titles)
+            
+            str_cmd = 'asciitranslate.exe /inp="{}" /conv="TimeSeries" /SetupFile="{}" /prog=1'.format(csv_path, ats_path)
+            # os.system(str_cmd)
+            with open('test.bat', 'w') as f:
+                f.write(str_cmd)
+            os.system('test.bat')
+
         n+=1
 
-    csv_path = r'D:\damage.csv'
-    output_csv_data(csv_path, [channel_titles]+damage_2d, ['channel_titles']+cut_names)
+    # csv_path = r'D:\damage.csv'
+    # output_csv_data(csv_path, [channel_titles]+damage_2d, ['channel_titles']+cut_names)
+    
+    # f.write(getTS_file_name(tsin1))
+    # f.close()
     return ''
 
 def output_csv_data(file_path, data, titles):
@@ -61,6 +111,26 @@ def output_csv_data(file_path, data, titles):
 
     f.close()
     return None
+
+
+def getTS_file_path(tsobj):
+
+    meta_obj = tsobj.GetMetaData()
+
+    return meta_obj.GetItem(0, "InputTestInfo.Path")
+
+def getTS_file_name(tsobj):
+
+    meta_obj = tsobj.GetMetaData()
+
+    return meta_obj.GetItem(0, "InputTestInfo.TestName")
+
+def getTS_samplerate(tsobj):
+
+    meta_obj = tsobj.GetMetaData()
+    
+    return meta_obj.GetItem(0, "Attributes.SampleRate")
+
 
 def getTS_channel_name(tsobj):
     num = tsobj.GetChannelCount()

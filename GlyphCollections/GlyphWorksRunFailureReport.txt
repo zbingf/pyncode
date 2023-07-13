@@ -440,3 +440,1112 @@ End
 ***
 
 
+*****
+Begin
+*****
+
+Run failure report
+
+13-Jul-2023 22:26:54
+
+
+00000   Memory
+00001       Load 28%
+00002       32716MB total
+00003       23284MB available
+00004       39884MB total (page file)
+00005       26889MB available (page file)
+00006       134217727MB total (virtual)
+00007       134212316MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      7 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Time series
+00045   
+00046      Array
+00047   
+00048      Multi column
+00049   
+00050      Time series
+00051   
+00052      Array
+00053   
+00054      Multi column channel
+00055   
+00056      Results table
+00057   
+00058   
+00059   
+00060   S3 File Manager
+00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
+00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
+00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[49ccbf6e-910a-4878-b4ed-7fbe56bc3d1b].tmp, pFile=OxF8F27E40, thread=Ox06E4, ptr=Ox00000000, readwrite
+00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[6da66c26-ef69-4ea7-a7df-58aa0ca31dc3].tmp, pFile=OxF8F27100, thread=Ox06E4, ptr=Ox00000000, readwrite
+00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[0534bd9a-29e5-4c08-abac-33d92fd34644].tmp, pFile=OxF8F26A60, thread=Ox06E4, ptr=Ox00000000, readwrite
+00066   
+00067   
+00068   Application
+00069        Workspace : WS1
+00070        Delete data on the fly enabled (global) : TRUE
+00071        Delete data on the fly (this) : TRUE
+00072        Glyphs that can switch pipe states : 0
+00073        Glyphs that can request skip cancellation : 1
+00074        Pipe states backed up : FALSE
+00075        Repeating : FALSE
+00076        Run : 0
+00077        Run count : 1
+00078        Run error count : 0
+00079        Run complete : FALSE
+00080        Run skipped : FALSE
+00081        Stop on error during multiple run : FALSE
+00082        Ranks are stored : FALSE = 0
+00083        Resetting : FALSE
+00084        Stepping : FALSE
+00085        Running : FALSE
+00086        Paused : FALSE
+00087        Stopped : TRUE
+00088        Interactive : FALSE
+00089        Complete : FALSE
+00090        Reset : FALSE
+00091        Break : FALSE
+00092        Next File : FALSE
+00093        Running to glyph : FALSE
+00094        Preparing to run : FALSE
+00095        Stop pending : FALSE
+00096        Waiting for next single step : FALSE
+00097        Auto collate : FALSE
+00098        Collate OFF : TRUE
+00099        Collate GATHER : FALSE
+00100        Collate REVIEW : FALSE
+00101        Collate results available : FALSE
+00102        Logging : FALSE
+00103        Use shared scratch file : FALSE
+00104        Looping : FALSE
+00105        Has looped : FALSE
+00106        
+00107             Superglyph : TS_Cut_file_and_pdi, depth 1
+00108             Delete data on the fly enabled (global) : TRUE
+00109             Delete data on the fly (this) : TRUE
+00110             Glyphs that can switch pipe states : 0
+00111             Glyphs that can request skip cancellation : 1
+00112             Pipe states backed up : FALSE
+00113             Repeating : FALSE
+00114             Run : 0
+00115             Run count : 1
+00116             Run error count : 0
+00117             Run complete : FALSE
+00118             Run skipped : FALSE
+00119             Stop on error during multiple run : FALSE
+00120             Ranks are stored : FALSE = 0
+00121             Resetting : FALSE
+00122             Stepping : FALSE
+00123             Running : FALSE
+00124             Paused : FALSE
+00125             Stopped : TRUE
+00126             Interactive : FALSE
+00127             Complete : FALSE
+00128             Reset : TRUE
+00129             Break : FALSE
+00130             Next File : FALSE
+00131             Running to glyph : FALSE
+00132             Preparing to run : FALSE
+00133             Stop pending : FALSE
+00134             Waiting for next single step : FALSE
+00135             Auto collate : FALSE
+00136             Collate OFF : TRUE
+00137             Collate GATHER : FALSE
+00138             Collate REVIEW : FALSE
+00139             Collate results available : FALSE
+00140             Logging : FALSE
+00141             Use shared scratch file : FALSE
+00142             Looping : FALSE
+00143             Has looped : FALSE
+00144             
+00145             
+00146             
+00147             
+00148             
+00149                  Auto collate : FALSE
+00150                  Collate results available : NO
+00151                  Collate data count : 0
+00152                  Collate review count : 0
+00153                  Logging : FALSE
+00154                  Reviewing : FALSE
+00155                  Backed up : FALSE
+00156                  Data present : TRUE
+00157             
+00158                  Auto collate : FALSE
+00159                  Collate results available : NO
+00160                  Collate data count : 0
+00161                  Collate review count : 0
+00162                  Logging : FALSE
+00163                  Reviewing : FALSE
+00164                  Backed up : FALSE
+00165                  Data present : TRUE
+00166        
+00167        
+00168             Auto collate : FALSE
+00169             Collate results available : NO
+00170             Collate data count : 0
+00171             Collate review count : 0
+00172             Logging : FALSE
+00173             Reviewing : FALSE
+00174             Backed up : FALSE
+00175             Data present : TRUE
+00176   
+00177   
+00178   
+00179   Global journal entries
+00180     Out  :  13-Jul-2023 22:23:30   Run started   
+00181     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
+00182     Out  :  13-Jul-2023 22:23:51   Run started   
+00183     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
+00184     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
+00185     Out  :  13-Jul-2023 22:24:33   Run started   
+00186     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
+00187     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
+00188     Out  :  13-Jul-2023 22:24:34   Run started   
+00189     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
+00190     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
+00191     Out  :  13-Jul-2023 22:26:54   Run started   
+00192   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+***
+End
+***
+
+
+*****
+Begin
+*****
+
+Run failure report
+
+13-Jul-2023 22:27:30
+
+
+00000   Memory
+00001       Load 28%
+00002       32716MB total
+00003       23379MB available
+00004       39884MB total (page file)
+00005       27035MB available (page file)
+00006       134217727MB total (virtual)
+00007       134212315MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      7 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Time series
+00045   
+00046      Array
+00047   
+00048      Multi column
+00049   
+00050      Time series
+00051   
+00052      Array
+00053   
+00054      Multi column channel
+00055   
+00056      Results table
+00057   
+00058   
+00059   
+00060   S3 File Manager
+00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
+00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
+00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[2ef620e4-4fa1-42a7-88a1-3913cd090cd4].tmp, pFile=OxF8F26A60, thread=Ox06E4, ptr=Ox00000000, readwrite
+00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[6c3629c0-0c7f-45eb-89a5-0d7918aa43cf].tmp, pFile=OxF8F26DB0, thread=Ox06E4, ptr=Ox00000000, readwrite
+00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[262e1a3a-ab6a-4ed2-8cfc-9db7282f45b6].tmp, pFile=OxF8F26710, thread=Ox06E4, ptr=Ox00000000, readwrite
+00066   
+00067   
+00068   Application
+00069        Workspace : WS1
+00070        Delete data on the fly enabled (global) : TRUE
+00071        Delete data on the fly (this) : TRUE
+00072        Glyphs that can switch pipe states : 0
+00073        Glyphs that can request skip cancellation : 1
+00074        Pipe states backed up : FALSE
+00075        Repeating : FALSE
+00076        Run : 0
+00077        Run count : 1
+00078        Run error count : 0
+00079        Run complete : FALSE
+00080        Run skipped : FALSE
+00081        Stop on error during multiple run : FALSE
+00082        Ranks are stored : FALSE = 0
+00083        Resetting : FALSE
+00084        Stepping : FALSE
+00085        Running : FALSE
+00086        Paused : FALSE
+00087        Stopped : TRUE
+00088        Interactive : FALSE
+00089        Complete : FALSE
+00090        Reset : FALSE
+00091        Break : FALSE
+00092        Next File : FALSE
+00093        Running to glyph : FALSE
+00094        Preparing to run : FALSE
+00095        Stop pending : FALSE
+00096        Waiting for next single step : FALSE
+00097        Auto collate : FALSE
+00098        Collate OFF : TRUE
+00099        Collate GATHER : FALSE
+00100        Collate REVIEW : FALSE
+00101        Collate results available : FALSE
+00102        Logging : FALSE
+00103        Use shared scratch file : FALSE
+00104        Looping : FALSE
+00105        Has looped : FALSE
+00106        
+00107             Superglyph : TS_Cut_file_and_pdi, depth 1
+00108             Delete data on the fly enabled (global) : TRUE
+00109             Delete data on the fly (this) : TRUE
+00110             Glyphs that can switch pipe states : 0
+00111             Glyphs that can request skip cancellation : 1
+00112             Pipe states backed up : FALSE
+00113             Repeating : FALSE
+00114             Run : 0
+00115             Run count : 1
+00116             Run error count : 0
+00117             Run complete : FALSE
+00118             Run skipped : FALSE
+00119             Stop on error during multiple run : FALSE
+00120             Ranks are stored : FALSE = 0
+00121             Resetting : FALSE
+00122             Stepping : FALSE
+00123             Running : FALSE
+00124             Paused : FALSE
+00125             Stopped : TRUE
+00126             Interactive : FALSE
+00127             Complete : FALSE
+00128             Reset : TRUE
+00129             Break : FALSE
+00130             Next File : FALSE
+00131             Running to glyph : FALSE
+00132             Preparing to run : FALSE
+00133             Stop pending : FALSE
+00134             Waiting for next single step : FALSE
+00135             Auto collate : FALSE
+00136             Collate OFF : TRUE
+00137             Collate GATHER : FALSE
+00138             Collate REVIEW : FALSE
+00139             Collate results available : FALSE
+00140             Logging : FALSE
+00141             Use shared scratch file : FALSE
+00142             Looping : FALSE
+00143             Has looped : FALSE
+00144             
+00145             
+00146             
+00147             
+00148             
+00149                  Auto collate : FALSE
+00150                  Collate results available : NO
+00151                  Collate data count : 0
+00152                  Collate review count : 0
+00153                  Logging : FALSE
+00154                  Reviewing : FALSE
+00155                  Backed up : FALSE
+00156                  Data present : TRUE
+00157             
+00158                  Auto collate : FALSE
+00159                  Collate results available : NO
+00160                  Collate data count : 0
+00161                  Collate review count : 0
+00162                  Logging : FALSE
+00163                  Reviewing : FALSE
+00164                  Backed up : FALSE
+00165                  Data present : TRUE
+00166        
+00167        
+00168             Auto collate : FALSE
+00169             Collate results available : NO
+00170             Collate data count : 0
+00171             Collate review count : 0
+00172             Logging : FALSE
+00173             Reviewing : FALSE
+00174             Backed up : FALSE
+00175             Data present : TRUE
+00176   
+00177   
+00178   
+00179   Global journal entries
+00180     Out  :  13-Jul-2023 22:23:30   Run started   
+00181     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
+00182     Out  :  13-Jul-2023 22:23:51   Run started   
+00183     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
+00184     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
+00185     Out  :  13-Jul-2023 22:24:33   Run started   
+00186     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
+00187     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
+00188     Out  :  13-Jul-2023 22:24:34   Run started   
+00189     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
+00190     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
+00191     Out  :  13-Jul-2023 22:26:54   Run started   
+00192   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00193     Out  :  13-Jul-2023 22:26:59   Run finished - elapsed time 4.27secs   
+00194     Out  :  13-Jul-2023 22:27:30   Run started   
+00195   Error  :  13-Jul-2023 22:27:30   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+***
+End
+***
+
+
+*****
+Begin
+*****
+
+Run failure report
+
+13-Jul-2023 22:38:40
+
+
+00000   Memory
+00001       Load 31%
+00002       32716MB total
+00003       22552MB available
+00004       39884MB total (page file)
+00005       26077MB available (page file)
+00006       134217727MB total (virtual)
+00007       134212315MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      7 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Time series
+00045   
+00046      Array
+00047   
+00048      Multi column
+00049   
+00050      Time series
+00051   
+00052      Array
+00053   
+00054      Multi column channel
+00055   
+00056      Results table
+00057   
+00058   
+00059   
+00060   S3 File Manager
+00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
+00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
+00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[7d8b9859-feb7-490f-8dd0-7ec4e30e0db2].tmp, pFile=OxF8F29570, thread=Ox06E4, ptr=Ox00000000, readwrite
+00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[fd9f19cf-0b63-4f00-91fd-ebf288bebdf2].tmp, pFile=OxF8F26070, thread=Ox06E4, ptr=Ox00000000, readwrite
+00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[2b0f7268-743d-455a-b3cc-6e100623d470].tmp, pFile=OxF8F28ED0, thread=Ox06E4, ptr=Ox00000000, readwrite
+00066   
+00067   
+00068   Application
+00069        Workspace : WS1
+00070        Delete data on the fly enabled (global) : TRUE
+00071        Delete data on the fly (this) : TRUE
+00072        Glyphs that can switch pipe states : 0
+00073        Glyphs that can request skip cancellation : 1
+00074        Pipe states backed up : FALSE
+00075        Repeating : FALSE
+00076        Run : 0
+00077        Run count : 1
+00078        Run error count : 0
+00079        Run complete : FALSE
+00080        Run skipped : FALSE
+00081        Stop on error during multiple run : FALSE
+00082        Ranks are stored : FALSE = 0
+00083        Resetting : FALSE
+00084        Stepping : FALSE
+00085        Running : FALSE
+00086        Paused : FALSE
+00087        Stopped : TRUE
+00088        Interactive : FALSE
+00089        Complete : FALSE
+00090        Reset : FALSE
+00091        Break : FALSE
+00092        Next File : FALSE
+00093        Running to glyph : FALSE
+00094        Preparing to run : FALSE
+00095        Stop pending : FALSE
+00096        Waiting for next single step : FALSE
+00097        Auto collate : FALSE
+00098        Collate OFF : TRUE
+00099        Collate GATHER : FALSE
+00100        Collate REVIEW : FALSE
+00101        Collate results available : FALSE
+00102        Logging : FALSE
+00103        Use shared scratch file : FALSE
+00104        Looping : FALSE
+00105        Has looped : FALSE
+00106        
+00107             Superglyph : TS_Cut_file_and_pdi, depth 1
+00108             Delete data on the fly enabled (global) : TRUE
+00109             Delete data on the fly (this) : TRUE
+00110             Glyphs that can switch pipe states : 0
+00111             Glyphs that can request skip cancellation : 1
+00112             Pipe states backed up : FALSE
+00113             Repeating : FALSE
+00114             Run : 0
+00115             Run count : 1
+00116             Run error count : 0
+00117             Run complete : FALSE
+00118             Run skipped : FALSE
+00119             Stop on error during multiple run : FALSE
+00120             Ranks are stored : FALSE = 0
+00121             Resetting : FALSE
+00122             Stepping : FALSE
+00123             Running : FALSE
+00124             Paused : FALSE
+00125             Stopped : TRUE
+00126             Interactive : FALSE
+00127             Complete : FALSE
+00128             Reset : TRUE
+00129             Break : FALSE
+00130             Next File : FALSE
+00131             Running to glyph : FALSE
+00132             Preparing to run : FALSE
+00133             Stop pending : FALSE
+00134             Waiting for next single step : FALSE
+00135             Auto collate : FALSE
+00136             Collate OFF : TRUE
+00137             Collate GATHER : FALSE
+00138             Collate REVIEW : FALSE
+00139             Collate results available : FALSE
+00140             Logging : FALSE
+00141             Use shared scratch file : FALSE
+00142             Looping : FALSE
+00143             Has looped : FALSE
+00144             
+00145             
+00146             
+00147             
+00148             
+00149                  Auto collate : FALSE
+00150                  Collate results available : NO
+00151                  Collate data count : 0
+00152                  Collate review count : 0
+00153                  Logging : FALSE
+00154                  Reviewing : FALSE
+00155                  Backed up : FALSE
+00156                  Data present : TRUE
+00157             
+00158                  Auto collate : FALSE
+00159                  Collate results available : NO
+00160                  Collate data count : 0
+00161                  Collate review count : 0
+00162                  Logging : FALSE
+00163                  Reviewing : FALSE
+00164                  Backed up : FALSE
+00165                  Data present : TRUE
+00166        
+00167        
+00168             Auto collate : FALSE
+00169             Collate results available : NO
+00170             Collate data count : 0
+00171             Collate review count : 0
+00172             Logging : FALSE
+00173             Reviewing : FALSE
+00174             Backed up : FALSE
+00175             Data present : TRUE
+00176   
+00177   
+00178   
+00179   Global journal entries
+00180     Out  :  13-Jul-2023 22:23:30   Run started   
+00181     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
+00182     Out  :  13-Jul-2023 22:23:51   Run started   
+00183     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
+00184     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
+00185     Out  :  13-Jul-2023 22:24:33   Run started   
+00186     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
+00187     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
+00188     Out  :  13-Jul-2023 22:24:34   Run started   
+00189     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
+00190     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
+00191     Out  :  13-Jul-2023 22:26:54   Run started   
+00192   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00193     Out  :  13-Jul-2023 22:26:59   Run finished - elapsed time 4.27secs   
+00194     Out  :  13-Jul-2023 22:27:30   Run started   
+00195   Error  :  13-Jul-2023 22:27:30   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00196     Out  :  13-Jul-2023 22:27:33   Run finished - elapsed time 2.83secs   
+00197     Out  :  13-Jul-2023 22:38:40   Run started   
+00198   Error  :  13-Jul-2023 22:38:40   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+***
+End
+***
+
+
+*****
+Begin
+*****
+
+Run failure report
+
+14-Jul-2023 00:55:24
+
+
+00000   Memory
+00001       Load 36%
+00002       32716MB total
+00003       20654MB available
+00004       39884MB total (page file)
+00005       23959MB available (page file)
+00006       134217727MB total (virtual)
+00007       134212315MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      7 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Time series
+00045   
+00046      Array
+00047   
+00048      Multi column
+00049   
+00050      Time series
+00051   
+00052      Array
+00053   
+00054      Multi column channel
+00055   
+00056      Results table
+00057   
+00058   
+00059   
+00060   S3 File Manager
+00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
+00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
+00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[454842d4-e7b3-4c63-9147-0d2629ba2b6a].tmp, pFile=OxF8F26710, thread=Ox06E4, ptr=Ox00000000, readwrite
+00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[b49909d6-45bb-476d-a21a-13af0d14d4b9].tmp, pFile=OxF8F26070, thread=Ox06E4, ptr=Ox00000000, readwrite
+00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[09a6dfdd-0b13-4d67-b196-3b722082aedf].tmp, pFile=OxF8F26DB0, thread=Ox06E4, ptr=Ox00000000, readwrite
+00066   
+00067   
+00068   Application
+00069        Workspace : WS1
+00070        Delete data on the fly enabled (global) : TRUE
+00071        Delete data on the fly (this) : TRUE
+00072        Glyphs that can switch pipe states : 0
+00073        Glyphs that can request skip cancellation : 1
+00074        Pipe states backed up : FALSE
+00075        Repeating : FALSE
+00076        Run : 0
+00077        Run count : 1
+00078        Run error count : 0
+00079        Run complete : FALSE
+00080        Run skipped : FALSE
+00081        Stop on error during multiple run : FALSE
+00082        Ranks are stored : FALSE = 0
+00083        Resetting : FALSE
+00084        Stepping : FALSE
+00085        Running : FALSE
+00086        Paused : FALSE
+00087        Stopped : TRUE
+00088        Interactive : FALSE
+00089        Complete : FALSE
+00090        Reset : FALSE
+00091        Break : FALSE
+00092        Next File : FALSE
+00093        Running to glyph : FALSE
+00094        Preparing to run : FALSE
+00095        Stop pending : FALSE
+00096        Waiting for next single step : FALSE
+00097        Auto collate : FALSE
+00098        Collate OFF : TRUE
+00099        Collate GATHER : FALSE
+00100        Collate REVIEW : FALSE
+00101        Collate results available : FALSE
+00102        Logging : FALSE
+00103        Use shared scratch file : FALSE
+00104        Looping : FALSE
+00105        Has looped : FALSE
+00106        
+00107             Superglyph : TS_Cut_file_and_pdi, depth 1
+00108             Delete data on the fly enabled (global) : TRUE
+00109             Delete data on the fly (this) : TRUE
+00110             Glyphs that can switch pipe states : 0
+00111             Glyphs that can request skip cancellation : 1
+00112             Pipe states backed up : FALSE
+00113             Repeating : FALSE
+00114             Run : 0
+00115             Run count : 1
+00116             Run error count : 0
+00117             Run complete : FALSE
+00118             Run skipped : FALSE
+00119             Stop on error during multiple run : FALSE
+00120             Ranks are stored : FALSE = 0
+00121             Resetting : FALSE
+00122             Stepping : FALSE
+00123             Running : FALSE
+00124             Paused : FALSE
+00125             Stopped : TRUE
+00126             Interactive : FALSE
+00127             Complete : FALSE
+00128             Reset : TRUE
+00129             Break : FALSE
+00130             Next File : FALSE
+00131             Running to glyph : FALSE
+00132             Preparing to run : FALSE
+00133             Stop pending : FALSE
+00134             Waiting for next single step : FALSE
+00135             Auto collate : FALSE
+00136             Collate OFF : TRUE
+00137             Collate GATHER : FALSE
+00138             Collate REVIEW : FALSE
+00139             Collate results available : FALSE
+00140             Logging : FALSE
+00141             Use shared scratch file : FALSE
+00142             Looping : FALSE
+00143             Has looped : FALSE
+00144             
+00145             
+00146             
+00147             
+00148             
+00149             
+00150                  Auto collate : FALSE
+00151                  Collate results available : NO
+00152                  Collate data count : 0
+00153                  Collate review count : 0
+00154                  Logging : FALSE
+00155                  Reviewing : FALSE
+00156                  Backed up : FALSE
+00157                  Data present : TRUE
+00158             
+00159                  Auto collate : FALSE
+00160                  Collate results available : NO
+00161                  Collate data count : 0
+00162                  Collate review count : 0
+00163                  Logging : FALSE
+00164                  Reviewing : FALSE
+00165                  Backed up : FALSE
+00166                  Data present : TRUE
+00167        
+00168        
+00169             Auto collate : FALSE
+00170             Collate results available : NO
+00171             Collate data count : 0
+00172             Collate review count : 0
+00173             Logging : FALSE
+00174             Reviewing : FALSE
+00175             Backed up : FALSE
+00176             Data present : TRUE
+00177   
+00178   
+00179   
+00180   Global journal entries
+00181     Out  :  13-Jul-2023 22:23:30   Run started   
+00182     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
+00183     Out  :  13-Jul-2023 22:23:51   Run started   
+00184     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
+00185     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
+00186     Out  :  13-Jul-2023 22:24:33   Run started   
+00187     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
+00188     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
+00189     Out  :  13-Jul-2023 22:24:34   Run started   
+00190     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
+00191     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
+00192     Out  :  13-Jul-2023 22:26:54   Run started   
+00193   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00194     Out  :  13-Jul-2023 22:26:59   Run finished - elapsed time 4.27secs   
+00195     Out  :  13-Jul-2023 22:27:30   Run started   
+00196   Error  :  13-Jul-2023 22:27:30   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00197     Out  :  13-Jul-2023 22:27:33   Run finished - elapsed time 2.83secs   
+00198     Out  :  13-Jul-2023 22:38:40   Run started   
+00199   Error  :  13-Jul-2023 22:38:40   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00200     Out  :  13-Jul-2023 22:38:41   Run finished - elapsed time 0.7013secs   
+00201     Out  :  13-Jul-2023 22:38:56   Run started   
+00202     Out  :  13-Jul-2023 22:38:56   . < TS_Cut_file_and_pdi (n=1) 0.1070secs   TS_Cut_file_and_pdi
+00203     Out  :  13-Jul-2023 22:38:56   Run finished - total time in process 0.1800secs   
+00204     Out  :  13-Jul-2023 22:47:11   Run started   
+00205     Out  :  13-Jul-2023 22:47:11   Run finished - total time in process 0.0843secs   
+00206   Error  :  13-Jul-2023 22:47:32   String property Columns value not defined   TS_Cut_file_and_pdi.MetaDataDisplay1
+00207     Out  :  13-Jul-2023 23:00:09   Run started   
+00208     Out  :  13-Jul-2023 23:00:10   . < TS_Cut_file_and_pdi (n=1) 0.1539secs   TS_Cut_file_and_pdi
+00209     Out  :  13-Jul-2023 23:00:10   Run finished - total time in process 0.6105secs   
+00210     Out  :  14-Jul-2023 00:51:11   Run started   
+00211     Out  :  14-Jul-2023 00:51:12   . < TS_Cut_file_and_pdi (n=1) 0.1435secs   TS_Cut_file_and_pdi
+00212     Out  :  14-Jul-2023 00:51:12   Run finished - total time in process 0.3005secs   
+00213     Out  :  14-Jul-2023 00:51:58   Run started   
+00214     Out  :  14-Jul-2023 00:51:59   . < TS_Cut_file_and_pdi (n=1) 0.0758secs   TS_Cut_file_and_pdi
+00215     Out  :  14-Jul-2023 00:51:59   Run finished - total time in process 0.1838secs   
+00216     Out  :  14-Jul-2023 00:52:16   Run started   
+00217     Out  :  14-Jul-2023 00:52:16   . < TS_Cut_file_and_pdi (n=1) 0.1217secs   TS_Cut_file_and_pdi
+00218     Out  :  14-Jul-2023 00:52:16   Run finished - total time in process 0.2199secs   
+00219     Out  :  14-Jul-2023 00:52:17   Run started   
+00220     Out  :  14-Jul-2023 00:52:17   . < TS_Cut_file_and_pdi (n=1) 0.1469secs   TS_Cut_file_and_pdi
+00221     Out  :  14-Jul-2023 00:52:17   Run finished - total time in process 0.2480secs   
+00222     Out  :  14-Jul-2023 00:55:24   Run started   
+00223   Error  :  14-Jul-2023 00:55:24   <type 'exceptions.NameError'> global name 'file_path' is not defined [Function: glyphscript Line:43]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+***
+End
+***
+
+
+*****
+Begin
+*****
+
+Run failure report
+
+14-Jul-2023 00:55:45
+
+
+00000   Memory
+00001       Load 36%
+00002       32716MB total
+00003       20639MB available
+00004       39884MB total (page file)
+00005       23892MB available (page file)
+00006       134217727MB total (virtual)
+00007       134212315MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      7 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Time series
+00045   
+00046      Array
+00047   
+00048      Multi column
+00049   
+00050      Time series
+00051   
+00052      Array
+00053   
+00054      Multi column channel
+00055   
+00056      Results table
+00057   
+00058   
+00059   
+00060   S3 File Manager
+00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
+00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
+00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[782f678e-6c1b-4e4b-bd02-d874ba581d98].tmp, pFile=OxF8F26710, thread=Ox06E4, ptr=Ox00000000, readwrite
+00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[aa42903f-699f-451b-817e-8c066de97e10].tmp, pFile=OxF8F284E0, thread=Ox06E4, ptr=Ox00000000, readwrite
+00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[785fab9f-7e40-494c-aafe-473354a8b6c3].tmp, pFile=OxF8F26070, thread=Ox06E4, ptr=Ox00000000, readwrite
+00066   
+00067   
+00068   Application
+00069        Workspace : WS1
+00070        Delete data on the fly enabled (global) : TRUE
+00071        Delete data on the fly (this) : TRUE
+00072        Glyphs that can switch pipe states : 0
+00073        Glyphs that can request skip cancellation : 1
+00074        Pipe states backed up : FALSE
+00075        Repeating : FALSE
+00076        Run : 0
+00077        Run count : 1
+00078        Run error count : 0
+00079        Run complete : FALSE
+00080        Run skipped : FALSE
+00081        Stop on error during multiple run : FALSE
+00082        Ranks are stored : FALSE = 0
+00083        Resetting : FALSE
+00084        Stepping : FALSE
+00085        Running : FALSE
+00086        Paused : FALSE
+00087        Stopped : TRUE
+00088        Interactive : FALSE
+00089        Complete : FALSE
+00090        Reset : FALSE
+00091        Break : FALSE
+00092        Next File : FALSE
+00093        Running to glyph : FALSE
+00094        Preparing to run : FALSE
+00095        Stop pending : FALSE
+00096        Waiting for next single step : FALSE
+00097        Auto collate : FALSE
+00098        Collate OFF : TRUE
+00099        Collate GATHER : FALSE
+00100        Collate REVIEW : FALSE
+00101        Collate results available : FALSE
+00102        Logging : FALSE
+00103        Use shared scratch file : FALSE
+00104        Looping : FALSE
+00105        Has looped : FALSE
+00106        
+00107             Superglyph : TS_Cut_file_and_pdi, depth 1
+00108             Delete data on the fly enabled (global) : TRUE
+00109             Delete data on the fly (this) : TRUE
+00110             Glyphs that can switch pipe states : 0
+00111             Glyphs that can request skip cancellation : 1
+00112             Pipe states backed up : FALSE
+00113             Repeating : FALSE
+00114             Run : 0
+00115             Run count : 1
+00116             Run error count : 0
+00117             Run complete : FALSE
+00118             Run skipped : FALSE
+00119             Stop on error during multiple run : FALSE
+00120             Ranks are stored : FALSE = 0
+00121             Resetting : FALSE
+00122             Stepping : FALSE
+00123             Running : FALSE
+00124             Paused : FALSE
+00125             Stopped : TRUE
+00126             Interactive : FALSE
+00127             Complete : FALSE
+00128             Reset : TRUE
+00129             Break : FALSE
+00130             Next File : FALSE
+00131             Running to glyph : FALSE
+00132             Preparing to run : FALSE
+00133             Stop pending : FALSE
+00134             Waiting for next single step : FALSE
+00135             Auto collate : FALSE
+00136             Collate OFF : TRUE
+00137             Collate GATHER : FALSE
+00138             Collate REVIEW : FALSE
+00139             Collate results available : FALSE
+00140             Logging : FALSE
+00141             Use shared scratch file : FALSE
+00142             Looping : FALSE
+00143             Has looped : FALSE
+00144             
+00145             
+00146             
+00147             
+00148             
+00149             
+00150                  Auto collate : FALSE
+00151                  Collate results available : NO
+00152                  Collate data count : 0
+00153                  Collate review count : 0
+00154                  Logging : FALSE
+00155                  Reviewing : FALSE
+00156                  Backed up : FALSE
+00157                  Data present : TRUE
+00158             
+00159                  Auto collate : FALSE
+00160                  Collate results available : NO
+00161                  Collate data count : 0
+00162                  Collate review count : 0
+00163                  Logging : FALSE
+00164                  Reviewing : FALSE
+00165                  Backed up : FALSE
+00166                  Data present : TRUE
+00167        
+00168        
+00169             Auto collate : FALSE
+00170             Collate results available : NO
+00171             Collate data count : 0
+00172             Collate review count : 0
+00173             Logging : FALSE
+00174             Reviewing : FALSE
+00175             Backed up : FALSE
+00176             Data present : TRUE
+00177   
+00178   
+00179   
+00180   Global journal entries
+00181     Out  :  13-Jul-2023 22:23:30   Run started   
+00182     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
+00183     Out  :  13-Jul-2023 22:23:51   Run started   
+00184     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
+00185     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
+00186     Out  :  13-Jul-2023 22:24:33   Run started   
+00187     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
+00188     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
+00189     Out  :  13-Jul-2023 22:24:34   Run started   
+00190     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
+00191     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
+00192     Out  :  13-Jul-2023 22:26:54   Run started   
+00193   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00194     Out  :  13-Jul-2023 22:26:59   Run finished - elapsed time 4.27secs   
+00195     Out  :  13-Jul-2023 22:27:30   Run started   
+00196   Error  :  13-Jul-2023 22:27:30   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00197     Out  :  13-Jul-2023 22:27:33   Run finished - elapsed time 2.83secs   
+00198     Out  :  13-Jul-2023 22:38:40   Run started   
+00199   Error  :  13-Jul-2023 22:38:40   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00200     Out  :  13-Jul-2023 22:38:41   Run finished - elapsed time 0.7013secs   
+00201     Out  :  13-Jul-2023 22:38:56   Run started   
+00202     Out  :  13-Jul-2023 22:38:56   . < TS_Cut_file_and_pdi (n=1) 0.1070secs   TS_Cut_file_and_pdi
+00203     Out  :  13-Jul-2023 22:38:56   Run finished - total time in process 0.1800secs   
+00204     Out  :  13-Jul-2023 22:47:11   Run started   
+00205     Out  :  13-Jul-2023 22:47:11   Run finished - total time in process 0.0843secs   
+00206   Error  :  13-Jul-2023 22:47:32   String property Columns value not defined   TS_Cut_file_and_pdi.MetaDataDisplay1
+00207     Out  :  13-Jul-2023 23:00:09   Run started   
+00208     Out  :  13-Jul-2023 23:00:10   . < TS_Cut_file_and_pdi (n=1) 0.1539secs   TS_Cut_file_and_pdi
+00209     Out  :  13-Jul-2023 23:00:10   Run finished - total time in process 0.6105secs   
+00210     Out  :  14-Jul-2023 00:51:11   Run started   
+00211     Out  :  14-Jul-2023 00:51:12   . < TS_Cut_file_and_pdi (n=1) 0.1435secs   TS_Cut_file_and_pdi
+00212     Out  :  14-Jul-2023 00:51:12   Run finished - total time in process 0.3005secs   
+00213     Out  :  14-Jul-2023 00:51:58   Run started   
+00214     Out  :  14-Jul-2023 00:51:59   . < TS_Cut_file_and_pdi (n=1) 0.0758secs   TS_Cut_file_and_pdi
+00215     Out  :  14-Jul-2023 00:51:59   Run finished - total time in process 0.1838secs   
+00216     Out  :  14-Jul-2023 00:52:16   Run started   
+00217     Out  :  14-Jul-2023 00:52:16   . < TS_Cut_file_and_pdi (n=1) 0.1217secs   TS_Cut_file_and_pdi
+00218     Out  :  14-Jul-2023 00:52:16   Run finished - total time in process 0.2199secs   
+00219     Out  :  14-Jul-2023 00:52:17   Run started   
+00220     Out  :  14-Jul-2023 00:52:17   . < TS_Cut_file_and_pdi (n=1) 0.1469secs   TS_Cut_file_and_pdi
+00221     Out  :  14-Jul-2023 00:52:17   Run finished - total time in process 0.2480secs   
+00222     Out  :  14-Jul-2023 00:55:24   Run started   
+00223   Error  :  14-Jul-2023 00:55:24   <type 'exceptions.NameError'> global name 'file_path' is not defined [Function: glyphscript Line:43]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00224     Out  :  14-Jul-2023 00:55:26   Run finished - elapsed time 2.12secs   
+00225     Out  :  14-Jul-2023 00:55:45   Run started   
+00226   Error  :  14-Jul-2023 00:55:45   <type 'exceptions.IOError'> (2, 'No such file or directory', 'A_modal_coordinate_7_34\\A_modal_coordinate_7_34_119_187.csv') [Function: glyphscript Line:49 | Function: output_csv_data Line:61]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+***
+End
+***
+
+
