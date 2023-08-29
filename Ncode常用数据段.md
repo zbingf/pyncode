@@ -48,6 +48,58 @@ qtutilr.dll
 ```
 
 
+```python
+ATS_RSP = """<AsciiTranslateSetup>
+   <Version>1</Version>
+   <ConvertTo>1</ConvertTo>
+   <CreateLogFile>0</CreateLogFile>
+   <NumberOfHeaderLines>1</NumberOfHeaderLines>
+   <NumberOfChannels>-1</NumberOfChannels>
+   <LineNumberForChannelTitles>1</LineNumberForChannelTitles>
+   <LineNumberForUnits>0</LineNumberForUnits>
+   <TabSeparated>0</TabSeparated>
+   <CommaSeparated>1</CommaSeparated>
+   <SpaceSeparated>0</SpaceSeparated>
+   <SemiColonSeparated>0</SemiColonSeparated>
+   <FixedWidth>0</FixedWidth>
+   <DecimalCharacter>1</DecimalCharacter>
+   <IncludeExclude>0</IncludeExclude>
+   <ColumnList></ColumnList>
+   <HeaderToMetadata>0</HeaderToMetadata>
+   <AutoDetectSampleRate>0</AutoDetectSampleRate>
+   <SampleRate>#SampleRate#</SampleRate>
+   <XaxisBase>0</XaxisBase>
+   <XaxisTitle>Time</XaxisTitle>
+   <XaxisUnits>Seconds</XaxisUnits>
+   <OutputNamingMethod>2</OutputNamingMethod>
+   <OutputTestName>temp</OutputTestName>
+   <OutputNamingText></OutputNamingText>
+   <OutputFormat>3</OutputFormat>
+</AsciiTranslateSetup>
+"""
+def translate_data_rsp(csv_path, samplerate):
+
+    ats_path = 'RSP_1V1.ats'
+    with open(ats_path, 'w') as f:
+        f.write(ATS_RSP.replace('#SampleRate#', str(samplerate)))
+    ats_path = os.path.abspath(ats_path)
+
+    str_cmd = 'asciitranslate.exe /inp="{}" /conv="TimeSeries" /SetupFile="{}" /prog=1'.format(csv_path, ats_path)
+    # os.system(str_cmd)
+    with open('_test.bat', 'w') as f:
+        f.write(str_cmd)
+    os.system('_test.bat')    
+
+    pass
+    return None
+
+```
+
+
+
+
+
+
 
 + 表头
 ```python
@@ -77,6 +129,25 @@ def getTS_channel_name(tsobj):
     for n in range(num):
         list1.append(tsobj.GetChanTitle(n))
     return list1
+
+
+def getTS_file_path(tsobj):
+
+    meta_obj = tsobj.GetMetaData()
+
+    return meta_obj.GetItem(0, "InputTestInfo.Path")
+
+def getTS_file_name(tsobj):
+
+    meta_obj = tsobj.GetMetaData()
+
+    return meta_obj.GetItem(0, "InputTestInfo.TestName")
+
+def getTS_samplerate(tsobj):
+
+    meta_obj = tsobj.GetMetaData()
+    
+    return meta_obj.GetItem(0, "Attributes.SampleRate")
 
 
 #获取\赋值时序信号数据
@@ -110,6 +181,9 @@ def putTS(tsobj,tartsobj,list1):
     
     tsobj.SetXTitle(tartsobj.GetXTitle())
     tsobj.SetXUnits(tartsobj.GetXUnits())
+
+
+
 
 ```
 

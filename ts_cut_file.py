@@ -35,7 +35,7 @@ ATS_RSP = """<AsciiTranslateSetup>
    <XaxisUnits>Seconds</XaxisUnits>
    <OutputNamingMethod>2</OutputNamingMethod>
    <OutputTestName>temp</OutputTestName>
-   <OutputNamingText>a</OutputNamingText>
+   <OutputNamingText></OutputNamingText>
    <OutputFormat>3</OutputFormat>
 </AsciiTranslateSetup>
 """
@@ -45,6 +45,8 @@ def glyphscript(engineState):
     tsin1 = engineState.GetInputTimeSeries(0)
     list1 = getTS(tsin1)
     mobj = engineState.GetInputMultiColumn(0)
+
+    
     list_range = get_list_range(mobj)
     
     cut_names = ['full']
@@ -73,32 +75,44 @@ def glyphscript(engineState):
     file_path = os.path.join(path_name, file_name)
     samplerate = getTS_samplerate(tsin1)
 
-    ats_path = 'RSP_1V1.ats'
-    with open(ats_path, 'w') as f:
-        f.write(ATS_RSP.replace('#SampleRate#', str(samplerate)))
-    ats_path = os.path.abspath(ats_path)
-
+    f = open('_temp_csv_paths.txt', 'w')
 
     n = 0
     for cut_name, list2d in zip(cut_names, list3d):
-        csv_path = file_path + '_' + cut_name + '.csv'
+        
         if n > 0:
+            csv_path = file_path + '_' + cut_name + '.csv'
             output_csv_data(csv_path, list2d, channel_titles)
-            
-            str_cmd = 'asciitranslate.exe /inp="{}" /conv="TimeSeries" /SetupFile="{}" /prog=1'.format(csv_path, ats_path)
-            # os.system(str_cmd)
-            with open('test.bat', 'w') as f:
-                f.write(str_cmd)
-            os.system('test.bat')
+            translate_data_rsp(csv_path, samplerate)
+        else:
+            csv_path = file_path + '.csv'
 
         n+=1
+        f.write(csv_path+'\n')
+    f.close()
 
     # csv_path = r'D:\damage.csv'
     # output_csv_data(csv_path, [channel_titles]+damage_2d, ['channel_titles']+cut_names)
     
     # f.write(getTS_file_name(tsin1))
-    # f.close()
+    
+
     return ''
+
+def translate_data_rsp(csv_path, samplerate):
+
+    ats_path = 'RSP_1V1.ats'
+    with open(ats_path, 'w') as f:
+        f.write(ATS_RSP.replace('#SampleRate#', str(samplerate)))
+    ats_path = os.path.abspath(ats_path)
+
+    str_cmd = 'asciitranslate.exe /inp="{}" /conv="TimeSeries" /SetupFile="{}" /prog=1'.format(csv_path, ats_path)
+    # os.system(str_cmd)
+    with open('_test.bat', 'w') as f:
+        f.write(str_cmd)
+    os.system('_test.bat')    
+
+    pass
 
 def output_csv_data(file_path, data, titles):
 

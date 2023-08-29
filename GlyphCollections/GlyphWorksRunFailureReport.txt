@@ -4,17 +4,17 @@ Begin
 
 Run failure report
 
-13-Jul-2023 00:02:25
+01-Aug-2023 21:25:12
 
 
 00000   Memory
-00001       Load 32%
+00001       Load 22%
 00002       32716MB total
-00003       21965MB available
+00003       25247MB available
 00004       39884MB total (page file)
-00005       24498MB available (page file)
+00005       29361MB available (page file)
 00006       134217727MB total (virtual)
-00007       134212338MB available (virtual)
+00007       134211775MB available (virtual)
 00008   
 00009   
 00010   System Info
@@ -43,7 +43,7 @@ Run failure report
 00033   
 00034   
 00035   Data Manager
-00036      5 entries - cache allocated 524288000 bytes
+00036      4 entries - cache allocated 524288000 bytes
 00037   
 00038      Remapping enabled : TRUE
 00039      Verify records : Off
@@ -53,20 +53,20 @@ Run failure report
 00043   
 00044      Time series
 00045   
-00046      Multi column
+00046      Meta data host
 00047   
-00048      Array
+00048      Time series
 00049   
-00050      Multi column channel
+00050      Array
 00051   
-00052      Results table
+00052   
 00053   
-00054   
-00055   
-00056   S3 File Manager
-00057    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004F9C]_G[a5129b05-696c-4888-b6f8-77a8c7ed942f].tmp, pFile=Ox34BBAE20, thread=Ox4F9C, ptr=Ox00000000, readwrite
-00058    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000002]_G[53044f39-4554-4954-a886-292538f107d6].tmp, pFile=Ox4F4B2C50, thread=Ox4F9C, ptr=Ox00000000, readwrite
-00059    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000003]_G[aa4242f1-f718-4ae6-aea8-9807a09070d3].tmp, pFile=Ox4F4B2900, thread=Ox4F9C, ptr=Ox00000000, readwrite
+00054   S3 File Manager
+00055    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00056    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[91a5a371-fe2a-4f51-93d7-223fcb231168].tmp, pFile=Ox410D2CB0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00057    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[0b583c9a-a4c7-4f33-beec-f2c010e08bc4].tmp, pFile=Ox410D1230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00058    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[f01aa732-4e7b-4eb4-be14-13e624c1ce40].tmp, pFile=Ox410D36A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00059    filename=d:\00_CAE_project\202306_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox4131E470, thread=Ox4DCC, ptr=Ox00000000, readwrite
 00060   
 00061   
 00062   Application
@@ -111,31 +111,56 @@ Run failure report
 00101        
 00102        
 00103        
-00104             Auto collate : FALSE
-00105             Collate results available : NO
-00106             Collate data count : 0
-00107             Collate review count : 0
-00108             Logging : FALSE
-00109             Reviewing : FALSE
-00110             Backed up : FALSE
-00111             Data present : TRUE
-00112        
-00113             Auto collate : FALSE
-00114             Collate results available : NO
-00115             Collate data count : 0
-00116             Collate review count : 0
-00117             Logging : FALSE
-00118             Reviewing : FALSE
-00119             Backed up : FALSE
-00120             Data present : TRUE
-00121   
-00122   
-00123   
-00124   Global journal entries
-00125     Out  :  13-Jul-2023 00:02:16   Run started   
-00126     Out  :  13-Jul-2023 00:02:16   Run finished - total time in process 0.1382secs   
-00127     Out  :  13-Jul-2023 00:02:25   Run started   
-00128   Error  :  13-Jul-2023 00:02:25   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
+00104        
+00105        
+00106             Auto collate : FALSE
+00107             Collate results available : NO
+00108             Collate data count : 0
+00109             Collate review count : 0
+00110             Logging : FALSE
+00111             Reviewing : FALSE
+00112             Backed up : FALSE
+00113             Data present : TRUE
+00114        
+00115             Auto collate : FALSE
+00116             Collate results available : NO
+00117             Collate data count : 0
+00118             Collate review count : 0
+00119             Logging : FALSE
+00120             Reviewing : FALSE
+00121             Backed up : FALSE
+00122             Data present : TRUE
+00123        
+00124             Auto collate : FALSE
+00125             Collate results available : NO
+00126             Collate data count : 0
+00127             Collate review count : 0
+00128             Logging : FALSE
+00129             Reviewing : FALSE
+00130             Backed up : FALSE
+00131             Data present : TRUE
+00132   
+00133   
+00134   
+00135   Global journal entries
+00136     Out  :  01-Aug-2023 21:24:38   Run started   
+00137     Out  :  01-Aug-2023 21:24:38   Run finished - total time in process 0.1287secs   
+00138     Out  :  01-Aug-2023 21:25:08   Run started   
+00139   Error  :  01-Aug-2023 21:25:12   Job completed with ERROR [Job] [Thread:19636] [ErrCode:-1900878]   VirtualStrainGauge2
+00140   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19636] [ErrCode:-1901401]   VirtualStrainGauge2
+00141   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19636] [ErrCode:18678023]   VirtualStrainGauge2
+00142   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19636] [ErrCode:1900866]   VirtualStrainGauge2
+00143   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19636] [ErrCode:-1915245]   VirtualStrainGauge2
+00144   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00145   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00146   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19916] [ErrCode:18678023]   VirtualStrainGauge2
+00147   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00148   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00149   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+No strain gauges defined
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
 ***
 End
 ***
@@ -147,17 +172,17 @@ Begin
 
 Run failure report
 
-13-Jul-2023 00:03:11
+01-Aug-2023 22:10:08
 
 
 00000   Memory
-00001       Load 32%
+00001       Load 24%
 00002       32716MB total
-00003       22071MB available
+00003       24818MB available
 00004       39884MB total (page file)
-00005       24635MB available (page file)
+00005       29023MB available (page file)
 00006       134217727MB total (virtual)
-00007       134212338MB available (virtual)
+00007       134211622MB available (virtual)
 00008   
 00009   
 00010   System Info
@@ -186,7 +211,778 @@ Run failure report
 00033   
 00034   
 00035   Data Manager
-00036      5 entries - cache allocated 524288000 bytes
+00036      7 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Meta data host
+00045   
+00046      Time series
+00047   
+00048      Meta data host
+00049   
+00050      Time series
+00051   
+00052      Time series
+00053   
+00054      Time series
+00055   
+00056      Array
+00057   
+00058   
+00059   
+00060   S3 File Manager
+00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[f9f643fa-4394-4b7c-8b5a-22872e393d96].tmp, pFile=Ox27074B50, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[d9d06b57-0928-4fac-882f-f2af4251c235].tmp, pFile=Ox27074EA0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[f1c916d0-448a-4e9a-b15a-526f78265d5f].tmp, pFile=Ox270751F0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000005]_G[66baecf7-efe6-41bd-91c4-f6bbaa8d4a29].tmp, pFile=Ox27075540, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00066    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000007]_G[81dbf240-32e2-4c65-b7fd-43253a766bd1].tmp, pFile=Ox27075BE0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00067    filename=d:\00_CAE_project\202306_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox4131E470, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00068    filename=d:\00_CAE_project\202306_01_VirtualStrain_SHEEL\T_result_rsp_s.nmd, pFile=Ox413209D0, thread=Ox4DCC, ptr=Ox00000000, readonly
+00069   
+00070   
+00071   Application
+00072        Workspace : WS1
+00073        Delete data on the fly enabled (global) : TRUE
+00074        Delete data on the fly (this) : TRUE
+00075        Glyphs that can switch pipe states : 0
+00076        Glyphs that can request skip cancellation : 0
+00077        Pipe states backed up : FALSE
+00078        Repeating : FALSE
+00079        Run : 0
+00080        Run count : 1
+00081        Run error count : 0
+00082        Run complete : FALSE
+00083        Run skipped : FALSE
+00084        Stop on error during multiple run : FALSE
+00085        Ranks are stored : FALSE = 0
+00086        Resetting : FALSE
+00087        Stepping : FALSE
+00088        Running : FALSE
+00089        Paused : FALSE
+00090        Stopped : TRUE
+00091        Interactive : FALSE
+00092        Complete : FALSE
+00093        Reset : FALSE
+00094        Break : FALSE
+00095        Next File : FALSE
+00096        Running to glyph : FALSE
+00097        Preparing to run : FALSE
+00098        Stop pending : FALSE
+00099        Waiting for next single step : FALSE
+00100        Auto collate : FALSE
+00101        Collate OFF : TRUE
+00102        Collate GATHER : FALSE
+00103        Collate REVIEW : FALSE
+00104        Collate results available : FALSE
+00105        Logging : FALSE
+00106        Use shared scratch file : FALSE
+00107        Looping : FALSE
+00108        Has looped : FALSE
+00109        
+00110        
+00111        
+00112        
+00113        
+00114        
+00115        
+00116        
+00117             Auto collate : FALSE
+00118             Collate results available : NO
+00119             Collate data count : 0
+00120             Collate review count : 0
+00121             Logging : FALSE
+00122             Reviewing : FALSE
+00123             Backed up : FALSE
+00124             Data present : TRUE
+00125        
+00126             Auto collate : FALSE
+00127             Collate results available : NO
+00128             Collate data count : 0
+00129             Collate review count : 0
+00130             Logging : FALSE
+00131             Reviewing : FALSE
+00132             Backed up : FALSE
+00133             Data present : TRUE
+00134        
+00135             Auto collate : FALSE
+00136             Collate results available : NO
+00137             Collate data count : 0
+00138             Collate review count : 0
+00139             Logging : FALSE
+00140             Reviewing : FALSE
+00141             Backed up : FALSE
+00142             Data present : TRUE
+00143        
+00144             Auto collate : FALSE
+00145             Collate results available : NO
+00146             Collate data count : 0
+00147             Collate review count : 0
+00148             Logging : FALSE
+00149             Reviewing : FALSE
+00150             Backed up : FALSE
+00151             Data present : TRUE
+00152        
+00153             Auto collate : FALSE
+00154             Collate results available : NO
+00155             Collate data count : 0
+00156             Collate review count : 0
+00157             Logging : FALSE
+00158             Reviewing : FALSE
+00159             Backed up : FALSE
+00160             Data present : TRUE
+00161   
+00162   
+00163   
+00164   Global journal entries
+00165     Out  :  01-Aug-2023 21:24:38   Run started   
+00166     Out  :  01-Aug-2023 21:24:38   Run finished - total time in process 0.1287secs   
+00167     Out  :  01-Aug-2023 21:25:08   Run started   
+00168   Error  :  01-Aug-2023 21:25:12   Job completed with ERROR [Job] [Thread:19636] [ErrCode:-1900878]   VirtualStrainGauge2
+00169   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19636] [ErrCode:-1901401]   VirtualStrainGauge2
+00170   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19636] [ErrCode:18678023]   VirtualStrainGauge2
+00171   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19636] [ErrCode:1900866]   VirtualStrainGauge2
+00172   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19636] [ErrCode:-1915245]   VirtualStrainGauge2
+00173   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00174   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00175   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19916] [ErrCode:18678023]   VirtualStrainGauge2
+00176   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00177   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00178   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+No strain gauges defined
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00179     Out  :  01-Aug-2023 21:25:40   Run finished - elapsed time 31.83secs   
+00180     Out  :  01-Aug-2023 21:26:40   Run started   
+00181     Out  :  01-Aug-2023 21:26:45   Run finished - total time in process 4.42secs   
+00182     Out  :  01-Aug-2023 21:27:15   Run started   
+00183     Out  :  01-Aug-2023 21:27:16   Run finished - total time in process 0.3878secs   
+00184     Out  :  01-Aug-2023 21:29:11   Run started   
+00185     Out  :  01-Aug-2023 21:29:12   Run finished - total time in process 0.3766secs   
+00186     Out  :  01-Aug-2023 21:30:26   Run started   
+00187     Out  :  01-Aug-2023 21:30:27   Run finished - total time in process 0.4282secs   
+00188     Out  :  01-Aug-2023 21:38:39   Run started   
+00189     Out  :  01-Aug-2023 21:38:44   Run finished - total time in process 4.42secs   
+00190     Out  :  01-Aug-2023 21:58:43   Run started   
+00191     Out  :  01-Aug-2023 21:58:43   Run finished - total time in process 0.5739secs   
+00192     Out  :  01-Aug-2023 22:00:28   Run started   
+00193     Out  :  01-Aug-2023 22:00:29   Run finished - total time in process 0.5633secs   
+00194     Out  :  01-Aug-2023 22:02:03   Run started   
+00195     Out  :  01-Aug-2023 22:02:03   Run finished - total time in process 0.3680secs   
+00196     Out  :  01-Aug-2023 22:02:11   Run started   
+00197     Out  :  01-Aug-2023 22:02:12   Run finished - total time in process 0.4307secs   
+00198     Out  :  01-Aug-2023 22:08:47   Run started   
+00199     Out  :  01-Aug-2023 22:08:48   Run finished - total time in process 0.6087secs   
+00200     Out  :  01-Aug-2023 22:10:05   Run started   
+00201   Error  :  01-Aug-2023 22:10:08   Job completed with ERROR [Job] [Thread:11412] [ErrCode:-1900878]   VirtualStrainGauge2
+00202   Error  :  01-Aug-2023 22:10:08   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:11412] [ErrCode:-1901401]   VirtualStrainGauge2
+00203   Error  :  01-Aug-2023 22:10:08   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:11412] [ErrCode:-8]   VirtualStrainGauge2
+00204   Error  :  01-Aug-2023 22:10:08   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:11412] [ErrCode:18677870]   VirtualStrainGauge2
+00205   Error  :  01-Aug-2023 22:10:08   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:11412] [ErrCode:1900866]   VirtualStrainGauge2
+00206   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:11412] [ErrCode:-1915245]   VirtualStrainGauge2
+00207   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00208   Error  :  01-Aug-2023 22:10:08   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00209   Error  :  01-Aug-2023 22:10:08   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:19916] [ErrCode:-8]   VirtualStrainGauge2
+00210   Error  :  01-Aug-2023 22:10:08   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:19916] [ErrCode:18677870]   VirtualStrainGauge2
+00211   Error  :  01-Aug-2023 22:10:08   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00212   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00213   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+SYS_ERROR_OPERATION   An operation failed in current state - No data defined
+Error occurred in VKI library - see full message for details
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+***
+End
+***
+
+
+*****
+Begin
+*****
+
+Run failure report
+
+01-Aug-2023 22:10:50
+
+
+00000   Memory
+00001       Load 24%
+00002       32716MB total
+00003       24845MB available
+00004       39884MB total (page file)
+00005       29029MB available (page file)
+00006       134217727MB total (virtual)
+00007       134211622MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      7 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Meta data host
+00045   
+00046      Time series
+00047   
+00048      Meta data host
+00049   
+00050      Time series
+00051   
+00052      Time series
+00053   
+00054      Time series
+00055   
+00056      Array
+00057   
+00058   
+00059   
+00060   S3 File Manager
+00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[ff8282d8-0f2b-45c9-86c4-6b134e7bfa11].tmp, pFile=Ox27075540, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[62590b0e-9b0f-4bcc-a365-130d8425717d].tmp, pFile=Ox27075890, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[8e5033da-6bf4-4b84-8a6b-3d95ccb59a20].tmp, pFile=Ox27075BE0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000005]_G[2578f2d4-cb75-4f57-8626-f67fcbad5c80].tmp, pFile=Ox27074160, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00066    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000007]_G[6b6039c5-0582-4e1e-b449-76f0a2587aaf].tmp, pFile=Ox27074EA0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00067    filename=d:\00_CAE_project\202306_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox4131E470, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00068    filename=d:\00_CAE_project\202306_01_VirtualStrain_SHEEL\T_result_rsp_s.nmd, pFile=Ox413209D0, thread=Ox4DCC, ptr=Ox00000000, readonly
+00069   
+00070   
+00071   Application
+00072        Workspace : WS1
+00073        Delete data on the fly enabled (global) : TRUE
+00074        Delete data on the fly (this) : TRUE
+00075        Glyphs that can switch pipe states : 0
+00076        Glyphs that can request skip cancellation : 0
+00077        Pipe states backed up : FALSE
+00078        Repeating : FALSE
+00079        Run : 0
+00080        Run count : 1
+00081        Run error count : 0
+00082        Run complete : FALSE
+00083        Run skipped : FALSE
+00084        Stop on error during multiple run : FALSE
+00085        Ranks are stored : FALSE = 0
+00086        Resetting : FALSE
+00087        Stepping : FALSE
+00088        Running : FALSE
+00089        Paused : FALSE
+00090        Stopped : TRUE
+00091        Interactive : FALSE
+00092        Complete : FALSE
+00093        Reset : FALSE
+00094        Break : FALSE
+00095        Next File : FALSE
+00096        Running to glyph : FALSE
+00097        Preparing to run : FALSE
+00098        Stop pending : FALSE
+00099        Waiting for next single step : FALSE
+00100        Auto collate : FALSE
+00101        Collate OFF : TRUE
+00102        Collate GATHER : FALSE
+00103        Collate REVIEW : FALSE
+00104        Collate results available : FALSE
+00105        Logging : FALSE
+00106        Use shared scratch file : FALSE
+00107        Looping : FALSE
+00108        Has looped : FALSE
+00109        
+00110        
+00111        
+00112        
+00113        
+00114        
+00115        
+00116        
+00117             Auto collate : FALSE
+00118             Collate results available : NO
+00119             Collate data count : 0
+00120             Collate review count : 0
+00121             Logging : FALSE
+00122             Reviewing : FALSE
+00123             Backed up : FALSE
+00124             Data present : TRUE
+00125        
+00126             Auto collate : FALSE
+00127             Collate results available : NO
+00128             Collate data count : 0
+00129             Collate review count : 0
+00130             Logging : FALSE
+00131             Reviewing : FALSE
+00132             Backed up : FALSE
+00133             Data present : TRUE
+00134        
+00135             Auto collate : FALSE
+00136             Collate results available : NO
+00137             Collate data count : 0
+00138             Collate review count : 0
+00139             Logging : FALSE
+00140             Reviewing : FALSE
+00141             Backed up : FALSE
+00142             Data present : TRUE
+00143        
+00144             Auto collate : FALSE
+00145             Collate results available : NO
+00146             Collate data count : 0
+00147             Collate review count : 0
+00148             Logging : FALSE
+00149             Reviewing : FALSE
+00150             Backed up : FALSE
+00151             Data present : TRUE
+00152        
+00153             Auto collate : FALSE
+00154             Collate results available : NO
+00155             Collate data count : 0
+00156             Collate review count : 0
+00157             Logging : FALSE
+00158             Reviewing : FALSE
+00159             Backed up : FALSE
+00160             Data present : TRUE
+00161   
+00162   
+00163   
+00164   Global journal entries
+00165     Out  :  01-Aug-2023 21:24:38   Run started   
+00166     Out  :  01-Aug-2023 21:24:38   Run finished - total time in process 0.1287secs   
+00167     Out  :  01-Aug-2023 21:25:08   Run started   
+00168   Error  :  01-Aug-2023 21:25:12   Job completed with ERROR [Job] [Thread:19636] [ErrCode:-1900878]   VirtualStrainGauge2
+00169   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19636] [ErrCode:-1901401]   VirtualStrainGauge2
+00170   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19636] [ErrCode:18678023]   VirtualStrainGauge2
+00171   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19636] [ErrCode:1900866]   VirtualStrainGauge2
+00172   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19636] [ErrCode:-1915245]   VirtualStrainGauge2
+00173   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00174   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00175   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19916] [ErrCode:18678023]   VirtualStrainGauge2
+00176   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00177   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00178   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+No strain gauges defined
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00179     Out  :  01-Aug-2023 21:25:40   Run finished - elapsed time 31.83secs   
+00180     Out  :  01-Aug-2023 21:26:40   Run started   
+00181     Out  :  01-Aug-2023 21:26:45   Run finished - total time in process 4.42secs   
+00182     Out  :  01-Aug-2023 21:27:15   Run started   
+00183     Out  :  01-Aug-2023 21:27:16   Run finished - total time in process 0.3878secs   
+00184     Out  :  01-Aug-2023 21:29:11   Run started   
+00185     Out  :  01-Aug-2023 21:29:12   Run finished - total time in process 0.3766secs   
+00186     Out  :  01-Aug-2023 21:30:26   Run started   
+00187     Out  :  01-Aug-2023 21:30:27   Run finished - total time in process 0.4282secs   
+00188     Out  :  01-Aug-2023 21:38:39   Run started   
+00189     Out  :  01-Aug-2023 21:38:44   Run finished - total time in process 4.42secs   
+00190     Out  :  01-Aug-2023 21:58:43   Run started   
+00191     Out  :  01-Aug-2023 21:58:43   Run finished - total time in process 0.5739secs   
+00192     Out  :  01-Aug-2023 22:00:28   Run started   
+00193     Out  :  01-Aug-2023 22:00:29   Run finished - total time in process 0.5633secs   
+00194     Out  :  01-Aug-2023 22:02:03   Run started   
+00195     Out  :  01-Aug-2023 22:02:03   Run finished - total time in process 0.3680secs   
+00196     Out  :  01-Aug-2023 22:02:11   Run started   
+00197     Out  :  01-Aug-2023 22:02:12   Run finished - total time in process 0.4307secs   
+00198     Out  :  01-Aug-2023 22:08:47   Run started   
+00199     Out  :  01-Aug-2023 22:08:48   Run finished - total time in process 0.6087secs   
+00200     Out  :  01-Aug-2023 22:10:05   Run started   
+00201   Error  :  01-Aug-2023 22:10:08   Job completed with ERROR [Job] [Thread:11412] [ErrCode:-1900878]   VirtualStrainGauge2
+00202   Error  :  01-Aug-2023 22:10:08   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:11412] [ErrCode:-1901401]   VirtualStrainGauge2
+00203   Error  :  01-Aug-2023 22:10:08   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:11412] [ErrCode:-8]   VirtualStrainGauge2
+00204   Error  :  01-Aug-2023 22:10:08   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:11412] [ErrCode:18677870]   VirtualStrainGauge2
+00205   Error  :  01-Aug-2023 22:10:08   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:11412] [ErrCode:1900866]   VirtualStrainGauge2
+00206   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:11412] [ErrCode:-1915245]   VirtualStrainGauge2
+00207   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00208   Error  :  01-Aug-2023 22:10:08   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00209   Error  :  01-Aug-2023 22:10:08   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:19916] [ErrCode:-8]   VirtualStrainGauge2
+00210   Error  :  01-Aug-2023 22:10:08   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:19916] [ErrCode:18677870]   VirtualStrainGauge2
+00211   Error  :  01-Aug-2023 22:10:08   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00212   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00213   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+SYS_ERROR_OPERATION   An operation failed in current state - No data defined
+Error occurred in VKI library - see full message for details
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00214     Out  :  01-Aug-2023 22:10:12   Run finished - elapsed time 7.13secs   
+00215     Out  :  01-Aug-2023 22:10:46   Run started   
+00216   Error  :  01-Aug-2023 22:10:50   Job completed with ERROR [Job] [Thread:20724] [ErrCode:-1900878]   VirtualStrainGauge2
+00217   Error  :  01-Aug-2023 22:10:50   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:20724] [ErrCode:-1901401]   VirtualStrainGauge2
+00218   Error  :  01-Aug-2023 22:10:50   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:20724] [ErrCode:-8]   VirtualStrainGauge2
+00219   Error  :  01-Aug-2023 22:10:50   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:20724] [ErrCode:18677870]   VirtualStrainGauge2
+00220   Error  :  01-Aug-2023 22:10:50   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:20724] [ErrCode:1900866]   VirtualStrainGauge2
+00221   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:20724] [ErrCode:-1915245]   VirtualStrainGauge2
+00222   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00223   Error  :  01-Aug-2023 22:10:50   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00224   Error  :  01-Aug-2023 22:10:50   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:19916] [ErrCode:-8]   VirtualStrainGauge2
+00225   Error  :  01-Aug-2023 22:10:50   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:19916] [ErrCode:18677870]   VirtualStrainGauge2
+00226   Error  :  01-Aug-2023 22:10:50   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00227   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00228   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+SYS_ERROR_OPERATION   An operation failed in current state - No data defined
+Error occurred in VKI library - see full message for details
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+***
+End
+***
+
+
+*****
+Begin
+*****
+
+Run failure report
+
+01-Aug-2023 22:11:02
+
+
+00000   Memory
+00001       Load 24%
+00002       32716MB total
+00003       24842MB available
+00004       39884MB total (page file)
+00005       29036MB available (page file)
+00006       134217727MB total (virtual)
+00007       134211699MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      7 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Meta data host
+00045   
+00046      Time series
+00047   
+00048      Meta data host
+00049   
+00050      Time series
+00051   
+00052      Time series
+00053   
+00054      Time series
+00055   
+00056      Array
+00057   
+00058   
+00059   
+00060   S3 File Manager
+00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[5a082c55-f700-4c6b-a6e5-493260d58ef4].tmp, pFile=Ox27074EA0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[8e701b08-a877-4fc1-b5f8-14347b801fec].tmp, pFile=Ox27074160, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[df8f1d37-9d07-4b6c-8584-e4d71f6b1025].tmp, pFile=Ox27074B50, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000005]_G[4671d11b-d67e-4592-9c43-fddf867e69f2].tmp, pFile=Ox27075540, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00066    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000007]_G[cd8fe0bd-9d74-4d3f-83e7-f419c6b9e99c].tmp, pFile=Ox270751F0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00067    filename=d:\00_CAE_project\202306_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox4131E470, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00068    filename=d:\00_CAE_project\202306_01_VirtualStrain_SHEEL\T_result_rsp_s.nmd, pFile=Ox413209D0, thread=Ox4DCC, ptr=Ox00000000, readonly
+00069   
+00070   
+00071   Application
+00072        Workspace : WS1
+00073        Delete data on the fly enabled (global) : TRUE
+00074        Delete data on the fly (this) : TRUE
+00075        Glyphs that can switch pipe states : 0
+00076        Glyphs that can request skip cancellation : 0
+00077        Pipe states backed up : FALSE
+00078        Repeating : FALSE
+00079        Run : 0
+00080        Run count : 1
+00081        Run error count : 0
+00082        Run complete : FALSE
+00083        Run skipped : FALSE
+00084        Stop on error during multiple run : FALSE
+00085        Ranks are stored : FALSE = 0
+00086        Resetting : FALSE
+00087        Stepping : FALSE
+00088        Running : FALSE
+00089        Paused : FALSE
+00090        Stopped : TRUE
+00091        Interactive : FALSE
+00092        Complete : FALSE
+00093        Reset : FALSE
+00094        Break : FALSE
+00095        Next File : FALSE
+00096        Running to glyph : FALSE
+00097        Preparing to run : FALSE
+00098        Stop pending : FALSE
+00099        Waiting for next single step : FALSE
+00100        Auto collate : FALSE
+00101        Collate OFF : TRUE
+00102        Collate GATHER : FALSE
+00103        Collate REVIEW : FALSE
+00104        Collate results available : FALSE
+00105        Logging : FALSE
+00106        Use shared scratch file : FALSE
+00107        Looping : FALSE
+00108        Has looped : FALSE
+00109        
+00110        
+00111        
+00112        
+00113        
+00114        
+00115        
+00116        
+00117             Auto collate : FALSE
+00118             Collate results available : NO
+00119             Collate data count : 0
+00120             Collate review count : 0
+00121             Logging : FALSE
+00122             Reviewing : FALSE
+00123             Backed up : FALSE
+00124             Data present : TRUE
+00125        
+00126             Auto collate : FALSE
+00127             Collate results available : NO
+00128             Collate data count : 0
+00129             Collate review count : 0
+00130             Logging : FALSE
+00131             Reviewing : FALSE
+00132             Backed up : FALSE
+00133             Data present : TRUE
+00134        
+00135             Auto collate : FALSE
+00136             Collate results available : NO
+00137             Collate data count : 0
+00138             Collate review count : 0
+00139             Logging : FALSE
+00140             Reviewing : FALSE
+00141             Backed up : FALSE
+00142             Data present : TRUE
+00143        
+00144             Auto collate : FALSE
+00145             Collate results available : NO
+00146             Collate data count : 0
+00147             Collate review count : 0
+00148             Logging : FALSE
+00149             Reviewing : FALSE
+00150             Backed up : FALSE
+00151             Data present : TRUE
+00152        
+00153             Auto collate : FALSE
+00154             Collate results available : NO
+00155             Collate data count : 0
+00156             Collate review count : 0
+00157             Logging : FALSE
+00158             Reviewing : FALSE
+00159             Backed up : FALSE
+00160             Data present : TRUE
+00161   
+00162   
+00163   
+00164   Global journal entries
+00165     Out  :  01-Aug-2023 21:24:38   Run started   
+00166     Out  :  01-Aug-2023 21:24:38   Run finished - total time in process 0.1287secs   
+00167     Out  :  01-Aug-2023 21:25:08   Run started   
+00168   Error  :  01-Aug-2023 21:25:12   Job completed with ERROR [Job] [Thread:19636] [ErrCode:-1900878]   VirtualStrainGauge2
+00169   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19636] [ErrCode:-1901401]   VirtualStrainGauge2
+00170   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19636] [ErrCode:18678023]   VirtualStrainGauge2
+00171   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19636] [ErrCode:1900866]   VirtualStrainGauge2
+00172   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19636] [ErrCode:-1915245]   VirtualStrainGauge2
+00173   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00174   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00175   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19916] [ErrCode:18678023]   VirtualStrainGauge2
+00176   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00177   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00178   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+No strain gauges defined
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00179     Out  :  01-Aug-2023 21:25:40   Run finished - elapsed time 31.83secs   
+00180     Out  :  01-Aug-2023 21:26:40   Run started   
+00181     Out  :  01-Aug-2023 21:26:45   Run finished - total time in process 4.42secs   
+00182     Out  :  01-Aug-2023 21:27:15   Run started   
+00183     Out  :  01-Aug-2023 21:27:16   Run finished - total time in process 0.3878secs   
+00184     Out  :  01-Aug-2023 21:29:11   Run started   
+00185     Out  :  01-Aug-2023 21:29:12   Run finished - total time in process 0.3766secs   
+00186     Out  :  01-Aug-2023 21:30:26   Run started   
+00187     Out  :  01-Aug-2023 21:30:27   Run finished - total time in process 0.4282secs   
+00188     Out  :  01-Aug-2023 21:38:39   Run started   
+00189     Out  :  01-Aug-2023 21:38:44   Run finished - total time in process 4.42secs   
+00190     Out  :  01-Aug-2023 21:58:43   Run started   
+00191     Out  :  01-Aug-2023 21:58:43   Run finished - total time in process 0.5739secs   
+00192     Out  :  01-Aug-2023 22:00:28   Run started   
+00193     Out  :  01-Aug-2023 22:00:29   Run finished - total time in process 0.5633secs   
+00194     Out  :  01-Aug-2023 22:02:03   Run started   
+00195     Out  :  01-Aug-2023 22:02:03   Run finished - total time in process 0.3680secs   
+00196     Out  :  01-Aug-2023 22:02:11   Run started   
+00197     Out  :  01-Aug-2023 22:02:12   Run finished - total time in process 0.4307secs   
+00198     Out  :  01-Aug-2023 22:08:47   Run started   
+00199     Out  :  01-Aug-2023 22:08:48   Run finished - total time in process 0.6087secs   
+00200     Out  :  01-Aug-2023 22:10:05   Run started   
+00201   Error  :  01-Aug-2023 22:10:08   Job completed with ERROR [Job] [Thread:11412] [ErrCode:-1900878]   VirtualStrainGauge2
+00202   Error  :  01-Aug-2023 22:10:08   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:11412] [ErrCode:-1901401]   VirtualStrainGauge2
+00203   Error  :  01-Aug-2023 22:10:08   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:11412] [ErrCode:-8]   VirtualStrainGauge2
+00204   Error  :  01-Aug-2023 22:10:08   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:11412] [ErrCode:18677870]   VirtualStrainGauge2
+00205   Error  :  01-Aug-2023 22:10:08   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:11412] [ErrCode:1900866]   VirtualStrainGauge2
+00206   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:11412] [ErrCode:-1915245]   VirtualStrainGauge2
+00207   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00208   Error  :  01-Aug-2023 22:10:08   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00209   Error  :  01-Aug-2023 22:10:08   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:19916] [ErrCode:-8]   VirtualStrainGauge2
+00210   Error  :  01-Aug-2023 22:10:08   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:19916] [ErrCode:18677870]   VirtualStrainGauge2
+00211   Error  :  01-Aug-2023 22:10:08   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00212   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00213   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+SYS_ERROR_OPERATION   An operation failed in current state - No data defined
+Error occurred in VKI library - see full message for details
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00214     Out  :  01-Aug-2023 22:10:12   Run finished - elapsed time 7.13secs   
+00215     Out  :  01-Aug-2023 22:10:46   Run started   
+00216   Error  :  01-Aug-2023 22:10:50   Job completed with ERROR [Job] [Thread:20724] [ErrCode:-1900878]   VirtualStrainGauge2
+00217   Error  :  01-Aug-2023 22:10:50   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:20724] [ErrCode:-1901401]   VirtualStrainGauge2
+00218   Error  :  01-Aug-2023 22:10:50   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:20724] [ErrCode:-8]   VirtualStrainGauge2
+00219   Error  :  01-Aug-2023 22:10:50   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:20724] [ErrCode:18677870]   VirtualStrainGauge2
+00220   Error  :  01-Aug-2023 22:10:50   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:20724] [ErrCode:1900866]   VirtualStrainGauge2
+00221   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:20724] [ErrCode:-1915245]   VirtualStrainGauge2
+00222   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00223   Error  :  01-Aug-2023 22:10:50   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00224   Error  :  01-Aug-2023 22:10:50   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:19916] [ErrCode:-8]   VirtualStrainGauge2
+00225   Error  :  01-Aug-2023 22:10:50   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:19916] [ErrCode:18677870]   VirtualStrainGauge2
+00226   Error  :  01-Aug-2023 22:10:50   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00227   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00228   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+SYS_ERROR_OPERATION   An operation failed in current state - No data defined
+Error occurred in VKI library - see full message for details
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00229     Out  :  01-Aug-2023 22:10:56   Run finished - elapsed time 9.93secs   
+00230     Out  :  01-Aug-2023 22:10:58   Run started   
+00231   Error  :  01-Aug-2023 22:11:02   Job completed with ERROR [Job] [Thread:7740] [ErrCode:-1900878]   VirtualStrainGauge2
+00232   Error  :  01-Aug-2023 22:11:02   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:7740] [ErrCode:-1901401]   VirtualStrainGauge2
+00233   Error  :  01-Aug-2023 22:11:02   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:7740] [ErrCode:-8]   VirtualStrainGauge2
+00234   Error  :  01-Aug-2023 22:11:02   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:7740] [ErrCode:18677870]   VirtualStrainGauge2
+00235   Error  :  01-Aug-2023 22:11:02   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:7740] [ErrCode:1900866]   VirtualStrainGauge2
+00236   Error  :  01-Aug-2023 22:11:02   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:7740] [ErrCode:-1915245]   VirtualStrainGauge2
+00237   Error  :  01-Aug-2023 22:11:02   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00238   Error  :  01-Aug-2023 22:11:02   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00239   Error  :  01-Aug-2023 22:11:02   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:19916] [ErrCode:-8]   VirtualStrainGauge2
+00240   Error  :  01-Aug-2023 22:11:02   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:19916] [ErrCode:18677870]   VirtualStrainGauge2
+00241   Error  :  01-Aug-2023 22:11:02   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00242   Error  :  01-Aug-2023 22:11:02   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00243   Error  :  01-Aug-2023 22:11:02   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+SYS_ERROR_OPERATION   An operation failed in current state - No data defined
+Error occurred in VKI library - see full message for details
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+***
+End
+***
+
+
+*****
+Begin
+*****
+
+Run failure report
+
+01-Aug-2023 22:33:29
+
+
+00000   Memory
+00001       Load 26%
+00002       32716MB total
+00003       24016MB available
+00004       39884MB total (page file)
+00005       27949MB available (page file)
+00006       134217727MB total (virtual)
+00007       134211803MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      7 entries - cache allocated 524288000 bytes
 00037   
 00038      Remapping enabled : TRUE
 00039      Verify records : Off
@@ -196,92 +992,513 @@ Run failure report
 00043   
 00044      Time series
 00045   
-00046      Multi column
+00046      Meta data host
 00047   
-00048      Array
+00048      Time series
 00049   
-00050      Multi column channel
+00050      Time series
 00051   
-00052      Results table
+00052      Time series
 00053   
-00054   
+00054      Array
 00055   
-00056   S3 File Manager
-00057    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004F9C]_G[a5129b05-696c-4888-b6f8-77a8c7ed942f].tmp, pFile=Ox34BBAE20, thread=Ox4F9C, ptr=Ox00000000, readwrite
-00058    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000002]_G[b1e3e9a5-c054-4dd3-901a-02291f170cb4].tmp, pFile=Ox4F4B3CE0, thread=Ox4F9C, ptr=Ox00000000, readwrite
-00059    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000003]_G[049f4764-e4d7-4d08-a0de-523c19b8c5bd].tmp, pFile=Ox4F4B1F10, thread=Ox4F9C, ptr=Ox00000000, readwrite
-00060   
+00056      Array
+00057   
+00058   
+00059   
+00060   S3 File Manager
+00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[610ab870-f342-46bc-bcfa-b5b526b6b2a0].tmp, pFile=Ox27074160, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[59410061-0ec5-49a9-8830-4ed2915fdc19].tmp, pFile=Ox410D36A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[ea92db00-c901-4335-bfa6-7b730043cae6].tmp, pFile=Ox410D2CB0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[9e869fdd-6139-42da-aeda-333182dfe7f4].tmp, pFile=Ox410D43E0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00066    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000005]_G[d847b778-871b-40f3-b086-57e04039bd2b].tmp, pFile=Ox410D3D40, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00067    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000007]_G[a97128e5-548c-40be-a6c7-9734e642aabc].tmp, pFile=Ox410D1230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00068    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox4726F8F0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00069   
+00070   
+00071   Application
+00072        Workspace : TEST1
+00073        Delete data on the fly enabled (global) : TRUE
+00074        Delete data on the fly (this) : TRUE
+00075        Glyphs that can switch pipe states : 0
+00076        Glyphs that can request skip cancellation : 0
+00077        Pipe states backed up : FALSE
+00078        Repeating : FALSE
+00079        Run : 0
+00080        Run count : 1
+00081        Run error count : 0
+00082        Run complete : FALSE
+00083        Run skipped : FALSE
+00084        Stop on error during multiple run : FALSE
+00085        Ranks are stored : FALSE = 0
+00086        Resetting : FALSE
+00087        Stepping : FALSE
+00088        Running : FALSE
+00089        Paused : FALSE
+00090        Stopped : TRUE
+00091        Interactive : FALSE
+00092        Complete : FALSE
+00093        Reset : FALSE
+00094        Break : FALSE
+00095        Next File : FALSE
+00096        Running to glyph : FALSE
+00097        Preparing to run : FALSE
+00098        Stop pending : FALSE
+00099        Waiting for next single step : FALSE
+00100        Auto collate : FALSE
+00101        Collate OFF : TRUE
+00102        Collate GATHER : FALSE
+00103        Collate REVIEW : FALSE
+00104        Collate results available : FALSE
+00105        Logging : FALSE
+00106        Use shared scratch file : FALSE
+00107        Looping : FALSE
+00108        Has looped : FALSE
+00109        
+00110        
+00111        
+00112        
+00113        
+00114        
+00115        
+00116        
+00117             Auto collate : FALSE
+00118             Collate results available : NO
+00119             Collate data count : 0
+00120             Collate review count : 0
+00121             Logging : FALSE
+00122             Reviewing : FALSE
+00123             Backed up : FALSE
+00124             Data present : TRUE
+00125        
+00126             Auto collate : FALSE
+00127             Collate results available : NO
+00128             Collate data count : 0
+00129             Collate review count : 0
+00130             Logging : FALSE
+00131             Reviewing : FALSE
+00132             Backed up : FALSE
+00133             Data present : TRUE
+00134        
+00135             Auto collate : FALSE
+00136             Collate results available : NO
+00137             Collate data count : 0
+00138             Collate review count : 0
+00139             Logging : FALSE
+00140             Reviewing : FALSE
+00141             Backed up : FALSE
+00142             Data present : TRUE
+00143        
+00144             Auto collate : FALSE
+00145             Collate results available : NO
+00146             Collate data count : 0
+00147             Collate review count : 0
+00148             Logging : FALSE
+00149             Reviewing : FALSE
+00150             Backed up : FALSE
+00151             Data present : TRUE
+00152        
+00153             Auto collate : FALSE
+00154             Collate results available : NO
+00155             Collate data count : 0
+00156             Collate review count : 0
+00157             Logging : FALSE
+00158             Reviewing : FALSE
+00159             Backed up : FALSE
+00160             Data present : TRUE
+00161   
+00162   
+00163   
+00164   Global journal entries
+00165     Out  :  01-Aug-2023 21:24:38   Run started   
+00166     Out  :  01-Aug-2023 21:24:38   Run finished - total time in process 0.1287secs   
+00167     Out  :  01-Aug-2023 21:25:08   Run started   
+00168   Error  :  01-Aug-2023 21:25:12   Job completed with ERROR [Job] [Thread:19636] [ErrCode:-1900878]   VirtualStrainGauge2
+00169   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19636] [ErrCode:-1901401]   VirtualStrainGauge2
+00170   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19636] [ErrCode:18678023]   VirtualStrainGauge2
+00171   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19636] [ErrCode:1900866]   VirtualStrainGauge2
+00172   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19636] [ErrCode:-1915245]   VirtualStrainGauge2
+00173   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00174   Error  :  01-Aug-2023 21:25:12   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00175   Error  :  01-Aug-2023 21:25:12   No strain gauges defined [FEImpStrainGaugeEngine::Translate] [Thread:19916] [ErrCode:18678023]   VirtualStrainGauge2
+00176   Error  :  01-Aug-2023 21:25:12   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00177   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00178   Error  :  01-Aug-2023 21:25:12   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+No strain gauges defined
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00179     Out  :  01-Aug-2023 21:25:40   Run finished - elapsed time 31.83secs   
+00180     Out  :  01-Aug-2023 21:26:40   Run started   
+00181     Out  :  01-Aug-2023 21:26:45   Run finished - total time in process 4.42secs   
+00182     Out  :  01-Aug-2023 21:27:15   Run started   
+00183     Out  :  01-Aug-2023 21:27:16   Run finished - total time in process 0.3878secs   
+00184     Out  :  01-Aug-2023 21:29:11   Run started   
+00185     Out  :  01-Aug-2023 21:29:12   Run finished - total time in process 0.3766secs   
+00186     Out  :  01-Aug-2023 21:30:26   Run started   
+00187     Out  :  01-Aug-2023 21:30:27   Run finished - total time in process 0.4282secs   
+00188     Out  :  01-Aug-2023 21:38:39   Run started   
+00189     Out  :  01-Aug-2023 21:38:44   Run finished - total time in process 4.42secs   
+00190     Out  :  01-Aug-2023 21:58:43   Run started   
+00191     Out  :  01-Aug-2023 21:58:43   Run finished - total time in process 0.5739secs   
+00192     Out  :  01-Aug-2023 22:00:28   Run started   
+00193     Out  :  01-Aug-2023 22:00:29   Run finished - total time in process 0.5633secs   
+00194     Out  :  01-Aug-2023 22:02:03   Run started   
+00195     Out  :  01-Aug-2023 22:02:03   Run finished - total time in process 0.3680secs   
+00196     Out  :  01-Aug-2023 22:02:11   Run started   
+00197     Out  :  01-Aug-2023 22:02:12   Run finished - total time in process 0.4307secs   
+00198     Out  :  01-Aug-2023 22:08:47   Run started   
+00199     Out  :  01-Aug-2023 22:08:48   Run finished - total time in process 0.6087secs   
+00200     Out  :  01-Aug-2023 22:10:05   Run started   
+00201   Error  :  01-Aug-2023 22:10:08   Job completed with ERROR [Job] [Thread:11412] [ErrCode:-1900878]   VirtualStrainGauge2
+00202   Error  :  01-Aug-2023 22:10:08   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:11412] [ErrCode:-1901401]   VirtualStrainGauge2
+00203   Error  :  01-Aug-2023 22:10:08   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:11412] [ErrCode:-8]   VirtualStrainGauge2
+00204   Error  :  01-Aug-2023 22:10:08   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:11412] [ErrCode:18677870]   VirtualStrainGauge2
+00205   Error  :  01-Aug-2023 22:10:08   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:11412] [ErrCode:1900866]   VirtualStrainGauge2
+00206   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:11412] [ErrCode:-1915245]   VirtualStrainGauge2
+00207   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00208   Error  :  01-Aug-2023 22:10:08   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00209   Error  :  01-Aug-2023 22:10:08   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:19916] [ErrCode:-8]   VirtualStrainGauge2
+00210   Error  :  01-Aug-2023 22:10:08   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:19916] [ErrCode:18677870]   VirtualStrainGauge2
+00211   Error  :  01-Aug-2023 22:10:08   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00212   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00213   Error  :  01-Aug-2023 22:10:08   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+SYS_ERROR_OPERATION   An operation failed in current state - No data defined
+Error occurred in VKI library - see full message for details
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00214     Out  :  01-Aug-2023 22:10:12   Run finished - elapsed time 7.13secs   
+00215     Out  :  01-Aug-2023 22:10:46   Run started   
+00216   Error  :  01-Aug-2023 22:10:50   Job completed with ERROR [Job] [Thread:20724] [ErrCode:-1900878]   VirtualStrainGauge2
+00217   Error  :  01-Aug-2023 22:10:50   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:20724] [ErrCode:-1901401]   VirtualStrainGauge2
+00218   Error  :  01-Aug-2023 22:10:50   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:20724] [ErrCode:-8]   VirtualStrainGauge2
+00219   Error  :  01-Aug-2023 22:10:50   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:20724] [ErrCode:18677870]   VirtualStrainGauge2
+00220   Error  :  01-Aug-2023 22:10:50   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:20724] [ErrCode:1900866]   VirtualStrainGauge2
+00221   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:20724] [ErrCode:-1915245]   VirtualStrainGauge2
+00222   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00223   Error  :  01-Aug-2023 22:10:50   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00224   Error  :  01-Aug-2023 22:10:50   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:19916] [ErrCode:-8]   VirtualStrainGauge2
+00225   Error  :  01-Aug-2023 22:10:50   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:19916] [ErrCode:18677870]   VirtualStrainGauge2
+00226   Error  :  01-Aug-2023 22:10:50   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00227   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00228   Error  :  01-Aug-2023 22:10:50   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+SYS_ERROR_OPERATION   An operation failed in current state - No data defined
+Error occurred in VKI library - see full message for details
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00229     Out  :  01-Aug-2023 22:10:56   Run finished - elapsed time 9.93secs   
+00230     Out  :  01-Aug-2023 22:10:58   Run started   
+00231   Error  :  01-Aug-2023 22:11:02   Job completed with ERROR [Job] [Thread:7740] [ErrCode:-1900878]   VirtualStrainGauge2
+00232   Error  :  01-Aug-2023 22:11:02   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:7740] [ErrCode:-1901401]   VirtualStrainGauge2
+00233   Error  :  01-Aug-2023 22:11:02   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:7740] [ErrCode:-8]   VirtualStrainGauge2
+00234   Error  :  01-Aug-2023 22:11:02   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:7740] [ErrCode:18677870]   VirtualStrainGauge2
+00235   Error  :  01-Aug-2023 22:11:02   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:7740] [ErrCode:1900866]   VirtualStrainGauge2
+00236   Error  :  01-Aug-2023 22:11:02   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:7740] [ErrCode:-1915245]   VirtualStrainGauge2
+00237   Error  :  01-Aug-2023 22:11:02   In Job(Job) : Execution thread failed Job [DTJob::RunTerminating] [Thread:19916] [ErrCode:-1900856]   VirtualStrainGauge2
+00238   Error  :  01-Aug-2023 22:11:02   Failed in doing the multi-processes translation [DTFEResultsImport::TranslateInMultiProcesses] [Thread:19916] [ErrCode:-1901401]   VirtualStrainGauge2
+00239   Error  :  01-Aug-2023 22:11:02   SYS_ERROR_OPERATION   An operation failed in current state - No data defined [vis_StateDataElem] [Thread:19916] [ErrCode:-8]   VirtualStrainGauge2
+00240   Error  :  01-Aug-2023 22:11:02   Error occurred in VKI library - see full message for details [vis_StateDataElem] [Thread:19916] [ErrCode:18677870]   VirtualStrainGauge2
+00241   Error  :  01-Aug-2023 22:11:02   Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess) [DTJob::ProcessBatchOperation] [Thread:19916] [ErrCode:1900866]   VirtualStrainGauge2
+00242   Error  :  01-Aug-2023 22:11:02   In Job(Job) : Execution thread failed for translation [DTTranslationThread::RunTerminating] [Thread:19916] [ErrCode:-1915245]   VirtualStrainGauge2
+00243   Error  :  01-Aug-2023 22:11:02   In Job(Job) : Execution thread failed Job
+Failed in doing the multi-processes translation
+SYS_ERROR_OPERATION   An operation failed in current state - No data defined
+Error occurred in VKI library - see full message for details
+Batch operation failed: DoCommand(FEResultsImport,TranslateMultiProcess)
+In Job(Job) : Execution thread failed for translation   VirtualStrainGauge2
+00244     Out  :  01-Aug-2023 22:11:03   Run finished - elapsed time 5.82secs   
+00245     Out  :  01-Aug-2023 22:11:16   Run started   
+00246     Out  :  01-Aug-2023 22:11:16   Run finished - total time in process 0.4948secs   
+00247     Out  :  01-Aug-2023 22:21:25   Run started   
+00248     Out  :  01-Aug-2023 22:21:26   Run finished - total time in process 0.3323secs   
+00249     Out  :  01-Aug-2023 22:21:42   Run started   
+00250     Out  :  01-Aug-2023 22:21:47   Run finished - total time in process 4.63secs   
+00251     Out  :  01-Aug-2023 22:22:26   Run started   
+00252     Out  :  01-Aug-2023 22:22:26   Run finished - total time in process 0.5148secs   
+00253     Out  :  01-Aug-2023 22:23:06   Run started   
+00254     Out  :  01-Aug-2023 22:23:06   Run finished - total time in process 0.5078secs   
+00255     Out  :  01-Aug-2023 22:23:28   Run started   
+00256     Out  :  01-Aug-2023 22:23:29   Run finished - total time in process 0.4624secs   
+00257     Out  :  01-Aug-2023 22:23:43   Run started   
+00258     Out  :  01-Aug-2023 22:23:44   Run finished - total time in process 0.5093secs   
+00259     Out  :  01-Aug-2023 22:33:28   Run started   
+00260   Error  :  01-Aug-2023 22:33:29   No test to process   TSInput2
+***
+End
+***
+
+
+*****
+Begin
+*****
+
+Run failure report
+
+01-Aug-2023 23:28:01
+
+
+00000   Memory
+00001       Load 27%
+00002       32716MB total
+00003       23688MB available
+00004       39884MB total (page file)
+00005       27566MB available (page file)
+00006       134217727MB total (virtual)
+00007       134211697MB available (virtual)
+00008   
+00009   
+00010   System Info
+00011       Processors 16
+00012       Processor Architecture 9
+00013       Page Size 4096
+00014       Processor Type 8664
+00015       Allocation Granularity 65536
+00016       Processor Level 23
+00017       Processor Revision 28928
+00018   
+00019   
+00020   OS Version Info
+00021       Major Version 6
+00022       Minor Version 2
+00023       Build Number 9200
+00024       Platform ID 2
+00025   
+00026   
+00027   HW Profile Info
+00028       Dock Info 1
+00029   
+00030   
+00031   File System
+00032      No data available
+00033   
+00034   
+00035   Data Manager
+00036      29 entries - cache allocated 524288000 bytes
+00037   
+00038      Remapping enabled : TRUE
+00039      Verify records : Off
+00040      Verify streams : Off
+00041      Verify storages : Off
+00042      Verify files : Off
+00043   
+00044      Time series
+00045   
+00046      Meta data host
+00047   
+00048      Time series
+00049   
+00050      Time series
+00051   
+00052      Time series
+00053   
+00054      Array
+00055   
+00056      Array
+00057   
+00058      Array
+00059   
+00060      Array
 00061   
-00062   Application
-00063        Workspace : WS1
-00064        Delete data on the fly enabled (global) : TRUE
-00065        Delete data on the fly (this) : TRUE
-00066        Glyphs that can switch pipe states : 0
-00067        Glyphs that can request skip cancellation : 0
-00068        Pipe states backed up : FALSE
-00069        Repeating : FALSE
-00070        Run : 0
-00071        Run count : 1
-00072        Run error count : 0
-00073        Run complete : FALSE
-00074        Run skipped : FALSE
-00075        Stop on error during multiple run : FALSE
-00076        Ranks are stored : FALSE = 0
-00077        Resetting : FALSE
-00078        Stepping : FALSE
-00079        Running : FALSE
-00080        Paused : FALSE
-00081        Stopped : TRUE
-00082        Interactive : FALSE
-00083        Complete : FALSE
-00084        Reset : FALSE
-00085        Break : FALSE
-00086        Next File : FALSE
-00087        Running to glyph : FALSE
-00088        Preparing to run : FALSE
-00089        Stop pending : FALSE
-00090        Waiting for next single step : FALSE
-00091        Auto collate : FALSE
-00092        Collate OFF : TRUE
-00093        Collate GATHER : FALSE
-00094        Collate REVIEW : FALSE
-00095        Collate results available : FALSE
-00096        Logging : FALSE
-00097        Use shared scratch file : FALSE
-00098        Looping : FALSE
-00099        Has looped : FALSE
-00100        
-00101        
-00102        
-00103        
-00104             Auto collate : FALSE
-00105             Collate results available : NO
-00106             Collate data count : 0
-00107             Collate review count : 0
-00108             Logging : FALSE
-00109             Reviewing : FALSE
-00110             Backed up : FALSE
-00111             Data present : TRUE
-00112        
-00113             Auto collate : FALSE
-00114             Collate results available : NO
-00115             Collate data count : 0
-00116             Collate review count : 0
-00117             Logging : FALSE
-00118             Reviewing : FALSE
-00119             Backed up : FALSE
-00120             Data present : TRUE
-00121   
-00122   
-00123   
-00124   Global journal entries
-00125     Out  :  13-Jul-2023 00:02:16   Run started   
-00126     Out  :  13-Jul-2023 00:02:16   Run finished - total time in process 0.1382secs   
-00127     Out  :  13-Jul-2023 00:02:25   Run started   
-00128   Error  :  13-Jul-2023 00:02:25   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
-00129     Out  :  13-Jul-2023 00:02:33   Run finished - elapsed time 7.79secs   
-00130     Out  :  13-Jul-2023 00:03:11   Run started   
-00131   Error  :  13-Jul-2023 00:03:11   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
+00062      Meta data host
+00063   
+00064      Time series
+00065   
+00066      Meta data host
+00067   
+00068      Time series
+00069   
+00070      Time series
+00071   
+00072      Time series
+00073   
+00074      Array
+00075   
+00076      Array
+00077   
+00078      Array
+00079   
+00080      Array
+00081   
+00082      Meta data host
+00083   
+00084      Time series
+00085   
+00086      Meta data host
+00087   
+00088      Time series
+00089   
+00090      Time series
+00091   
+00092      Time series
+00093   
+00094      Time series
+00095   
+00096      Time series
+00097   
+00098      Array
+00099   
+00100      Array
+00101   
+00102   
+00103   
+00104   S3 File Manager
+00105    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[4787f10c-66c6-45b9-b086-222ba3537fcb].tmp, pFile=Ox410D4090, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00106    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[610ab870-f342-46bc-bcfa-b5b526b6b2a0].tmp, pFile=Ox27074160, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00107    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[cff7cff1-4766-4d46-8542-09c5d69a2274].tmp, pFile=Ox50218E50, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00108    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00109    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[0b6f7950-0a31-4e2e-be0c-98c2fdccc956].tmp, pFile=Ox410D36A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00110    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[abfe5cf7-eb08-467b-b9d3-8be8a4c0ccb3].tmp, pFile=Ox410D2CB0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00111    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[c31cea9d-f51c-4beb-8c3f-c33ef5ff96e3].tmp, pFile=Ox410D43E0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00112    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000005]_G[eb4ff65e-d0d8-4d14-9eb9-0b69acdc4a9f].tmp, pFile=Ox410D3D40, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00113    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000007]_G[e858ef87-7590-417c-92fb-efcd2b270ca1].tmp, pFile=Ox410D1230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00114    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000008]_G[8b96b6ba-52ca-4ed0-88c2-6a152e555f51].tmp, pFile=Ox50217080, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00115    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000009]_G[683dc219-d775-4db4-a9f7-5d8be88b05a5].tmp, pFile=Ox5021AC20, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00116    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000A]_G[36960cf4-4dea-45c4-90d7-614e36623255].tmp, pFile=Ox5021A8D0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00117    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000B]_G[336f3319-1638-40ed-865b-1f75828b7854].tmp, pFile=Ox502194F0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00118    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000C]_G[2d210aaf-530c-44bb-b845-848749d14218].tmp, pFile=Ox50219B90, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00119    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000D]_G[29319aee-02e5-4573-a22d-440aed666a52].tmp, pFile=Ox50218110, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00120    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000E]_G[78bb8b89-87dd-4664-b2bf-39eea6ea12fe].tmp, pFile=Ox50218460, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00121    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000F]_G[6b1ccd76-0d27-486f-a7a5-15dbb16c23fb].tmp, pFile=Ox50219EE0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00122    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000010]_G[aa7353de-3fb1-4d09-bbf2-41b0a0914b80].tmp, pFile=Ox502191A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00123    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000011]_G[957e6a81-9e9b-41d0-8070-66deab26a24a].tmp, pFile=Ox5021A230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00124    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000012]_G[51012c24-d841-4458-a092-8c95f1245ead].tmp, pFile=Ox50219840, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00125    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000013]_G[ad51ce8f-9a05-40e5-8c75-37272538be25].tmp, pFile=Ox50217720, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00126    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox50E8B810, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00127    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m10_rsp_s.nmd, pFile=Ox5115A940, thread=Ox4DCC, ptr=Ox00000000, readonly
+00128    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m28-R_rsp_s.nmd, pFile=Ox55751330, thread=Ox4DCC, ptr=Ox00000000, readonly
+00129   
+00130   
+00131   Application
+00132        Workspace : WS2
+00133        Delete data on the fly enabled (global) : TRUE
+00134        Delete data on the fly (this) : TRUE
+00135        Glyphs that can switch pipe states : 0
+00136        Glyphs that can request skip cancellation : 0
+00137        Pipe states backed up : FALSE
+00138        Repeating : FALSE
+00139        Run : 0
+00140        Run count : 1
+00141        Run error count : 0
+00142        Run complete : FALSE
+00143        Run skipped : FALSE
+00144        Stop on error during multiple run : FALSE
+00145        Ranks are stored : FALSE = 0
+00146        Resetting : FALSE
+00147        Stepping : FALSE
+00148        Running : FALSE
+00149        Paused : FALSE
+00150        Stopped : TRUE
+00151        Interactive : FALSE
+00152        Complete : FALSE
+00153        Reset : FALSE
+00154        Break : FALSE
+00155        Next File : FALSE
+00156        Running to glyph : FALSE
+00157        Preparing to run : FALSE
+00158        Stop pending : FALSE
+00159        Waiting for next single step : FALSE
+00160        Auto collate : FALSE
+00161        Collate OFF : TRUE
+00162        Collate GATHER : FALSE
+00163        Collate REVIEW : FALSE
+00164        Collate results available : FALSE
+00165        Logging : FALSE
+00166        Use shared scratch file : FALSE
+00167        Looping : FALSE
+00168        Has looped : FALSE
+00169        
+00170        
+00171        
+00172        
+00173        
+00174        
+00175        
+00176        
+00177        
+00178        
+00179        
+00180        
+00181             Auto collate : FALSE
+00182             Collate results available : NO
+00183             Collate data count : 0
+00184             Collate review count : 0
+00185             Logging : FALSE
+00186             Reviewing : FALSE
+00187             Backed up : FALSE
+00188             Data present : TRUE
+00189        
+00190             Auto collate : FALSE
+00191             Collate results available : NO
+00192             Collate data count : 0
+00193             Collate review count : 0
+00194             Logging : FALSE
+00195             Reviewing : FALSE
+00196             Backed up : FALSE
+00197             Data present : TRUE
+00198        
+00199             Auto collate : FALSE
+00200             Collate results available : NO
+00201             Collate data count : 0
+00202             Collate review count : 0
+00203             Logging : FALSE
+00204             Reviewing : FALSE
+00205             Backed up : FALSE
+00206             Data present : TRUE
+00207        
+00208             Auto collate : FALSE
+00209             Collate results available : NO
+00210             Collate data count : 0
+00211             Collate review count : 0
+00212             Logging : FALSE
+00213             Reviewing : FALSE
+00214             Backed up : FALSE
+00215             Data present : TRUE
+00216        
+00217             Auto collate : FALSE
+00218             Collate results available : NO
+00219             Collate data count : 0
+00220             Collate review count : 0
+00221             Logging : FALSE
+00222             Reviewing : FALSE
+00223             Backed up : FALSE
+00224             Data present : TRUE
+00225        
+00226             Auto collate : FALSE
+00227             Collate results available : NO
+00228             Collate data count : 0
+00229             Collate review count : 0
+00230             Logging : FALSE
+00231             Reviewing : FALSE
+00232             Backed up : FALSE
+00233             Data present : TRUE
+00234        
+00235             Auto collate : FALSE
+00236             Collate results available : NO
+00237             Collate data count : 0
+00238             Collate review count : 0
+00239             Logging : FALSE
+00240             Reviewing : FALSE
+00241             Backed up : FALSE
+00242             Data present : TRUE
+00243   
+00244   
+00245   
+00246   Global journal entries
+00247     Out  :  01-Aug-2023 23:13:34   Run started   
+00248     Out  :  01-Aug-2023 23:13:35   Run finished - total time in process 0.2119secs   
+00249     Out  :  01-Aug-2023 23:14:10   Run started   
+00250     Out  :  01-Aug-2023 23:14:15   Run finished - total time in process 4.49secs   
+00251     Out  :  01-Aug-2023 23:16:33   Run started   
+00252     Out  :  01-Aug-2023 23:16:34   Run finished - total time in process 0.4650secs   
+00253     Out  :  01-Aug-2023 23:26:18   Run started   
+00254     Out  :  01-Aug-2023 23:26:23   Run finished - total time in process 4.49secs   
+00255     Out  :  01-Aug-2023 23:27:13   Run started   
+00256     Out  :  01-Aug-2023 23:27:14   Run finished - total time in process 0.5800secs   
+00257     Out  :  01-Aug-2023 23:28:01   Run started   
+00258   Error  :  01-Aug-2023 23:28:01   No test to process   TSInput2
 ***
 End
 ***
@@ -293,17 +1510,17 @@ Begin
 
 Run failure report
 
-13-Jul-2023 00:06:04
+01-Aug-2023 23:28:21
 
 
 00000   Memory
-00001       Load 34%
+00001       Load 27%
 00002       32716MB total
-00003       21312MB available
+00003       23688MB available
 00004       39884MB total (page file)
-00005       22915MB available (page file)
+00005       27585MB available (page file)
 00006       134217727MB total (virtual)
-00007       134212337MB available (virtual)
+00007       134211697MB available (virtual)
 00008   
 00009   
 00010   System Info
@@ -332,7 +1549,7 @@ Run failure report
 00033   
 00034   
 00035   Data Manager
-00036      5 entries - cache allocated 524288000 bytes
+00036      30 entries - cache allocated 524288000 bytes
 00037   
 00038      Remapping enabled : TRUE
 00039      Verify records : Off
@@ -342,99 +1559,225 @@ Run failure report
 00043   
 00044      Time series
 00045   
-00046      Multi column
+00046      Meta data host
 00047   
-00048      Array
+00048      Time series
 00049   
-00050      Multi column channel
+00050      Time series
 00051   
-00052      Results table
+00052      Time series
 00053   
-00054   
+00054      Array
 00055   
-00056   S3 File Manager
-00057    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004F9C]_G[a5129b05-696c-4888-b6f8-77a8c7ed942f].tmp, pFile=Ox34BBAE20, thread=Ox4F9C, ptr=Ox00000000, readwrite
-00058    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000002]_G[0e08e37f-b9c3-4316-90b0-ad3e8bfbcd11].tmp, pFile=Ox4F4B2FA0, thread=Ox4F9C, ptr=Ox00000000, readwrite
-00059    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004F9C]_N[000003]_G[e032302b-16b0-471d-9986-0e1aab760d05].tmp, pFile=Ox4F4B1BC0, thread=Ox4F9C, ptr=Ox00000000, readwrite
-00060   
+00056      Array
+00057   
+00058      Array
+00059   
+00060      Array
 00061   
-00062   Application
-00063        Workspace : WS1
-00064        Delete data on the fly enabled (global) : TRUE
-00065        Delete data on the fly (this) : TRUE
-00066        Glyphs that can switch pipe states : 0
-00067        Glyphs that can request skip cancellation : 0
-00068        Pipe states backed up : FALSE
-00069        Repeating : FALSE
-00070        Run : 0
-00071        Run count : 1
-00072        Run error count : 0
-00073        Run complete : FALSE
-00074        Run skipped : FALSE
-00075        Stop on error during multiple run : FALSE
-00076        Ranks are stored : FALSE = 0
-00077        Resetting : FALSE
-00078        Stepping : FALSE
-00079        Running : FALSE
-00080        Paused : FALSE
-00081        Stopped : TRUE
-00082        Interactive : FALSE
-00083        Complete : FALSE
-00084        Reset : FALSE
-00085        Break : FALSE
-00086        Next File : FALSE
-00087        Running to glyph : FALSE
-00088        Preparing to run : FALSE
-00089        Stop pending : FALSE
-00090        Waiting for next single step : FALSE
-00091        Auto collate : FALSE
-00092        Collate OFF : TRUE
-00093        Collate GATHER : FALSE
-00094        Collate REVIEW : FALSE
-00095        Collate results available : FALSE
-00096        Logging : FALSE
-00097        Use shared scratch file : FALSE
-00098        Looping : FALSE
-00099        Has looped : FALSE
-00100        
-00101        
-00102        
-00103        
-00104             Auto collate : FALSE
-00105             Collate results available : NO
-00106             Collate data count : 0
-00107             Collate review count : 0
-00108             Logging : FALSE
-00109             Reviewing : FALSE
-00110             Backed up : FALSE
-00111             Data present : TRUE
-00112        
-00113             Auto collate : FALSE
-00114             Collate results available : NO
-00115             Collate data count : 0
-00116             Collate review count : 0
-00117             Logging : FALSE
-00118             Reviewing : FALSE
-00119             Backed up : FALSE
-00120             Data present : TRUE
-00121   
-00122   
-00123   
-00124   Global journal entries
-00125     Out  :  13-Jul-2023 00:02:16   Run started   
-00126     Out  :  13-Jul-2023 00:02:16   Run finished - total time in process 0.1382secs   
-00127     Out  :  13-Jul-2023 00:02:25   Run started   
-00128   Error  :  13-Jul-2023 00:02:25   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
-00129     Out  :  13-Jul-2023 00:02:33   Run finished - elapsed time 7.79secs   
-00130     Out  :  13-Jul-2023 00:03:11   Run started   
-00131   Error  :  13-Jul-2023 00:03:11   <type 'exceptions.TypeError'> 'NoneType' object has no attribute '__getitem__' [Function: glyphscript Line:56 | Function: output_csv_data Line:66]   Scripting1
-00132     Out  :  13-Jul-2023 00:03:47   Run finished - elapsed time 36.62secs   
-00133     Out  :  13-Jul-2023 00:03:50   Run started   
-00134     Out  :  13-Jul-2023 00:03:50   Run finished - total time in process 0.1511secs   
-00135     Out  :  13-Jul-2023 00:03:56   Run started   
-00136     Out  :  13-Jul-2023 00:03:56   Run finished - total time in process 0.1419secs   
-00137     Out  :  13-Jul-2023 00:06:03   Run started   
-00138   Error  :  13-Jul-2023 00:06:04   <type 'exceptions.IOError'> (13, 'Permission denied', 'D:\\207_447.csv') [Function: glyphscript Line:49 | Function: output_csv_data Line:63]   Scripting1
+00062      Meta data host
+00063   
+00064      Time series
+00065   
+00066      Meta data host
+00067   
+00068      Time series
+00069   
+00070      Time series
+00071   
+00072      Time series
+00073   
+00074      Array
+00075   
+00076      Array
+00077   
+00078      Array
+00079   
+00080      Array
+00081   
+00082      Meta data host
+00083   
+00084      Meta data host
+00085   
+00086      Time series
+00087   
+00088      Meta data host
+00089   
+00090      Time series
+00091   
+00092      Time series
+00093   
+00094      Time series
+00095   
+00096      Time series
+00097   
+00098      Time series
+00099   
+00100      Array
+00101   
+00102      Array
+00103   
+00104   
+00105   
+00106   S3 File Manager
+00107    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[4787f10c-66c6-45b9-b086-222ba3537fcb].tmp, pFile=Ox410D4090, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00108    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[610ab870-f342-46bc-bcfa-b5b526b6b2a0].tmp, pFile=Ox27074160, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00109    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[cff7cff1-4766-4d46-8542-09c5d69a2274].tmp, pFile=Ox50218E50, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00110    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00111    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[0b6f7950-0a31-4e2e-be0c-98c2fdccc956].tmp, pFile=Ox410D36A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00112    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[abfe5cf7-eb08-467b-b9d3-8be8a4c0ccb3].tmp, pFile=Ox410D2CB0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00113    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[c31cea9d-f51c-4beb-8c3f-c33ef5ff96e3].tmp, pFile=Ox410D43E0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00114    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000005]_G[eb4ff65e-d0d8-4d14-9eb9-0b69acdc4a9f].tmp, pFile=Ox410D3D40, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00115    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000007]_G[e858ef87-7590-417c-92fb-efcd2b270ca1].tmp, pFile=Ox410D1230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00116    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000008]_G[8b96b6ba-52ca-4ed0-88c2-6a152e555f51].tmp, pFile=Ox50217080, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00117    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000009]_G[683dc219-d775-4db4-a9f7-5d8be88b05a5].tmp, pFile=Ox5021AC20, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00118    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000A]_G[36960cf4-4dea-45c4-90d7-614e36623255].tmp, pFile=Ox5021A8D0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00119    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000B]_G[336f3319-1638-40ed-865b-1f75828b7854].tmp, pFile=Ox502194F0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00120    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000C]_G[2d210aaf-530c-44bb-b845-848749d14218].tmp, pFile=Ox50219B90, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00121    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000D]_G[fd65f838-7977-41a8-839f-83a2da2f77fb].tmp, pFile=Ox50217DC0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00122    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000E]_G[eb47afd2-32a3-4022-8fe5-c0c742567b2e].tmp, pFile=Ox50219840, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00123    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000F]_G[8186966b-ee06-4b11-ba2e-0db3376db53b].tmp, pFile=Ox50219EE0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00124    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000010]_G[c0122836-220f-43bd-9a9e-2ac611059afe].tmp, pFile=Ox50218460, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00125    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000011]_G[6def09ea-22d6-4c9d-98e9-1c9a7bcaffa0].tmp, pFile=Ox50218110, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00126    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000012]_G[dedc8992-f59a-4e79-80ed-b8e59de3450c].tmp, pFile=Ox5021A230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00127    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000013]_G[3b186e7d-0fdc-4697-9061-aacad2b93bd8].tmp, pFile=Ox50217720, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00128    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox50E8B810, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00129    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m10_rsp_s.nmd, pFile=Ox5115A940, thread=Ox4DCC, ptr=Ox00000000, readonly
+00130    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m28-R_rsp_s.nmd, pFile=Ox55751330, thread=Ox4DCC, ptr=Ox00000000, readonly
+00131    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m28_rsp_s.nmd, pFile=Ox557507B0, thread=Ox4DCC, ptr=Ox00000000, readonly
+00132   
+00133   
+00134   Application
+00135        Workspace : WS2
+00136        Delete data on the fly enabled (global) : TRUE
+00137        Delete data on the fly (this) : TRUE
+00138        Glyphs that can switch pipe states : 0
+00139        Glyphs that can request skip cancellation : 0
+00140        Pipe states backed up : FALSE
+00141        Repeating : FALSE
+00142        Run : 0
+00143        Run count : 1
+00144        Run error count : 0
+00145        Run complete : FALSE
+00146        Run skipped : FALSE
+00147        Stop on error during multiple run : FALSE
+00148        Ranks are stored : FALSE = 0
+00149        Resetting : FALSE
+00150        Stepping : FALSE
+00151        Running : FALSE
+00152        Paused : FALSE
+00153        Stopped : TRUE
+00154        Interactive : FALSE
+00155        Complete : FALSE
+00156        Reset : FALSE
+00157        Break : FALSE
+00158        Next File : FALSE
+00159        Running to glyph : FALSE
+00160        Preparing to run : FALSE
+00161        Stop pending : FALSE
+00162        Waiting for next single step : FALSE
+00163        Auto collate : FALSE
+00164        Collate OFF : TRUE
+00165        Collate GATHER : FALSE
+00166        Collate REVIEW : FALSE
+00167        Collate results available : FALSE
+00168        Logging : FALSE
+00169        Use shared scratch file : FALSE
+00170        Looping : FALSE
+00171        Has looped : FALSE
+00172        
+00173        
+00174        
+00175        
+00176        
+00177        
+00178        
+00179        
+00180        
+00181        
+00182        
+00183        
+00184             Auto collate : FALSE
+00185             Collate results available : NO
+00186             Collate data count : 0
+00187             Collate review count : 0
+00188             Logging : FALSE
+00189             Reviewing : FALSE
+00190             Backed up : FALSE
+00191             Data present : TRUE
+00192        
+00193             Auto collate : FALSE
+00194             Collate results available : NO
+00195             Collate data count : 0
+00196             Collate review count : 0
+00197             Logging : FALSE
+00198             Reviewing : FALSE
+00199             Backed up : FALSE
+00200             Data present : TRUE
+00201        
+00202             Auto collate : FALSE
+00203             Collate results available : NO
+00204             Collate data count : 0
+00205             Collate review count : 0
+00206             Logging : FALSE
+00207             Reviewing : FALSE
+00208             Backed up : FALSE
+00209             Data present : TRUE
+00210        
+00211             Auto collate : FALSE
+00212             Collate results available : NO
+00213             Collate data count : 0
+00214             Collate review count : 0
+00215             Logging : FALSE
+00216             Reviewing : FALSE
+00217             Backed up : FALSE
+00218             Data present : TRUE
+00219        
+00220             Auto collate : FALSE
+00221             Collate results available : NO
+00222             Collate data count : 0
+00223             Collate review count : 0
+00224             Logging : FALSE
+00225             Reviewing : FALSE
+00226             Backed up : FALSE
+00227             Data present : TRUE
+00228        
+00229             Auto collate : FALSE
+00230             Collate results available : NO
+00231             Collate data count : 0
+00232             Collate review count : 0
+00233             Logging : FALSE
+00234             Reviewing : FALSE
+00235             Backed up : FALSE
+00236             Data present : TRUE
+00237        
+00238             Auto collate : FALSE
+00239             Collate results available : NO
+00240             Collate data count : 0
+00241             Collate review count : 0
+00242             Logging : FALSE
+00243             Reviewing : FALSE
+00244             Backed up : FALSE
+00245             Data present : TRUE
+00246   
+00247   
+00248   
+00249   Global journal entries
+00250     Out  :  01-Aug-2023 23:13:34   Run started   
+00251     Out  :  01-Aug-2023 23:13:35   Run finished - total time in process 0.2119secs   
+00252     Out  :  01-Aug-2023 23:14:10   Run started   
+00253     Out  :  01-Aug-2023 23:14:15   Run finished - total time in process 4.49secs   
+00254     Out  :  01-Aug-2023 23:16:33   Run started   
+00255     Out  :  01-Aug-2023 23:16:34   Run finished - total time in process 0.4650secs   
+00256     Out  :  01-Aug-2023 23:26:18   Run started   
+00257     Out  :  01-Aug-2023 23:26:23   Run finished - total time in process 4.49secs   
+00258     Out  :  01-Aug-2023 23:27:13   Run started   
+00259     Out  :  01-Aug-2023 23:27:14   Run finished - total time in process 0.5800secs   
+00260     Out  :  01-Aug-2023 23:28:01   Run started   
+00261   Error  :  01-Aug-2023 23:28:01   No test to process   TSInput2
+00262     Out  :  01-Aug-2023 23:28:02   Run finished - elapsed time 1.27secs   
+00263     Out  :  01-Aug-2023 23:28:21   Run started   
+00264   Error  :  01-Aug-2023 23:28:21   No test to process   TSInput2
 ***
 End
 ***
@@ -446,17 +1789,17 @@ Begin
 
 Run failure report
 
-13-Jul-2023 22:26:54
+01-Aug-2023 23:28:49
 
 
 00000   Memory
-00001       Load 28%
+00001       Load 27%
 00002       32716MB total
-00003       23284MB available
+00003       23683MB available
 00004       39884MB total (page file)
-00005       26889MB available (page file)
+00005       27563MB available (page file)
 00006       134217727MB total (virtual)
-00007       134212316MB available (virtual)
+00007       134211697MB available (virtual)
 00008   
 00009   
 00010   System Info
@@ -485,7 +1828,7 @@ Run failure report
 00033   
 00034   
 00035   Data Manager
-00036      7 entries - cache allocated 524288000 bytes
+00036      29 entries - cache allocated 524288000 bytes
 00037   
 00038      Remapping enabled : TRUE
 00039      Verify records : Off
@@ -495,153 +1838,227 @@ Run failure report
 00043   
 00044      Time series
 00045   
-00046      Array
+00046      Meta data host
 00047   
-00048      Multi column
+00048      Time series
 00049   
 00050      Time series
 00051   
-00052      Array
+00052      Time series
 00053   
-00054      Multi column channel
+00054      Array
 00055   
-00056      Results table
+00056      Array
 00057   
-00058   
+00058      Array
 00059   
-00060   S3 File Manager
-00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
-00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
-00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[49ccbf6e-910a-4878-b4ed-7fbe56bc3d1b].tmp, pFile=OxF8F27E40, thread=Ox06E4, ptr=Ox00000000, readwrite
-00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[6da66c26-ef69-4ea7-a7df-58aa0ca31dc3].tmp, pFile=OxF8F27100, thread=Ox06E4, ptr=Ox00000000, readwrite
-00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[0534bd9a-29e5-4c08-abac-33d92fd34644].tmp, pFile=OxF8F26A60, thread=Ox06E4, ptr=Ox00000000, readwrite
-00066   
+00060      Array
+00061   
+00062      Meta data host
+00063   
+00064      Time series
+00065   
+00066      Meta data host
 00067   
-00068   Application
-00069        Workspace : WS1
-00070        Delete data on the fly enabled (global) : TRUE
-00071        Delete data on the fly (this) : TRUE
-00072        Glyphs that can switch pipe states : 0
-00073        Glyphs that can request skip cancellation : 1
-00074        Pipe states backed up : FALSE
-00075        Repeating : FALSE
-00076        Run : 0
-00077        Run count : 1
-00078        Run error count : 0
-00079        Run complete : FALSE
-00080        Run skipped : FALSE
-00081        Stop on error during multiple run : FALSE
-00082        Ranks are stored : FALSE = 0
-00083        Resetting : FALSE
-00084        Stepping : FALSE
-00085        Running : FALSE
-00086        Paused : FALSE
-00087        Stopped : TRUE
-00088        Interactive : FALSE
-00089        Complete : FALSE
-00090        Reset : FALSE
-00091        Break : FALSE
-00092        Next File : FALSE
-00093        Running to glyph : FALSE
-00094        Preparing to run : FALSE
-00095        Stop pending : FALSE
-00096        Waiting for next single step : FALSE
-00097        Auto collate : FALSE
-00098        Collate OFF : TRUE
-00099        Collate GATHER : FALSE
-00100        Collate REVIEW : FALSE
-00101        Collate results available : FALSE
-00102        Logging : FALSE
-00103        Use shared scratch file : FALSE
-00104        Looping : FALSE
-00105        Has looped : FALSE
-00106        
-00107             Superglyph : TS_Cut_file_and_pdi, depth 1
-00108             Delete data on the fly enabled (global) : TRUE
-00109             Delete data on the fly (this) : TRUE
-00110             Glyphs that can switch pipe states : 0
-00111             Glyphs that can request skip cancellation : 1
-00112             Pipe states backed up : FALSE
-00113             Repeating : FALSE
-00114             Run : 0
-00115             Run count : 1
-00116             Run error count : 0
-00117             Run complete : FALSE
-00118             Run skipped : FALSE
-00119             Stop on error during multiple run : FALSE
-00120             Ranks are stored : FALSE = 0
-00121             Resetting : FALSE
-00122             Stepping : FALSE
-00123             Running : FALSE
-00124             Paused : FALSE
-00125             Stopped : TRUE
-00126             Interactive : FALSE
-00127             Complete : FALSE
-00128             Reset : TRUE
-00129             Break : FALSE
-00130             Next File : FALSE
-00131             Running to glyph : FALSE
-00132             Preparing to run : FALSE
-00133             Stop pending : FALSE
-00134             Waiting for next single step : FALSE
-00135             Auto collate : FALSE
-00136             Collate OFF : TRUE
-00137             Collate GATHER : FALSE
-00138             Collate REVIEW : FALSE
-00139             Collate results available : FALSE
-00140             Logging : FALSE
-00141             Use shared scratch file : FALSE
-00142             Looping : FALSE
-00143             Has looped : FALSE
-00144             
-00145             
-00146             
-00147             
-00148             
-00149                  Auto collate : FALSE
-00150                  Collate results available : NO
-00151                  Collate data count : 0
-00152                  Collate review count : 0
-00153                  Logging : FALSE
-00154                  Reviewing : FALSE
-00155                  Backed up : FALSE
-00156                  Data present : TRUE
-00157             
-00158                  Auto collate : FALSE
-00159                  Collate results available : NO
-00160                  Collate data count : 0
-00161                  Collate review count : 0
-00162                  Logging : FALSE
-00163                  Reviewing : FALSE
-00164                  Backed up : FALSE
-00165                  Data present : TRUE
-00166        
-00167        
-00168             Auto collate : FALSE
-00169             Collate results available : NO
-00170             Collate data count : 0
-00171             Collate review count : 0
-00172             Logging : FALSE
-00173             Reviewing : FALSE
-00174             Backed up : FALSE
-00175             Data present : TRUE
-00176   
-00177   
-00178   
-00179   Global journal entries
-00180     Out  :  13-Jul-2023 22:23:30   Run started   
-00181     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
-00182     Out  :  13-Jul-2023 22:23:51   Run started   
-00183     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
-00184     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
-00185     Out  :  13-Jul-2023 22:24:33   Run started   
-00186     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
-00187     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
-00188     Out  :  13-Jul-2023 22:24:34   Run started   
-00189     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
-00190     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
-00191     Out  :  13-Jul-2023 22:26:54   Run started   
-00192   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00068      Time series
+00069   
+00070      Time series
+00071   
+00072      Time series
+00073   
+00074      Array
+00075   
+00076      Array
+00077   
+00078      Array
+00079   
+00080      Array
+00081   
+00082      Meta data host
+00083   
+00084      Time series
+00085   
+00086      Meta data host
+00087   
+00088      Time series
+00089   
+00090      Time series
+00091   
+00092      Time series
+00093   
+00094      Time series
+00095   
+00096      Time series
+00097   
+00098      Array
+00099   
+00100      Array
+00101   
+00102   
+00103   
+00104   S3 File Manager
+00105    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[4787f10c-66c6-45b9-b086-222ba3537fcb].tmp, pFile=Ox410D4090, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00106    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[610ab870-f342-46bc-bcfa-b5b526b6b2a0].tmp, pFile=Ox27074160, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00107    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[cff7cff1-4766-4d46-8542-09c5d69a2274].tmp, pFile=Ox50218E50, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00108    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00109    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[0b6f7950-0a31-4e2e-be0c-98c2fdccc956].tmp, pFile=Ox410D36A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00110    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[abfe5cf7-eb08-467b-b9d3-8be8a4c0ccb3].tmp, pFile=Ox410D2CB0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00111    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[c31cea9d-f51c-4beb-8c3f-c33ef5ff96e3].tmp, pFile=Ox410D43E0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00112    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000005]_G[eb4ff65e-d0d8-4d14-9eb9-0b69acdc4a9f].tmp, pFile=Ox410D3D40, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00113    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000007]_G[e858ef87-7590-417c-92fb-efcd2b270ca1].tmp, pFile=Ox410D1230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00114    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000008]_G[8b96b6ba-52ca-4ed0-88c2-6a152e555f51].tmp, pFile=Ox50217080, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00115    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000009]_G[683dc219-d775-4db4-a9f7-5d8be88b05a5].tmp, pFile=Ox5021AC20, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00116    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000A]_G[36960cf4-4dea-45c4-90d7-614e36623255].tmp, pFile=Ox5021A8D0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00117    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000B]_G[336f3319-1638-40ed-865b-1f75828b7854].tmp, pFile=Ox502194F0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00118    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000C]_G[2d210aaf-530c-44bb-b845-848749d14218].tmp, pFile=Ox50219B90, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00119    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000D]_G[537f23ae-158b-4d54-ac91-2954dda11a82].tmp, pFile=Ox50219EE0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00120    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000E]_G[b414debe-c380-4494-9a13-843ee2a8b2bb].tmp, pFile=Ox50217720, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00121    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000F]_G[f3e12341-2349-4f5a-832c-4894d22da543].tmp, pFile=Ox50218460, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00122    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000010]_G[0f0164fd-87a9-4832-bb98-a85d64403e71].tmp, pFile=Ox50219840, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00123    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000011]_G[d1bd199a-e997-4e66-ae15-1f730a8efcbc].tmp, pFile=Ox50218110, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00124    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000012]_G[5da4dfd4-fbb7-44e9-9296-0e37ec715964].tmp, pFile=Ox5021A230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00125    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000013]_G[eb55575f-4694-41b3-bb93-f384d18c672a].tmp, pFile=Ox502191A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00126    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox50E8B810, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00127    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m10_rsp_s.nmd, pFile=Ox5115A940, thread=Ox4DCC, ptr=Ox00000000, readonly
+00128    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m28-R_rsp_s.nmd, pFile=Ox55751330, thread=Ox4DCC, ptr=Ox00000000, readonly
+00129   
+00130   
+00131   Application
+00132        Workspace : WS2
+00133        Delete data on the fly enabled (global) : TRUE
+00134        Delete data on the fly (this) : TRUE
+00135        Glyphs that can switch pipe states : 0
+00136        Glyphs that can request skip cancellation : 0
+00137        Pipe states backed up : FALSE
+00138        Repeating : FALSE
+00139        Run : 0
+00140        Run count : 1
+00141        Run error count : 0
+00142        Run complete : FALSE
+00143        Run skipped : FALSE
+00144        Stop on error during multiple run : FALSE
+00145        Ranks are stored : FALSE = 0
+00146        Resetting : FALSE
+00147        Stepping : FALSE
+00148        Running : FALSE
+00149        Paused : FALSE
+00150        Stopped : TRUE
+00151        Interactive : FALSE
+00152        Complete : FALSE
+00153        Reset : FALSE
+00154        Break : FALSE
+00155        Next File : FALSE
+00156        Running to glyph : FALSE
+00157        Preparing to run : FALSE
+00158        Stop pending : FALSE
+00159        Waiting for next single step : FALSE
+00160        Auto collate : FALSE
+00161        Collate OFF : TRUE
+00162        Collate GATHER : FALSE
+00163        Collate REVIEW : FALSE
+00164        Collate results available : FALSE
+00165        Logging : FALSE
+00166        Use shared scratch file : FALSE
+00167        Looping : FALSE
+00168        Has looped : FALSE
+00169        
+00170        
+00171        
+00172        
+00173        
+00174        
+00175        
+00176        
+00177        
+00178        
+00179        
+00180        
+00181             Auto collate : FALSE
+00182             Collate results available : NO
+00183             Collate data count : 0
+00184             Collate review count : 0
+00185             Logging : FALSE
+00186             Reviewing : FALSE
+00187             Backed up : FALSE
+00188             Data present : TRUE
+00189        
+00190             Auto collate : FALSE
+00191             Collate results available : NO
+00192             Collate data count : 0
+00193             Collate review count : 0
+00194             Logging : FALSE
+00195             Reviewing : FALSE
+00196             Backed up : FALSE
+00197             Data present : TRUE
+00198        
+00199             Auto collate : FALSE
+00200             Collate results available : NO
+00201             Collate data count : 0
+00202             Collate review count : 0
+00203             Logging : FALSE
+00204             Reviewing : FALSE
+00205             Backed up : FALSE
+00206             Data present : TRUE
+00207        
+00208             Auto collate : FALSE
+00209             Collate results available : NO
+00210             Collate data count : 0
+00211             Collate review count : 0
+00212             Logging : FALSE
+00213             Reviewing : FALSE
+00214             Backed up : FALSE
+00215             Data present : TRUE
+00216        
+00217             Auto collate : FALSE
+00218             Collate results available : NO
+00219             Collate data count : 0
+00220             Collate review count : 0
+00221             Logging : FALSE
+00222             Reviewing : FALSE
+00223             Backed up : FALSE
+00224             Data present : TRUE
+00225        
+00226             Auto collate : FALSE
+00227             Collate results available : NO
+00228             Collate data count : 0
+00229             Collate review count : 0
+00230             Logging : FALSE
+00231             Reviewing : FALSE
+00232             Backed up : FALSE
+00233             Data present : TRUE
+00234        
+00235             Auto collate : FALSE
+00236             Collate results available : NO
+00237             Collate data count : 0
+00238             Collate review count : 0
+00239             Logging : FALSE
+00240             Reviewing : FALSE
+00241             Backed up : FALSE
+00242             Data present : TRUE
+00243   
+00244   
+00245   
+00246   Global journal entries
+00247     Out  :  01-Aug-2023 23:13:34   Run started   
+00248     Out  :  01-Aug-2023 23:13:35   Run finished - total time in process 0.2119secs   
+00249     Out  :  01-Aug-2023 23:14:10   Run started   
+00250     Out  :  01-Aug-2023 23:14:15   Run finished - total time in process 4.49secs   
+00251     Out  :  01-Aug-2023 23:16:33   Run started   
+00252     Out  :  01-Aug-2023 23:16:34   Run finished - total time in process 0.4650secs   
+00253     Out  :  01-Aug-2023 23:26:18   Run started   
+00254     Out  :  01-Aug-2023 23:26:23   Run finished - total time in process 4.49secs   
+00255     Out  :  01-Aug-2023 23:27:13   Run started   
+00256     Out  :  01-Aug-2023 23:27:14   Run finished - total time in process 0.5800secs   
+00257     Out  :  01-Aug-2023 23:28:01   Run started   
+00258   Error  :  01-Aug-2023 23:28:01   No test to process   TSInput2
+00259     Out  :  01-Aug-2023 23:28:02   Run finished - elapsed time 1.27secs   
+00260     Out  :  01-Aug-2023 23:28:21   Run started   
+00261   Error  :  01-Aug-2023 23:28:21   No test to process   TSInput2
+00262     Out  :  01-Aug-2023 23:28:23   Run finished - elapsed time 1.80secs   
+00263     Out  :  01-Aug-2023 23:28:26   Run started   
+00264     Out  :  01-Aug-2023 23:28:26   Run finished - total time in process 0.5955secs   
+00265     Out  :  01-Aug-2023 23:28:49   Run started   
+00266   Error  :  01-Aug-2023 23:28:49   No test to process   TSInput2
 ***
 End
 ***
@@ -653,17 +2070,17 @@ Begin
 
 Run failure report
 
-13-Jul-2023 22:27:30
+01-Aug-2023 23:30:09
 
 
 00000   Memory
-00001       Load 28%
+00001       Load 27%
 00002       32716MB total
-00003       23379MB available
+00003       23690MB available
 00004       39884MB total (page file)
-00005       27035MB available (page file)
+00005       27584MB available (page file)
 00006       134217727MB total (virtual)
-00007       134212315MB available (virtual)
+00007       134211681MB available (virtual)
 00008   
 00009   
 00010   System Info
@@ -692,7 +2109,7 @@ Run failure report
 00033   
 00034   
 00035   Data Manager
-00036      7 entries - cache allocated 524288000 bytes
+00036      29 entries - cache allocated 524288000 bytes
 00037   
 00038      Remapping enabled : TRUE
 00039      Verify records : Off
@@ -702,156 +2119,198 @@ Run failure report
 00043   
 00044      Time series
 00045   
-00046      Array
+00046      Meta data host
 00047   
-00048      Multi column
+00048      Time series
 00049   
 00050      Time series
 00051   
-00052      Array
+00052      Time series
 00053   
-00054      Multi column channel
+00054      Array
 00055   
-00056      Results table
+00056      Array
 00057   
-00058   
+00058      Array
 00059   
-00060   S3 File Manager
-00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
-00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
-00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[2ef620e4-4fa1-42a7-88a1-3913cd090cd4].tmp, pFile=OxF8F26A60, thread=Ox06E4, ptr=Ox00000000, readwrite
-00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[6c3629c0-0c7f-45eb-89a5-0d7918aa43cf].tmp, pFile=OxF8F26DB0, thread=Ox06E4, ptr=Ox00000000, readwrite
-00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[262e1a3a-ab6a-4ed2-8cfc-9db7282f45b6].tmp, pFile=OxF8F26710, thread=Ox06E4, ptr=Ox00000000, readwrite
-00066   
+00060      Array
+00061   
+00062      Meta data host
+00063   
+00064      Meta data host
+00065   
+00066      Time series
 00067   
-00068   Application
-00069        Workspace : WS1
-00070        Delete data on the fly enabled (global) : TRUE
-00071        Delete data on the fly (this) : TRUE
-00072        Glyphs that can switch pipe states : 0
-00073        Glyphs that can request skip cancellation : 1
-00074        Pipe states backed up : FALSE
-00075        Repeating : FALSE
-00076        Run : 0
-00077        Run count : 1
-00078        Run error count : 0
-00079        Run complete : FALSE
-00080        Run skipped : FALSE
-00081        Stop on error during multiple run : FALSE
-00082        Ranks are stored : FALSE = 0
-00083        Resetting : FALSE
-00084        Stepping : FALSE
-00085        Running : FALSE
-00086        Paused : FALSE
-00087        Stopped : TRUE
-00088        Interactive : FALSE
-00089        Complete : FALSE
-00090        Reset : FALSE
-00091        Break : FALSE
-00092        Next File : FALSE
-00093        Running to glyph : FALSE
-00094        Preparing to run : FALSE
-00095        Stop pending : FALSE
-00096        Waiting for next single step : FALSE
-00097        Auto collate : FALSE
-00098        Collate OFF : TRUE
-00099        Collate GATHER : FALSE
-00100        Collate REVIEW : FALSE
-00101        Collate results available : FALSE
-00102        Logging : FALSE
-00103        Use shared scratch file : FALSE
-00104        Looping : FALSE
-00105        Has looped : FALSE
-00106        
-00107             Superglyph : TS_Cut_file_and_pdi, depth 1
-00108             Delete data on the fly enabled (global) : TRUE
-00109             Delete data on the fly (this) : TRUE
-00110             Glyphs that can switch pipe states : 0
-00111             Glyphs that can request skip cancellation : 1
-00112             Pipe states backed up : FALSE
-00113             Repeating : FALSE
-00114             Run : 0
-00115             Run count : 1
-00116             Run error count : 0
-00117             Run complete : FALSE
-00118             Run skipped : FALSE
-00119             Stop on error during multiple run : FALSE
-00120             Ranks are stored : FALSE = 0
-00121             Resetting : FALSE
-00122             Stepping : FALSE
-00123             Running : FALSE
-00124             Paused : FALSE
-00125             Stopped : TRUE
-00126             Interactive : FALSE
-00127             Complete : FALSE
-00128             Reset : TRUE
-00129             Break : FALSE
-00130             Next File : FALSE
-00131             Running to glyph : FALSE
-00132             Preparing to run : FALSE
-00133             Stop pending : FALSE
-00134             Waiting for next single step : FALSE
-00135             Auto collate : FALSE
-00136             Collate OFF : TRUE
-00137             Collate GATHER : FALSE
-00138             Collate REVIEW : FALSE
-00139             Collate results available : FALSE
-00140             Logging : FALSE
-00141             Use shared scratch file : FALSE
-00142             Looping : FALSE
-00143             Has looped : FALSE
-00144             
-00145             
-00146             
-00147             
-00148             
-00149                  Auto collate : FALSE
-00150                  Collate results available : NO
-00151                  Collate data count : 0
-00152                  Collate review count : 0
-00153                  Logging : FALSE
-00154                  Reviewing : FALSE
-00155                  Backed up : FALSE
-00156                  Data present : TRUE
-00157             
-00158                  Auto collate : FALSE
-00159                  Collate results available : NO
-00160                  Collate data count : 0
-00161                  Collate review count : 0
-00162                  Logging : FALSE
-00163                  Reviewing : FALSE
-00164                  Backed up : FALSE
-00165                  Data present : TRUE
-00166        
-00167        
-00168             Auto collate : FALSE
-00169             Collate results available : NO
-00170             Collate data count : 0
-00171             Collate review count : 0
-00172             Logging : FALSE
-00173             Reviewing : FALSE
-00174             Backed up : FALSE
-00175             Data present : TRUE
-00176   
-00177   
-00178   
-00179   Global journal entries
-00180     Out  :  13-Jul-2023 22:23:30   Run started   
-00181     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
-00182     Out  :  13-Jul-2023 22:23:51   Run started   
-00183     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
-00184     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
-00185     Out  :  13-Jul-2023 22:24:33   Run started   
-00186     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
-00187     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
-00188     Out  :  13-Jul-2023 22:24:34   Run started   
-00189     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
-00190     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
-00191     Out  :  13-Jul-2023 22:26:54   Run started   
-00192   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00193     Out  :  13-Jul-2023 22:26:59   Run finished - elapsed time 4.27secs   
-00194     Out  :  13-Jul-2023 22:27:30   Run started   
-00195   Error  :  13-Jul-2023 22:27:30   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00068      Meta data host
+00069   
+00070      Time series
+00071   
+00072      Time series
+00073   
+00074      Time series
+00075   
+00076      Time series
+00077   
+00078      Time series
+00079   
+00080      Array
+00081   
+00082      Array
+00083   
+00084      Array
+00085   
+00086      Array
+00087   
+00088      Array
+00089   
+00090      Array
+00091   
+00092      Time series
+00093   
+00094      Meta data host
+00095   
+00096      Time series
+00097   
+00098      Time series
+00099   
+00100      Time series
+00101   
+00102   
+00103   
+00104   S3 File Manager
+00105    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[4787f10c-66c6-45b9-b086-222ba3537fcb].tmp, pFile=Ox410D4090, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00106    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[610ab870-f342-46bc-bcfa-b5b526b6b2a0].tmp, pFile=Ox27074160, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00107    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[cff7cff1-4766-4d46-8542-09c5d69a2274].tmp, pFile=Ox50218E50, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00108    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00109    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[0b6f7950-0a31-4e2e-be0c-98c2fdccc956].tmp, pFile=Ox410D36A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00110    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[abfe5cf7-eb08-467b-b9d3-8be8a4c0ccb3].tmp, pFile=Ox410D2CB0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00111    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[c31cea9d-f51c-4beb-8c3f-c33ef5ff96e3].tmp, pFile=Ox410D43E0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00112    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000005]_G[eb4ff65e-d0d8-4d14-9eb9-0b69acdc4a9f].tmp, pFile=Ox410D3D40, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00113    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000007]_G[e858ef87-7590-417c-92fb-efcd2b270ca1].tmp, pFile=Ox410D1230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00114    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000008]_G[50ff868c-3b76-4f6c-98d9-c5f14b99233a].tmp, pFile=Ox502194F0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00115    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000009]_G[07dbb4d8-cf3e-422e-ac5e-7dfe7838a7eb].tmp, pFile=Ox5021AC20, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00116    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000A]_G[524fbb0a-79e2-462b-921d-1b46d3666c6d].tmp, pFile=Ox5021A580, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00117    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000B]_G[a54220fb-5afb-4c2b-a0c1-c7026b5ffe9e].tmp, pFile=Ox5021A8D0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00118    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000C]_G[98fc3a05-ebae-432f-8691-22504b242a44].tmp, pFile=Ox50218B00, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00119    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000D]_G[7bbcf561-3b2c-4e84-8a8c-13511be956df].tmp, pFile=Ox502191A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00120    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000E]_G[6961d8d3-77f7-4464-a4e2-be95bef8bc81].tmp, pFile=Ox50219EE0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00121    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000F]_G[509e9aaf-fdfe-4e91-bb3f-fa27ee3516f2].tmp, pFile=Ox50217720, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00122    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000010]_G[c6be441a-ae9b-4183-8ffc-25aaaf3b3363].tmp, pFile=Ox50218110, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00123    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000011]_G[860409b8-342f-4b42-b786-4118e35522be].tmp, pFile=Ox50217DC0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00124    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000012]_G[49582839-7dae-470d-ae45-cdc389ec6989].tmp, pFile=Ox50218460, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00125    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000013]_G[b56a229e-f612-4270-9ee8-6200a9f935fd].tmp, pFile=Ox50219840, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00126    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox566687C0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00127    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m28-R_rsp_s.nmd, pFile=Ox55751330, thread=Ox4DCC, ptr=Ox00000000, readonly
+00128    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m28_rsp_s.nmd, pFile=Ox557507B0, thread=Ox4DCC, ptr=Ox00000000, readonly
+00129   
+00130   
+00131   Application
+00132        Workspace : TEST1-M10
+00133        Delete data on the fly enabled (global) : TRUE
+00134        Delete data on the fly (this) : TRUE
+00135        Glyphs that can switch pipe states : 0
+00136        Glyphs that can request skip cancellation : 0
+00137        Pipe states backed up : FALSE
+00138        Repeating : FALSE
+00139        Run : 0
+00140        Run count : 1
+00141        Run error count : 0
+00142        Run complete : FALSE
+00143        Run skipped : FALSE
+00144        Stop on error during multiple run : FALSE
+00145        Ranks are stored : FALSE = 0
+00146        Resetting : FALSE
+00147        Stepping : FALSE
+00148        Running : FALSE
+00149        Paused : FALSE
+00150        Stopped : TRUE
+00151        Interactive : FALSE
+00152        Complete : FALSE
+00153        Reset : FALSE
+00154        Break : FALSE
+00155        Next File : FALSE
+00156        Running to glyph : FALSE
+00157        Preparing to run : FALSE
+00158        Stop pending : FALSE
+00159        Waiting for next single step : FALSE
+00160        Auto collate : FALSE
+00161        Collate OFF : TRUE
+00162        Collate GATHER : FALSE
+00163        Collate REVIEW : FALSE
+00164        Collate results available : FALSE
+00165        Logging : FALSE
+00166        Use shared scratch file : FALSE
+00167        Looping : FALSE
+00168        Has looped : FALSE
+00169        
+00170        
+00171        
+00172        
+00173        
+00174        
+00175        
+00176        
+00177        
+00178             Auto collate : FALSE
+00179             Collate results available : NO
+00180             Collate data count : 0
+00181             Collate review count : 0
+00182             Logging : FALSE
+00183             Reviewing : FALSE
+00184             Backed up : FALSE
+00185             Data present : TRUE
+00186        
+00187             Auto collate : FALSE
+00188             Collate results available : NO
+00189             Collate data count : 0
+00190             Collate review count : 0
+00191             Logging : FALSE
+00192             Reviewing : FALSE
+00193             Backed up : FALSE
+00194             Data present : TRUE
+00195        
+00196             Auto collate : FALSE
+00197             Collate results available : NO
+00198             Collate data count : 0
+00199             Collate review count : 0
+00200             Logging : FALSE
+00201             Reviewing : FALSE
+00202             Backed up : FALSE
+00203             Data present : TRUE
+00204        
+00205             Auto collate : FALSE
+00206             Collate results available : NO
+00207             Collate data count : 0
+00208             Collate review count : 0
+00209             Logging : FALSE
+00210             Reviewing : FALSE
+00211             Backed up : FALSE
+00212             Data present : TRUE
+00213        
+00214             Auto collate : FALSE
+00215             Collate results available : NO
+00216             Collate data count : 0
+00217             Collate review count : 0
+00218             Logging : FALSE
+00219             Reviewing : FALSE
+00220             Backed up : FALSE
+00221             Data present : TRUE
+00222   
+00223   
+00224   
+00225   Global journal entries
+00226     Out  :  01-Aug-2023 22:56:51   Run started   
+00227     Out  :  01-Aug-2023 22:56:51   Run finished - total time in process 0.3970secs   
+00228     Out  :  01-Aug-2023 22:57:13   Run started   
+00229     Out  :  01-Aug-2023 22:57:17   Run finished - total time in process 4.46secs   
+00230     Out  :  01-Aug-2023 22:57:46   Run started   
+00231     Out  :  01-Aug-2023 22:57:46   Run finished - total time in process 0.4306secs   
+00232     Out  :  01-Aug-2023 23:02:20   Run started   
+00233     Out  :  01-Aug-2023 23:02:20   Run finished - total time in process 0.4374secs   
+00234     Out  :  01-Aug-2023 23:08:54   Run started   
+00235     Out  :  01-Aug-2023 23:08:55   Run finished - total time in process 0.5197secs   
+00236     Out  :  01-Aug-2023 23:30:09   Run started   
+00237   Error  :  01-Aug-2023 23:30:09   No test to process   TSInput1
 ***
 End
 ***
@@ -863,17 +2322,17 @@ Begin
 
 Run failure report
 
-13-Jul-2023 22:38:40
+01-Aug-2023 23:30:42
 
 
 00000   Memory
-00001       Load 31%
+00001       Load 27%
 00002       32716MB total
-00003       22552MB available
+00003       23686MB available
 00004       39884MB total (page file)
-00005       26077MB available (page file)
+00005       27571MB available (page file)
 00006       134217727MB total (virtual)
-00007       134212315MB available (virtual)
+00007       134211681MB available (virtual)
 00008   
 00009   
 00010   System Info
@@ -902,7 +2361,7 @@ Run failure report
 00033   
 00034   
 00035   Data Manager
-00036      7 entries - cache allocated 524288000 bytes
+00036      31 entries - cache allocated 524288000 bytes
 00037   
 00038      Remapping enabled : TRUE
 00039      Verify records : Off
@@ -912,638 +2371,206 @@ Run failure report
 00043   
 00044      Time series
 00045   
-00046      Array
+00046      Meta data host
 00047   
-00048      Multi column
+00048      Time series
 00049   
 00050      Time series
 00051   
-00052      Array
+00052      Time series
 00053   
-00054      Multi column channel
+00054      Array
 00055   
-00056      Results table
+00056      Array
 00057   
-00058   
+00058      Array
 00059   
-00060   S3 File Manager
-00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
-00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
-00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[7d8b9859-feb7-490f-8dd0-7ec4e30e0db2].tmp, pFile=OxF8F29570, thread=Ox06E4, ptr=Ox00000000, readwrite
-00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[fd9f19cf-0b63-4f00-91fd-ebf288bebdf2].tmp, pFile=OxF8F26070, thread=Ox06E4, ptr=Ox00000000, readwrite
-00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[2b0f7268-743d-455a-b3cc-6e100623d470].tmp, pFile=OxF8F28ED0, thread=Ox06E4, ptr=Ox00000000, readwrite
-00066   
+00060      Array
+00061   
+00062      Meta data host
+00063   
+00064      Meta data host
+00065   
+00066      Time series
 00067   
-00068   Application
-00069        Workspace : WS1
-00070        Delete data on the fly enabled (global) : TRUE
-00071        Delete data on the fly (this) : TRUE
-00072        Glyphs that can switch pipe states : 0
-00073        Glyphs that can request skip cancellation : 1
-00074        Pipe states backed up : FALSE
-00075        Repeating : FALSE
-00076        Run : 0
-00077        Run count : 1
-00078        Run error count : 0
-00079        Run complete : FALSE
-00080        Run skipped : FALSE
-00081        Stop on error during multiple run : FALSE
-00082        Ranks are stored : FALSE = 0
-00083        Resetting : FALSE
-00084        Stepping : FALSE
-00085        Running : FALSE
-00086        Paused : FALSE
-00087        Stopped : TRUE
-00088        Interactive : FALSE
-00089        Complete : FALSE
-00090        Reset : FALSE
-00091        Break : FALSE
-00092        Next File : FALSE
-00093        Running to glyph : FALSE
-00094        Preparing to run : FALSE
-00095        Stop pending : FALSE
-00096        Waiting for next single step : FALSE
-00097        Auto collate : FALSE
-00098        Collate OFF : TRUE
-00099        Collate GATHER : FALSE
-00100        Collate REVIEW : FALSE
-00101        Collate results available : FALSE
-00102        Logging : FALSE
-00103        Use shared scratch file : FALSE
-00104        Looping : FALSE
-00105        Has looped : FALSE
-00106        
-00107             Superglyph : TS_Cut_file_and_pdi, depth 1
-00108             Delete data on the fly enabled (global) : TRUE
-00109             Delete data on the fly (this) : TRUE
-00110             Glyphs that can switch pipe states : 0
-00111             Glyphs that can request skip cancellation : 1
-00112             Pipe states backed up : FALSE
-00113             Repeating : FALSE
-00114             Run : 0
-00115             Run count : 1
-00116             Run error count : 0
-00117             Run complete : FALSE
-00118             Run skipped : FALSE
-00119             Stop on error during multiple run : FALSE
-00120             Ranks are stored : FALSE = 0
-00121             Resetting : FALSE
-00122             Stepping : FALSE
-00123             Running : FALSE
-00124             Paused : FALSE
-00125             Stopped : TRUE
-00126             Interactive : FALSE
-00127             Complete : FALSE
-00128             Reset : TRUE
-00129             Break : FALSE
-00130             Next File : FALSE
-00131             Running to glyph : FALSE
-00132             Preparing to run : FALSE
-00133             Stop pending : FALSE
-00134             Waiting for next single step : FALSE
-00135             Auto collate : FALSE
-00136             Collate OFF : TRUE
-00137             Collate GATHER : FALSE
-00138             Collate REVIEW : FALSE
-00139             Collate results available : FALSE
-00140             Logging : FALSE
-00141             Use shared scratch file : FALSE
-00142             Looping : FALSE
-00143             Has looped : FALSE
-00144             
-00145             
-00146             
-00147             
-00148             
-00149                  Auto collate : FALSE
-00150                  Collate results available : NO
-00151                  Collate data count : 0
-00152                  Collate review count : 0
-00153                  Logging : FALSE
-00154                  Reviewing : FALSE
-00155                  Backed up : FALSE
-00156                  Data present : TRUE
-00157             
-00158                  Auto collate : FALSE
-00159                  Collate results available : NO
-00160                  Collate data count : 0
-00161                  Collate review count : 0
-00162                  Logging : FALSE
-00163                  Reviewing : FALSE
-00164                  Backed up : FALSE
-00165                  Data present : TRUE
-00166        
-00167        
-00168             Auto collate : FALSE
-00169             Collate results available : NO
-00170             Collate data count : 0
-00171             Collate review count : 0
-00172             Logging : FALSE
-00173             Reviewing : FALSE
-00174             Backed up : FALSE
-00175             Data present : TRUE
-00176   
-00177   
-00178   
-00179   Global journal entries
-00180     Out  :  13-Jul-2023 22:23:30   Run started   
-00181     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
-00182     Out  :  13-Jul-2023 22:23:51   Run started   
-00183     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
-00184     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
-00185     Out  :  13-Jul-2023 22:24:33   Run started   
-00186     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
-00187     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
-00188     Out  :  13-Jul-2023 22:24:34   Run started   
-00189     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
-00190     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
-00191     Out  :  13-Jul-2023 22:26:54   Run started   
-00192   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00193     Out  :  13-Jul-2023 22:26:59   Run finished - elapsed time 4.27secs   
-00194     Out  :  13-Jul-2023 22:27:30   Run started   
-00195   Error  :  13-Jul-2023 22:27:30   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00196     Out  :  13-Jul-2023 22:27:33   Run finished - elapsed time 2.83secs   
-00197     Out  :  13-Jul-2023 22:38:40   Run started   
-00198   Error  :  13-Jul-2023 22:38:40   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-***
-End
-***
-
-
-*****
-Begin
-*****
-
-Run failure report
-
-14-Jul-2023 00:55:24
-
-
-00000   Memory
-00001       Load 36%
-00002       32716MB total
-00003       20654MB available
-00004       39884MB total (page file)
-00005       23959MB available (page file)
-00006       134217727MB total (virtual)
-00007       134212315MB available (virtual)
-00008   
-00009   
-00010   System Info
-00011       Processors 16
-00012       Processor Architecture 9
-00013       Page Size 4096
-00014       Processor Type 8664
-00015       Allocation Granularity 65536
-00016       Processor Level 23
-00017       Processor Revision 28928
-00018   
-00019   
-00020   OS Version Info
-00021       Major Version 6
-00022       Minor Version 2
-00023       Build Number 9200
-00024       Platform ID 2
-00025   
-00026   
-00027   HW Profile Info
-00028       Dock Info 1
-00029   
-00030   
-00031   File System
-00032      No data available
-00033   
-00034   
-00035   Data Manager
-00036      7 entries - cache allocated 524288000 bytes
-00037   
-00038      Remapping enabled : TRUE
-00039      Verify records : Off
-00040      Verify streams : Off
-00041      Verify storages : Off
-00042      Verify files : Off
-00043   
-00044      Time series
-00045   
-00046      Array
-00047   
-00048      Multi column
-00049   
-00050      Time series
-00051   
-00052      Array
-00053   
-00054      Multi column channel
-00055   
-00056      Results table
-00057   
-00058   
-00059   
-00060   S3 File Manager
-00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
-00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
-00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[454842d4-e7b3-4c63-9147-0d2629ba2b6a].tmp, pFile=OxF8F26710, thread=Ox06E4, ptr=Ox00000000, readwrite
-00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[b49909d6-45bb-476d-a21a-13af0d14d4b9].tmp, pFile=OxF8F26070, thread=Ox06E4, ptr=Ox00000000, readwrite
-00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[09a6dfdd-0b13-4d67-b196-3b722082aedf].tmp, pFile=OxF8F26DB0, thread=Ox06E4, ptr=Ox00000000, readwrite
-00066   
-00067   
-00068   Application
-00069        Workspace : WS1
-00070        Delete data on the fly enabled (global) : TRUE
-00071        Delete data on the fly (this) : TRUE
-00072        Glyphs that can switch pipe states : 0
-00073        Glyphs that can request skip cancellation : 1
-00074        Pipe states backed up : FALSE
-00075        Repeating : FALSE
-00076        Run : 0
-00077        Run count : 1
-00078        Run error count : 0
-00079        Run complete : FALSE
-00080        Run skipped : FALSE
-00081        Stop on error during multiple run : FALSE
-00082        Ranks are stored : FALSE = 0
-00083        Resetting : FALSE
-00084        Stepping : FALSE
-00085        Running : FALSE
-00086        Paused : FALSE
-00087        Stopped : TRUE
-00088        Interactive : FALSE
-00089        Complete : FALSE
-00090        Reset : FALSE
-00091        Break : FALSE
-00092        Next File : FALSE
-00093        Running to glyph : FALSE
-00094        Preparing to run : FALSE
-00095        Stop pending : FALSE
-00096        Waiting for next single step : FALSE
-00097        Auto collate : FALSE
-00098        Collate OFF : TRUE
-00099        Collate GATHER : FALSE
-00100        Collate REVIEW : FALSE
-00101        Collate results available : FALSE
-00102        Logging : FALSE
-00103        Use shared scratch file : FALSE
-00104        Looping : FALSE
-00105        Has looped : FALSE
-00106        
-00107             Superglyph : TS_Cut_file_and_pdi, depth 1
-00108             Delete data on the fly enabled (global) : TRUE
-00109             Delete data on the fly (this) : TRUE
-00110             Glyphs that can switch pipe states : 0
-00111             Glyphs that can request skip cancellation : 1
-00112             Pipe states backed up : FALSE
-00113             Repeating : FALSE
-00114             Run : 0
-00115             Run count : 1
-00116             Run error count : 0
-00117             Run complete : FALSE
-00118             Run skipped : FALSE
-00119             Stop on error during multiple run : FALSE
-00120             Ranks are stored : FALSE = 0
-00121             Resetting : FALSE
-00122             Stepping : FALSE
-00123             Running : FALSE
-00124             Paused : FALSE
-00125             Stopped : TRUE
-00126             Interactive : FALSE
-00127             Complete : FALSE
-00128             Reset : TRUE
-00129             Break : FALSE
-00130             Next File : FALSE
-00131             Running to glyph : FALSE
-00132             Preparing to run : FALSE
-00133             Stop pending : FALSE
-00134             Waiting for next single step : FALSE
-00135             Auto collate : FALSE
-00136             Collate OFF : TRUE
-00137             Collate GATHER : FALSE
-00138             Collate REVIEW : FALSE
-00139             Collate results available : FALSE
-00140             Logging : FALSE
-00141             Use shared scratch file : FALSE
-00142             Looping : FALSE
-00143             Has looped : FALSE
-00144             
-00145             
-00146             
-00147             
-00148             
-00149             
-00150                  Auto collate : FALSE
-00151                  Collate results available : NO
-00152                  Collate data count : 0
-00153                  Collate review count : 0
-00154                  Logging : FALSE
-00155                  Reviewing : FALSE
-00156                  Backed up : FALSE
-00157                  Data present : TRUE
-00158             
-00159                  Auto collate : FALSE
-00160                  Collate results available : NO
-00161                  Collate data count : 0
-00162                  Collate review count : 0
-00163                  Logging : FALSE
-00164                  Reviewing : FALSE
-00165                  Backed up : FALSE
-00166                  Data present : TRUE
-00167        
-00168        
-00169             Auto collate : FALSE
-00170             Collate results available : NO
-00171             Collate data count : 0
-00172             Collate review count : 0
-00173             Logging : FALSE
-00174             Reviewing : FALSE
-00175             Backed up : FALSE
-00176             Data present : TRUE
-00177   
-00178   
-00179   
-00180   Global journal entries
-00181     Out  :  13-Jul-2023 22:23:30   Run started   
-00182     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
-00183     Out  :  13-Jul-2023 22:23:51   Run started   
-00184     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
-00185     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
-00186     Out  :  13-Jul-2023 22:24:33   Run started   
-00187     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
-00188     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
-00189     Out  :  13-Jul-2023 22:24:34   Run started   
-00190     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
-00191     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
-00192     Out  :  13-Jul-2023 22:26:54   Run started   
-00193   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00194     Out  :  13-Jul-2023 22:26:59   Run finished - elapsed time 4.27secs   
-00195     Out  :  13-Jul-2023 22:27:30   Run started   
-00196   Error  :  13-Jul-2023 22:27:30   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00197     Out  :  13-Jul-2023 22:27:33   Run finished - elapsed time 2.83secs   
-00198     Out  :  13-Jul-2023 22:38:40   Run started   
-00199   Error  :  13-Jul-2023 22:38:40   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00200     Out  :  13-Jul-2023 22:38:41   Run finished - elapsed time 0.7013secs   
-00201     Out  :  13-Jul-2023 22:38:56   Run started   
-00202     Out  :  13-Jul-2023 22:38:56   . < TS_Cut_file_and_pdi (n=1) 0.1070secs   TS_Cut_file_and_pdi
-00203     Out  :  13-Jul-2023 22:38:56   Run finished - total time in process 0.1800secs   
-00204     Out  :  13-Jul-2023 22:47:11   Run started   
-00205     Out  :  13-Jul-2023 22:47:11   Run finished - total time in process 0.0843secs   
-00206   Error  :  13-Jul-2023 22:47:32   String property Columns value not defined   TS_Cut_file_and_pdi.MetaDataDisplay1
-00207     Out  :  13-Jul-2023 23:00:09   Run started   
-00208     Out  :  13-Jul-2023 23:00:10   . < TS_Cut_file_and_pdi (n=1) 0.1539secs   TS_Cut_file_and_pdi
-00209     Out  :  13-Jul-2023 23:00:10   Run finished - total time in process 0.6105secs   
-00210     Out  :  14-Jul-2023 00:51:11   Run started   
-00211     Out  :  14-Jul-2023 00:51:12   . < TS_Cut_file_and_pdi (n=1) 0.1435secs   TS_Cut_file_and_pdi
-00212     Out  :  14-Jul-2023 00:51:12   Run finished - total time in process 0.3005secs   
-00213     Out  :  14-Jul-2023 00:51:58   Run started   
-00214     Out  :  14-Jul-2023 00:51:59   . < TS_Cut_file_and_pdi (n=1) 0.0758secs   TS_Cut_file_and_pdi
-00215     Out  :  14-Jul-2023 00:51:59   Run finished - total time in process 0.1838secs   
-00216     Out  :  14-Jul-2023 00:52:16   Run started   
-00217     Out  :  14-Jul-2023 00:52:16   . < TS_Cut_file_and_pdi (n=1) 0.1217secs   TS_Cut_file_and_pdi
-00218     Out  :  14-Jul-2023 00:52:16   Run finished - total time in process 0.2199secs   
-00219     Out  :  14-Jul-2023 00:52:17   Run started   
-00220     Out  :  14-Jul-2023 00:52:17   . < TS_Cut_file_and_pdi (n=1) 0.1469secs   TS_Cut_file_and_pdi
-00221     Out  :  14-Jul-2023 00:52:17   Run finished - total time in process 0.2480secs   
-00222     Out  :  14-Jul-2023 00:55:24   Run started   
-00223   Error  :  14-Jul-2023 00:55:24   <type 'exceptions.NameError'> global name 'file_path' is not defined [Function: glyphscript Line:43]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-***
-End
-***
-
-
-*****
-Begin
-*****
-
-Run failure report
-
-14-Jul-2023 00:55:45
-
-
-00000   Memory
-00001       Load 36%
-00002       32716MB total
-00003       20639MB available
-00004       39884MB total (page file)
-00005       23892MB available (page file)
-00006       134217727MB total (virtual)
-00007       134212315MB available (virtual)
-00008   
-00009   
-00010   System Info
-00011       Processors 16
-00012       Processor Architecture 9
-00013       Page Size 4096
-00014       Processor Type 8664
-00015       Allocation Granularity 65536
-00016       Processor Level 23
-00017       Processor Revision 28928
-00018   
-00019   
-00020   OS Version Info
-00021       Major Version 6
-00022       Minor Version 2
-00023       Build Number 9200
-00024       Platform ID 2
-00025   
-00026   
-00027   HW Profile Info
-00028       Dock Info 1
-00029   
-00030   
-00031   File System
-00032      No data available
-00033   
-00034   
-00035   Data Manager
-00036      7 entries - cache allocated 524288000 bytes
-00037   
-00038      Remapping enabled : TRUE
-00039      Verify records : Off
-00040      Verify streams : Off
-00041      Verify storages : Off
-00042      Verify files : Off
-00043   
-00044      Time series
-00045   
-00046      Array
-00047   
-00048      Multi column
-00049   
-00050      Time series
-00051   
-00052      Array
-00053   
-00054      Multi column channel
-00055   
-00056      Results table
-00057   
-00058   
-00059   
-00060   S3 File Manager
-00061    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[931fe1b0-57b1-4378-be65-c9333912235b].tmp, pFile=OxF8F27AF0, thread=Ox06E4, ptr=Ox00000000, readwrite
-00062    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[000006E4]_G[c419c639-ae1f-4ed9-b668-30fc55c922f2].tmp, pFile=OxDFC20E00, thread=Ox06E4, ptr=Ox00000000, readwrite
-00063    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000001]_G[782f678e-6c1b-4e4b-bd02-d874ba581d98].tmp, pFile=OxF8F26710, thread=Ox06E4, ptr=Ox00000000, readwrite
-00064    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000002]_G[aa42903f-699f-451b-817e-8c066de97e10].tmp, pFile=OxF8F284E0, thread=Ox06E4, ptr=Ox00000000, readwrite
-00065    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[000006E4]_N[000003]_G[785fab9f-7e40-494c-aafe-473354a8b6c3].tmp, pFile=OxF8F26070, thread=Ox06E4, ptr=Ox00000000, readwrite
-00066   
-00067   
-00068   Application
-00069        Workspace : WS1
-00070        Delete data on the fly enabled (global) : TRUE
-00071        Delete data on the fly (this) : TRUE
-00072        Glyphs that can switch pipe states : 0
-00073        Glyphs that can request skip cancellation : 1
-00074        Pipe states backed up : FALSE
-00075        Repeating : FALSE
-00076        Run : 0
-00077        Run count : 1
-00078        Run error count : 0
-00079        Run complete : FALSE
-00080        Run skipped : FALSE
-00081        Stop on error during multiple run : FALSE
-00082        Ranks are stored : FALSE = 0
-00083        Resetting : FALSE
-00084        Stepping : FALSE
-00085        Running : FALSE
-00086        Paused : FALSE
-00087        Stopped : TRUE
-00088        Interactive : FALSE
-00089        Complete : FALSE
-00090        Reset : FALSE
-00091        Break : FALSE
-00092        Next File : FALSE
-00093        Running to glyph : FALSE
-00094        Preparing to run : FALSE
-00095        Stop pending : FALSE
-00096        Waiting for next single step : FALSE
-00097        Auto collate : FALSE
-00098        Collate OFF : TRUE
-00099        Collate GATHER : FALSE
-00100        Collate REVIEW : FALSE
-00101        Collate results available : FALSE
-00102        Logging : FALSE
-00103        Use shared scratch file : FALSE
-00104        Looping : FALSE
-00105        Has looped : FALSE
-00106        
-00107             Superglyph : TS_Cut_file_and_pdi, depth 1
-00108             Delete data on the fly enabled (global) : TRUE
-00109             Delete data on the fly (this) : TRUE
-00110             Glyphs that can switch pipe states : 0
-00111             Glyphs that can request skip cancellation : 1
-00112             Pipe states backed up : FALSE
-00113             Repeating : FALSE
-00114             Run : 0
-00115             Run count : 1
-00116             Run error count : 0
-00117             Run complete : FALSE
-00118             Run skipped : FALSE
-00119             Stop on error during multiple run : FALSE
-00120             Ranks are stored : FALSE = 0
-00121             Resetting : FALSE
-00122             Stepping : FALSE
-00123             Running : FALSE
-00124             Paused : FALSE
-00125             Stopped : TRUE
-00126             Interactive : FALSE
-00127             Complete : FALSE
-00128             Reset : TRUE
-00129             Break : FALSE
-00130             Next File : FALSE
-00131             Running to glyph : FALSE
-00132             Preparing to run : FALSE
-00133             Stop pending : FALSE
-00134             Waiting for next single step : FALSE
-00135             Auto collate : FALSE
-00136             Collate OFF : TRUE
-00137             Collate GATHER : FALSE
-00138             Collate REVIEW : FALSE
-00139             Collate results available : FALSE
-00140             Logging : FALSE
-00141             Use shared scratch file : FALSE
-00142             Looping : FALSE
-00143             Has looped : FALSE
-00144             
-00145             
-00146             
-00147             
-00148             
-00149             
-00150                  Auto collate : FALSE
-00151                  Collate results available : NO
-00152                  Collate data count : 0
-00153                  Collate review count : 0
-00154                  Logging : FALSE
-00155                  Reviewing : FALSE
-00156                  Backed up : FALSE
-00157                  Data present : TRUE
-00158             
-00159                  Auto collate : FALSE
-00160                  Collate results available : NO
-00161                  Collate data count : 0
-00162                  Collate review count : 0
-00163                  Logging : FALSE
-00164                  Reviewing : FALSE
-00165                  Backed up : FALSE
-00166                  Data present : TRUE
-00167        
-00168        
-00169             Auto collate : FALSE
-00170             Collate results available : NO
-00171             Collate data count : 0
-00172             Collate review count : 0
-00173             Logging : FALSE
-00174             Reviewing : FALSE
-00175             Backed up : FALSE
-00176             Data present : TRUE
-00177   
-00178   
-00179   
-00180   Global journal entries
-00181     Out  :  13-Jul-2023 22:23:30   Run started   
-00182     Out  :  13-Jul-2023 22:23:30   Run finished - total time in process 0.0773secs   
-00183     Out  :  13-Jul-2023 22:23:51   Run started   
-00184     Out  :  13-Jul-2023 22:23:51   . < TS_Cut_file_and_pdi (n=1) 0.1874secs   TS_Cut_file_and_pdi
-00185     Out  :  13-Jul-2023 22:23:51   Run finished - total time in process 0.2812secs   
-00186     Out  :  13-Jul-2023 22:24:33   Run started   
-00187     Out  :  13-Jul-2023 22:24:33   . < TS_Cut_file_and_pdi (n=1) 0.1100secs   TS_Cut_file_and_pdi
-00188     Out  :  13-Jul-2023 22:24:33   Run finished - total time in process 0.1851secs   
-00189     Out  :  13-Jul-2023 22:24:34   Run started   
-00190     Out  :  13-Jul-2023 22:24:34   . < TS_Cut_file_and_pdi (n=1) 0.1057secs   TS_Cut_file_and_pdi
-00191     Out  :  13-Jul-2023 22:24:34   Run finished - total time in process 0.1825secs   
-00192     Out  :  13-Jul-2023 22:26:54   Run started   
-00193   Error  :  13-Jul-2023 22:26:54   <type 'exceptions.ImportError'> No module named _multiprocessing [Function: <module> Line:12 | Function: <module> Line:84]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00194     Out  :  13-Jul-2023 22:26:59   Run finished - elapsed time 4.27secs   
-00195     Out  :  13-Jul-2023 22:27:30   Run started   
-00196   Error  :  13-Jul-2023 22:27:30   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00197     Out  :  13-Jul-2023 22:27:33   Run finished - elapsed time 2.83secs   
-00198     Out  :  13-Jul-2023 22:38:40   Run started   
-00199   Error  :  13-Jul-2023 22:38:40   <type 'exceptions.ImportError'> No module named multiprocess [Function: <module> Line:12]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00200     Out  :  13-Jul-2023 22:38:41   Run finished - elapsed time 0.7013secs   
-00201     Out  :  13-Jul-2023 22:38:56   Run started   
-00202     Out  :  13-Jul-2023 22:38:56   . < TS_Cut_file_and_pdi (n=1) 0.1070secs   TS_Cut_file_and_pdi
-00203     Out  :  13-Jul-2023 22:38:56   Run finished - total time in process 0.1800secs   
-00204     Out  :  13-Jul-2023 22:47:11   Run started   
-00205     Out  :  13-Jul-2023 22:47:11   Run finished - total time in process 0.0843secs   
-00206   Error  :  13-Jul-2023 22:47:32   String property Columns value not defined   TS_Cut_file_and_pdi.MetaDataDisplay1
-00207     Out  :  13-Jul-2023 23:00:09   Run started   
-00208     Out  :  13-Jul-2023 23:00:10   . < TS_Cut_file_and_pdi (n=1) 0.1539secs   TS_Cut_file_and_pdi
-00209     Out  :  13-Jul-2023 23:00:10   Run finished - total time in process 0.6105secs   
-00210     Out  :  14-Jul-2023 00:51:11   Run started   
-00211     Out  :  14-Jul-2023 00:51:12   . < TS_Cut_file_and_pdi (n=1) 0.1435secs   TS_Cut_file_and_pdi
-00212     Out  :  14-Jul-2023 00:51:12   Run finished - total time in process 0.3005secs   
-00213     Out  :  14-Jul-2023 00:51:58   Run started   
-00214     Out  :  14-Jul-2023 00:51:59   . < TS_Cut_file_and_pdi (n=1) 0.0758secs   TS_Cut_file_and_pdi
-00215     Out  :  14-Jul-2023 00:51:59   Run finished - total time in process 0.1838secs   
-00216     Out  :  14-Jul-2023 00:52:16   Run started   
-00217     Out  :  14-Jul-2023 00:52:16   . < TS_Cut_file_and_pdi (n=1) 0.1217secs   TS_Cut_file_and_pdi
-00218     Out  :  14-Jul-2023 00:52:16   Run finished - total time in process 0.2199secs   
-00219     Out  :  14-Jul-2023 00:52:17   Run started   
-00220     Out  :  14-Jul-2023 00:52:17   . < TS_Cut_file_and_pdi (n=1) 0.1469secs   TS_Cut_file_and_pdi
-00221     Out  :  14-Jul-2023 00:52:17   Run finished - total time in process 0.2480secs   
-00222     Out  :  14-Jul-2023 00:55:24   Run started   
-00223   Error  :  14-Jul-2023 00:55:24   <type 'exceptions.NameError'> global name 'file_path' is not defined [Function: glyphscript Line:43]   TS_Cut_file_and_pdi.ts_cut_file_pdi
-00224     Out  :  14-Jul-2023 00:55:26   Run finished - elapsed time 2.12secs   
-00225     Out  :  14-Jul-2023 00:55:45   Run started   
-00226   Error  :  14-Jul-2023 00:55:45   <type 'exceptions.IOError'> (2, 'No such file or directory', 'A_modal_coordinate_7_34\\A_modal_coordinate_7_34_119_187.csv') [Function: glyphscript Line:49 | Function: output_csv_data Line:61]   TS_Cut_file_and_pdi.ts_cut_file_pdi
+00068      Meta data host
+00069   
+00070      Time series
+00071   
+00072      Time series
+00073   
+00074      Time series
+00075   
+00076      Time series
+00077   
+00078      Time series
+00079   
+00080      Array
+00081   
+00082      Array
+00083   
+00084      Array
+00085   
+00086      Array
+00087   
+00088      Array
+00089   
+00090      Array
+00091   
+00092      Meta data host
+00093   
+00094      Time series
+00095   
+00096      Meta data host
+00097   
+00098      Time series
+00099   
+00100      Time series
+00101   
+00102      Time series
+00103   
+00104      Array
+00105   
+00106   
+00107   
+00108   S3 File Manager
+00109    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[4787f10c-66c6-45b9-b086-222ba3537fcb].tmp, pFile=Ox410D4090, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00110    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[610ab870-f342-46bc-bcfa-b5b526b6b2a0].tmp, pFile=Ox27074160, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00111    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[cff7cff1-4766-4d46-8542-09c5d69a2274].tmp, pFile=Ox50218E50, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00112    filename=c:\Users\zbingf\AppData\Local\Temp\nc_global_dummy_T[00004DCC]_G[eceb1a43-516f-491a-81f1-e1c8cd79ded3].tmp, pFile=Ox410D2960, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00113    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000001]_G[0b6f7950-0a31-4e2e-be0c-98c2fdccc956].tmp, pFile=Ox410D36A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00114    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000002]_G[abfe5cf7-eb08-467b-b9d3-8be8a4c0ccb3].tmp, pFile=Ox410D2CB0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00115    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000003]_G[c31cea9d-f51c-4beb-8c3f-c33ef5ff96e3].tmp, pFile=Ox410D43E0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00116    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000005]_G[eb4ff65e-d0d8-4d14-9eb9-0b69acdc4a9f].tmp, pFile=Ox410D3D40, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00117    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000007]_G[e858ef87-7590-417c-92fb-efcd2b270ca1].tmp, pFile=Ox410D1230, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00118    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000008]_G[5b52d9d5-69ed-4796-9a7f-112856f561d4].tmp, pFile=Ox50219B90, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00119    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000009]_G[91315184-e388-446e-892d-55bf26774ddf].tmp, pFile=Ox502194F0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00120    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000A]_G[60d48baf-5496-4b0b-8e01-0d3d309f6bfe].tmp, pFile=Ox5021A580, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00121    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000B]_G[3dd07bcd-c3e4-4435-b41a-01230cbe5255].tmp, pFile=Ox50218B00, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00122    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000C]_G[ef492dbc-7af6-4049-ba4e-f16bfdec1586].tmp, pFile=Ox5021AC20, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00123    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000D]_G[7bbcf561-3b2c-4e84-8a8c-13511be956df].tmp, pFile=Ox502191A0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00124    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000E]_G[6961d8d3-77f7-4464-a4e2-be95bef8bc81].tmp, pFile=Ox50219EE0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00125    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[00000F]_G[509e9aaf-fdfe-4e91-bb3f-fa27ee3516f2].tmp, pFile=Ox50217720, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00126    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000010]_G[c6be441a-ae9b-4183-8ffc-25aaaf3b3363].tmp, pFile=Ox50218110, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00127    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000011]_G[860409b8-342f-4b42-b786-4118e35522be].tmp, pFile=Ox50217DC0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00128    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000012]_G[49582839-7dae-470d-ae45-cdc389ec6989].tmp, pFile=Ox50218460, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00129    filename=c:\Users\zbingf\AppData\Local\Temp\nc_pipe_scratch_T[00004DCC]_N[000013]_G[b56a229e-f612-4270-9ee8-6200a9f935fd].tmp, pFile=Ox50219840, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00130    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\SHELL_STRAIN_TOP_BOTTOM.fdb, pFile=Ox566687C0, thread=Ox4DCC, ptr=Ox00000000, readwrite
+00131    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m10_rsp_s.nmd, pFile=Ox557504D0, thread=Ox4DCC, ptr=Ox00000000, readonly
+00132    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m28-R_rsp_s.nmd, pFile=Ox55751330, thread=Ox4DCC, ptr=Ox00000000, readonly
+00133    filename=d:\00_CAE_project\202308_01_VirtualStrain_SHEEL\T-TEST1-m28_rsp_s.nmd, pFile=Ox557507B0, thread=Ox4DCC, ptr=Ox00000000, readonly
+00134   
+00135   
+00136   Application
+00137        Workspace : TEST1-M10
+00138        Delete data on the fly enabled (global) : TRUE
+00139        Delete data on the fly (this) : TRUE
+00140        Glyphs that can switch pipe states : 0
+00141        Glyphs that can request skip cancellation : 0
+00142        Pipe states backed up : FALSE
+00143        Repeating : FALSE
+00144        Run : 0
+00145        Run count : 1
+00146        Run error count : 0
+00147        Run complete : FALSE
+00148        Run skipped : FALSE
+00149        Stop on error during multiple run : FALSE
+00150        Ranks are stored : FALSE = 0
+00151        Resetting : FALSE
+00152        Stepping : FALSE
+00153        Running : FALSE
+00154        Paused : FALSE
+00155        Stopped : TRUE
+00156        Interactive : FALSE
+00157        Complete : FALSE
+00158        Reset : FALSE
+00159        Break : FALSE
+00160        Next File : FALSE
+00161        Running to glyph : FALSE
+00162        Preparing to run : FALSE
+00163        Stop pending : FALSE
+00164        Waiting for next single step : FALSE
+00165        Auto collate : FALSE
+00166        Collate OFF : TRUE
+00167        Collate GATHER : FALSE
+00168        Collate REVIEW : FALSE
+00169        Collate results available : FALSE
+00170        Logging : FALSE
+00171        Use shared scratch file : FALSE
+00172        Looping : FALSE
+00173        Has looped : FALSE
+00174        
+00175        
+00176        
+00177        
+00178        
+00179        
+00180        
+00181        
+00182        
+00183             Auto collate : FALSE
+00184             Collate results available : NO
+00185             Collate data count : 0
+00186             Collate review count : 0
+00187             Logging : FALSE
+00188             Reviewing : FALSE
+00189             Backed up : FALSE
+00190             Data present : TRUE
+00191        
+00192             Auto collate : FALSE
+00193             Collate results available : NO
+00194             Collate data count : 0
+00195             Collate review count : 0
+00196             Logging : FALSE
+00197             Reviewing : FALSE
+00198             Backed up : FALSE
+00199             Data present : TRUE
+00200        
+00201             Auto collate : FALSE
+00202             Collate results available : NO
+00203             Collate data count : 0
+00204             Collate review count : 0
+00205             Logging : FALSE
+00206             Reviewing : FALSE
+00207             Backed up : FALSE
+00208             Data present : TRUE
+00209        
+00210             Auto collate : FALSE
+00211             Collate results available : NO
+00212             Collate data count : 0
+00213             Collate review count : 0
+00214             Logging : FALSE
+00215             Reviewing : FALSE
+00216             Backed up : FALSE
+00217             Data present : TRUE
+00218        
+00219             Auto collate : FALSE
+00220             Collate results available : NO
+00221             Collate data count : 0
+00222             Collate review count : 0
+00223             Logging : FALSE
+00224             Reviewing : FALSE
+00225             Backed up : FALSE
+00226             Data present : TRUE
+00227   
+00228   
+00229   
+00230   Global journal entries
+00231     Out  :  01-Aug-2023 22:56:51   Run started   
+00232     Out  :  01-Aug-2023 22:56:51   Run finished - total time in process 0.3970secs   
+00233     Out  :  01-Aug-2023 22:57:13   Run started   
+00234     Out  :  01-Aug-2023 22:57:17   Run finished - total time in process 4.46secs   
+00235     Out  :  01-Aug-2023 22:57:46   Run started   
+00236     Out  :  01-Aug-2023 22:57:46   Run finished - total time in process 0.4306secs   
+00237     Out  :  01-Aug-2023 23:02:20   Run started   
+00238     Out  :  01-Aug-2023 23:02:20   Run finished - total time in process 0.4374secs   
+00239     Out  :  01-Aug-2023 23:08:54   Run started   
+00240     Out  :  01-Aug-2023 23:08:55   Run finished - total time in process 0.5197secs   
+00241     Out  :  01-Aug-2023 23:30:09   Run started   
+00242   Error  :  01-Aug-2023 23:30:09   No test to process   TSInput1
+00243     Out  :  01-Aug-2023 23:30:10   Run finished - elapsed time 1.22secs   
+00244     Out  :  01-Aug-2023 23:30:41   Run started   
+00245   Error  :  01-Aug-2023 23:30:41   No test to process   FEInput2
 ***
 End
 ***
