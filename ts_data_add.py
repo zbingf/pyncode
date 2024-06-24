@@ -1,13 +1,17 @@
 # -*- coding: utf-8 -*-
-import logging
-import os
-import json
-import subprocess
-from pprint import pprint, pformat
+# 同数据相加，并引用输入1的数据
+# 20231113
 
-log_path = 'py_temp.txt'
-with open(log_path,'w') as f : pass
-logging.basicConfig(level=logging.INFO, filename=log_path)
+
+# import logging
+# import os
+# import json
+# import subprocess
+# from pprint import pprint, pformat
+
+# log_path = 'py_temp.txt'
+# with open(log_path,'w') as f : pass
+# logging.basicConfig(level=logging.INFO, filename=log_path)
 
 
 def glyphscript(engineState):
@@ -29,10 +33,10 @@ def glyphscript(engineState):
 			line_new.append(n)
 		list2d_new.append(line_new)
 
-	str_log = pformat(list2d_new)
-	logging.info(str_log)
+	# str_log = pformat(list2d_new)
+	# logging.info(str_log)
 
-	os.popen(log_path)
+	# os.popen(log_path)
 
 	output_ts_data(ts_out0, ts_in0, list2d_new)
 

@@ -114,6 +114,7 @@ def translate_data_rsp(csv_path, samplerate):
 
 
 ```python
+# 获取时域数据
 def getTS(tsobj):
     num = tsobj.GetChannelCount()
     list1 = []
@@ -123,6 +124,7 @@ def getTS(tsobj):
         list1.append(list_temp)
     return list1
 
+# 获取通道名称
 def getTS_channel_name(tsobj):
     num = tsobj.GetChannelCount()
     list1 = []
@@ -130,19 +132,21 @@ def getTS_channel_name(tsobj):
         list1.append(tsobj.GetChanTitle(n))
     return list1
 
-
+# 获取时域数据的引用路径
 def getTS_file_path(tsobj):
 
     meta_obj = tsobj.GetMetaData()
 
     return meta_obj.GetItem(0, "InputTestInfo.Path")
 
+# 获取时域数据的引用名称
 def getTS_file_name(tsobj):
 
     meta_obj = tsobj.GetMetaData()
 
     return meta_obj.GetItem(0, "InputTestInfo.TestName")
 
+# 获取时域数据的采样频率
 def getTS_samplerate(tsobj):
 
     meta_obj = tsobj.GetMetaData()
